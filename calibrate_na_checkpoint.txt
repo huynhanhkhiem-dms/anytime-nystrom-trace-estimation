@@ -1,0 +1,17 @@
+# Calibration for Gaussian NA-Hutch++ at matched checkpoints
+
+The development replay uses the 240 paths in the archived archived experiment. The confirmation uses 24 fresh Gaussian paths per operator, with seed 11062000 + 1000 times the zero-based operator index + the zero-based path index. Keep the ten operators and product checkpoints of archived, a cap of 256, a 5% relative radius target, and 5% total risk per method. Report paired stopping counts, restricted mean products and reference exclusions. The primary comparison on fresh paths uses the sharper NA-Hutch++ certificate with the risk schedule specified below versus frozen norm at stake 1/2. The sharper certificate with uniform risk spending is a sensitivity check. These are comparisons on ten fixed operators. The risk schedule was chosen after examining the archived paths and fixed before the fresh paths were generated.
+
+Use the Gaussian NA-Hutch++ point estimator and its held-out Gaussian products. Let the symmetric residual be C, the held-out sample count be h, the observed squared Frobenius norm of the residual block divided by h be v, the residual Frobenius norm squared be r, and the residual spectral norm be B. A one-sided chi-square quantile bounds B using the projection of the residual block on a top eigenvector. Assign risk delta/4 to this bound and delta/4 to the Frobenius bound at a checkpoint with risk delta.
+
+## Frobenius bound
+
+For t > 0, log concavity gives log(1 + 2t λ²) ≥ (λ²/B²) log(1 + 2t B²) for each eigenvalue λ of C. The Laplace transform and the Chernoff choice t = (r/v − 1)/(2B²) give a lower-tail rate h[r log(r/v) − r + v]/(2B²) for v < r. Invert this rate at log(4/delta), using the spectral upper bound in the denominator. On the event that the spectral bound holds, the resulting Frobenius upper bound is at least the bound computed with the unknown true spectral norm. The latter fails with probability at most delta/4, so using a random spectral upper bound needs no independence assumption.
+
+The original checkpoint records suffice to recover v and the residual block spectral norm whenever the recorded spectral upper bound is strictly below the recorded Frobenius upper bound. At other reports the reanalysis retains the preceding intersection, since the stored bound may hide the block spectral norm. Skipping a report cannot increase the probability of exclusion.
+
+## Quadratic-form tail
+
+For either sign of C and 0 < t < 1/(2B), expand the centered Gaussian log moment generating function in the eigencoordinates. The ratio [-s − log(1 − s)]/s² is increasing for 0 ≤ s < 1, and the value at −s is bounded by that at s. Consequently the log moment generating function of the summed centered score is bounded by ν[-s − log(1 − s)] for s = 2tB and ν = hr/(2B²). Use the upper bounds for r and B in this inequality. Optimize the Chernoff exponent to obtain half-width 2Bz/h, with z − ν log(1 + z/ν) = log(4/delta). The two signed tails together have failure probability at most delta/2. Union bounds over both norm events, both tails and all checkpoints give the original 5% total risk. The equal schedule spends 0.005 per checkpoint. The weighted schedule spends 0.001 on each of the first seven checkpoints and 0.043/3 on each of the last three.
+
+The concentration bounds apply in exact arithmetic with independent Gaussian probes. The data analysis uses binary64 and numerical trace references.

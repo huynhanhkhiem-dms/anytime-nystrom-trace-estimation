@@ -1,0 +1,1266 @@
+{
+  "status": "COMPLETE",
+  "dimension": 128,
+  "cap": 126,
+  "target": 0.1,
+  "alpha_per_rule": 0.05,
+  "seeds": [
+    3367000,
+    3367001,
+    3367002,
+    3367003
+  ],
+  "mode_tolerances": {
+    "loose": [
+      0.01
+    ],
+    "tight": [
+      1e-09
+    ],
+    "refine": [
+      0.01,
+      0.0001,
+      1e-07,
+      1e-10
+    ]
+  },
+  "scope": "Seeded diagnostic with outward arithmetic. Coverage assumes ideal Gaussian bits. Timing includes common verification and both intervals, with dense Arb matrix action.",
+  "source_sha256": {
+    "run_verified_norm_comparison.py": "7cdb2e069957d0720a163c20ea3d110195e580de27b380a61362e8ee0d28f39d",
+    "run_verified_galerkin.py": "7c09d9cbcd2792ad8da7649a99538f16ceeb54472451a59026bd8eca5dcc3390",
+    "run_graph_holdout.py": "28f04b91943276fc0d3c4e8f75ff78855e92fcfea4f7a1f3741964f86196dfb8"
+  },
+  "cases": [
+    {
+      "shift_exponent": -8,
+      "mode": "loose",
+      "records": [
+        {
+          "seed": 3367000,
+          "stops": {
+            "progress": null,
+            "frozen_norm": {
+              "outer_probes": 95,
+              "cg_iterations": 4511,
+              "solve_attempts": 95,
+              "lower_dyadic": [
+                "78596342408829874609125753526034517173298319909824207847478564892274062783789",
+                -247
+              ],
+              "upper_dyadic": [
+                "96059548633290994958778571548456445804892390390920297834450981580831771701843",
+                -247
+              ]
+            }
+          },
+          "reference_exclusion_checks": {
+            "progress": 0,
+            "frozen_norm": 0
+          },
+          "failed_solve_gates": 125,
+          "probes_executed": 126,
+          "full_span_trace_enclosure": null,
+          "skipped_pivots": 0,
+          "solve_attempts": 126,
+          "cg_iterations": 6022,
+          "seconds": {
+            "cg": 0.2915449002175592,
+            "verified_projection_and_evidence": 1.2301068998640403,
+            "gaussian_enclosures": 1.2011399999610148
+          }
+        },
+        {
+          "seed": 3367001,
+          "stops": {
+            "progress": null,
+            "frozen_norm": {
+              "outer_probes": 67,
+              "cg_iterations": 3189,
+              "solve_attempts": 67,
+              "lower_dyadic": [
+                "9445794949508846295404713639255435458055373822599675466323708619310300324947",
+                -244
+              ],
+              "upper_dyadic": [
+                "5772119271507523538368270392612546368897665391621682591076019278165304333693",
+                -243
+              ]
+            }
+          },
+          "reference_exclusion_checks": {
+            "progress": 0,
+            "frozen_norm": 0
+          },
+          "failed_solve_gates": 126,
+          "probes_executed": 126,
+          "full_span_trace_enclosure": null,
+          "skipped_pivots": 0,
+          "solve_attempts": 126,
+          "cg_iterations": 6055,
+          "seconds": {
+            "cg": 0.2954893002170138,
+            "verified_projection_and_evidence": 1.2426454999949783,
+            "gaussian_enclosures": 1.204859499761369
+          }
+        },
+        {
+          "seed": 3367002,
+          "stops": {
+            "progress": null,
+            "frozen_norm": {
+              "outer_probes": 84,
+              "cg_iterations": 3991,
+              "solve_attempts": 84,
+              "lower_dyadic": [
+                "19393508017818220295161878326861687372574800973378956290188605995322624356975",
+                -245
+              ],
+              "upper_dyadic": [
+                "47386912539209828902430737081409762619605775092552753236813785926812914506417",
+                -246
+              ]
+            }
+          },
+          "reference_exclusion_checks": {
+            "progress": 0,
+            "frozen_norm": 0
+          },
+          "failed_solve_gates": 126,
+          "probes_executed": 126,
+          "full_span_trace_enclosure": null,
+          "skipped_pivots": 0,
+          "solve_attempts": 126,
+          "cg_iterations": 5986,
+          "seconds": {
+            "cg": 0.2813485002843663,
+            "verified_projection_and_evidence": 1.258006799442228,
+            "gaussian_enclosures": 1.186836399952881
+          }
+        },
+        {
+          "seed": 3367003,
+          "stops": {
+            "progress": null,
+            "frozen_norm": {
+              "outer_probes": 72,
+              "cg_iterations": 3375,
+              "solve_attempts": 72,
+              "lower_dyadic": [
+                "19036780499762645749574751801871357008680556481454682756738989241298414225395",
+                -245
+              ],
+              "upper_dyadic": [
+                "92799751584319626176191394263814437320283466166105055231066601396758452229917",
+                -247
+              ]
+            }
+          },
+          "reference_exclusion_checks": {
+            "progress": 0,
+            "frozen_norm": 0
+          },
+          "failed_solve_gates": 126,
+          "probes_executed": 126,
+          "full_span_trace_enclosure": null,
+          "skipped_pivots": 0,
+          "solve_attempts": 126,
+          "cg_iterations": 5960,
+          "seconds": {
+            "cg": 0.28649819997372106,
+            "verified_projection_and_evidence": 1.2586319000693038,
+            "gaussian_enclosures": 1.18359569972381
+          }
+        }
+      ]
+    },
+    {
+      "shift_exponent": -8,
+      "mode": "tight",
+      "records": [
+        {
+          "seed": 3367000,
+          "stops": {
+            "progress": {
+              "outer_probes": 102,
+              "cg_iterations": 9598,
+              "solve_attempts": 102,
+              "lower_dyadic": [
+                "79238938455078918006316754036582391285773636155000115121543958520302761806795",
+                -247
+              ],
+              "upper_dyadic": [
+                "96703446403135585173430776907245019637418030189233806915491126162886229901771",
+                -247
+              ]
+            },
+            "frozen_norm": {
+              "outer_probes": 92,
+              "cg_iterations": 8657,
+              "solve_attempts": 92,
+              "lower_dyadic": [
+                "78285556847872992496990143532832446114595611198634475442305887662455230434251",
+                -247
+              ],
+              "upper_dyadic": [
+                "95629744226677654480512328527928886701041469844999264244997722161650362814929",
+                -247
+              ]
+            }
+          },
+          "reference_exclusion_checks": {
+            "progress": 0,
+            "frozen_norm": 0
+          },
+          "failed_solve_gates": 0,
+          "probes_executed": 126,
+          "full_span_trace_enclosure": null,
+          "skipped_pivots": 0,
+          "solve_attempts": 126,
+          "cg_iterations": 11860,
+          "seconds": {
+            "cg": 0.6045159998466261,
+            "verified_projection_and_evidence": 1.3868278994923458,
+            "gaussian_enclosures": 1.3024030998931266
+          }
+        },
+        {
+          "seed": 3367001,
+          "stops": {
+            "progress": {
+              "outer_probes": 84,
+              "cg_iterations": 7881,
+              "solve_attempts": 84,
+              "lower_dyadic": [
+                "77452002575306495058734982456905511397483949798104942945106213123791205480121",
+                -247
+              ],
+              "upper_dyadic": [
+                "94369408624524815120639590548293058521165768830964871742476733111710183992423",
+                -247
+              ]
+            },
+            "frozen_norm": {
+              "outer_probes": 64,
+              "cg_iterations": 5999,
+              "solve_attempts": 64,
+              "lower_dyadic": [
+                "75141281646290294773060924120976464571288834553108194247300488282727296317113",
+                -247
+              ],
+              "upper_dyadic": [
+                "91757472147213910269511279441362010036918989390571652199311154316088862196863",
+                -247
+              ]
+            }
+          },
+          "reference_exclusion_checks": {
+            "progress": 0,
+            "frozen_norm": 0
+          },
+          "failed_solve_gates": 0,
+          "probes_executed": 126,
+          "full_span_trace_enclosure": null,
+          "skipped_pivots": 0,
+          "solve_attempts": 126,
+          "cg_iterations": 11825,
+          "seconds": {
+            "cg": 0.5931863998994231,
+            "verified_projection_and_evidence": 1.3696999991079792,
+            "gaussian_enclosures": 1.3073617000482045
+          }
+        },
+        {
+          "seed": 3367002,
+          "stops": {
+            "progress": {
+              "outer_probes": 94,
+              "cg_iterations": 8833,
+              "solve_attempts": 94,
+              "lower_dyadic": [
+                "78534808607781936450779711989006413805857597376205177617279396729335866813675",
+                -247
+              ],
+              "upper_dyadic": [
+                "23976756578648004431693804144160562732597574980238029656980563082463847434405",
+                -245
+              ]
+            },
+            "frozen_norm": {
+              "outer_probes": 81,
+              "cg_iterations": 7615,
+              "solve_attempts": 81,
+              "lower_dyadic": [
+                "77261558238013835899521973097413761609009872350371760547359636194563036376299",
+                -247
+              ],
+              "upper_dyadic": [
+                "23587501782716546233238040094048958968830499339644213651135230313412949916385",
+                -245
+              ]
+            }
+          },
+          "reference_exclusion_checks": {
+            "progress": 0,
+            "frozen_norm": 0
+          },
+          "failed_solve_gates": 0,
+          "probes_executed": 126,
+          "full_span_trace_enclosure": null,
+          "skipped_pivots": 0,
+          "solve_attempts": 126,
+          "cg_iterations": 11841,
+          "seconds": {
+            "cg": 0.5836990000680089,
+            "verified_projection_and_evidence": 1.367119499889668,
+            "gaussian_enclosures": 1.3111097004730254
+          }
+        },
+        {
+          "seed": 3367003,
+          "stops": {
+            "progress": {
+              "outer_probes": 87,
+              "cg_iterations": 8164,
+              "solve_attempts": 87,
+              "lower_dyadic": [
+                "77849329023262873198721574743250651772085422433805061784271480944196436684027",
+                -247
+              ],
+              "upper_dyadic": [
+                "94942565451339473187873135343829326838788699084212725441666450779072183413893",
+                -247
+              ]
+            },
+            "frozen_norm": {
+              "outer_probes": 69,
+              "cg_iterations": 6476,
+              "solve_attempts": 69,
+              "lower_dyadic": [
+                "75773361790009538411898822619633743337386461508576187429706733553891196071163",
+                -247
+              ],
+              "upper_dyadic": [
+                "46193724391691766876911014544405558658137066553508213133108019915383238646705",
+                -246
+              ]
+            }
+          },
+          "reference_exclusion_checks": {
+            "progress": 0,
+            "frozen_norm": 0
+          },
+          "failed_solve_gates": 0,
+          "probes_executed": 126,
+          "full_span_trace_enclosure": null,
+          "skipped_pivots": 0,
+          "solve_attempts": 126,
+          "cg_iterations": 11832,
+          "seconds": {
+            "cg": 0.5930752002168447,
+            "verified_projection_and_evidence": 1.3976617000880651,
+            "gaussian_enclosures": 1.3128656999324448
+          }
+        }
+      ]
+    },
+    {
+      "shift_exponent": -8,
+      "mode": "refine",
+      "records": [
+        {
+          "seed": 3367000,
+          "stops": {
+            "progress": {
+              "outer_probes": 103,
+              "cg_iterations": 7304,
+              "solve_attempts": 205,
+              "lower_dyadic": [
+                "79319266250720056415328785541571517740144791028379408849632107040169881702723",
+                -247
+              ],
+              "upper_dyadic": [
+                "96921326406857464517846146621020154154018282254456446673713774491034023242121",
+                -247
+              ]
+            },
+            "frozen_norm": {
+              "outer_probes": 93,
+              "cg_iterations": 6596,
+              "solve_attempts": 185,
+              "lower_dyadic": [
+                "78377800401664669892600706923367171761101675723737966798944915314369846251843",
+                -247
+              ],
+              "upper_dyadic": [
+                "47803496437767517028415467942521081400523939855145037657066771740337185556667",
+                -246
+              ]
+            }
+          },
+          "reference_exclusion_checks": {
+            "progress": 0,
+            "frozen_norm": 0
+          },
+          "failed_solve_gates": 0,
+          "probes_executed": 126,
+          "full_span_trace_enclosure": null,
+          "skipped_pivots": 0,
+          "solve_attempts": 251,
+          "cg_iterations": 8957,
+          "seconds": {
+            "cg": 0.4954609003616497,
+            "verified_projection_and_evidence": 2.3148960999096744,
+            "gaussian_enclosures": 1.3234113000216894
+          }
+        },
+        {
+          "seed": 3367001,
+          "stops": {
+            "progress": {
+              "outer_probes": 85,
+              "cg_iterations": 6034,
+              "solve_attempts": 170,
+              "lower_dyadic": [
+                "38775029007419029952005458725776739317460284971033665146514336767057818391319",
+                -246
+              ],
+              "upper_dyadic": [
+                "94531533089605731672329230655323234488795811544490863108088907482510878901019",
+                -247
+              ]
+            },
+            "frozen_norm": {
+              "outer_probes": 64,
+              "cg_iterations": 4528,
+              "solve_attempts": 128,
+              "lower_dyadic": [
+                "37570649013445069170356749232577871313567162647845982970408226424037247128343",
+                -246
+              ],
+              "upper_dyadic": [
+                "22940265259320467774509147620530343387279802029184414215953553422210692290571",
+                -245
+              ]
+            }
+          },
+          "reference_exclusion_checks": {
+            "progress": 0,
+            "frozen_norm": 0
+          },
+          "failed_solve_gates": 0,
+          "probes_executed": 126,
+          "full_span_trace_enclosure": null,
+          "skipped_pivots": 0,
+          "solve_attempts": 252,
+          "cg_iterations": 8911,
+          "seconds": {
+            "cg": 0.444330699800048,
+            "verified_projection_and_evidence": 2.046951200463809,
+            "gaussian_enclosures": 1.1925812000408769
+          }
+        },
+        {
+          "seed": 3367002,
+          "stops": {
+            "progress": {
+              "outer_probes": 95,
+              "cg_iterations": 6730,
+              "solve_attempts": 190,
+              "lower_dyadic": [
+                "78608692913087808551178998607630514568092373592826783077006807395516106650573",
+                -247
+              ],
+              "upper_dyadic": [
+                "48038130183421397313345523299724298770835988351614806788297757577755384057485",
+                -246
+              ]
+            },
+            "frozen_norm": {
+              "outer_probes": 81,
+              "cg_iterations": 5752,
+              "solve_attempts": 162,
+              "lower_dyadic": [
+                "77261534839320593623698563661978018936609216240340567180512993158370053567437",
+                -247
+              ],
+              "upper_dyadic": [
+                "94353596346334812408740240739979527667534324362680048825527901246390330452799",
+                -247
+              ]
+            }
+          },
+          "reference_exclusion_checks": {
+            "progress": 0,
+            "frozen_norm": 0
+          },
+          "failed_solve_gates": 0,
+          "probes_executed": 126,
+          "full_span_trace_enclosure": null,
+          "skipped_pivots": 0,
+          "solve_attempts": 252,
+          "cg_iterations": 8940,
+          "seconds": {
+            "cg": 0.4424780002445914,
+            "verified_projection_and_evidence": 2.0559726987266913,
+            "gaussian_enclosures": 1.1988130002864636
+          }
+        },
+        {
+          "seed": 3367003,
+          "stops": {
+            "progress": {
+              "outer_probes": 88,
+              "cg_iterations": 6288,
+              "solve_attempts": 176,
+              "lower_dyadic": [
+                "4872782746414412239621890517427467544269865306528555351316665897656497932179",
+                -243
+              ],
+              "upper_dyadic": [
+                "95105049081633812922941986984814334270897018547621281869141857406487513206129",
+                -247
+              ]
+            },
+            "frozen_norm": {
+              "outer_probes": 69,
+              "cg_iterations": 4914,
+              "solve_attempts": 138,
+              "lower_dyadic": [
+                "4735833933037684732460379077556176713401851822528415818281432810201458870163",
+                -243
+              ],
+              "upper_dyadic": [
+                "2887199932129488613612888909262383618185566147838061982845925531784140011849",
+                -242
+              ]
+            }
+          },
+          "reference_exclusion_checks": {
+            "progress": 0,
+            "frozen_norm": 0
+          },
+          "failed_solve_gates": 0,
+          "probes_executed": 126,
+          "full_span_trace_enclosure": null,
+          "skipped_pivots": 0,
+          "solve_attempts": 252,
+          "cg_iterations": 8957,
+          "seconds": {
+            "cg": 0.47001489996910095,
+            "verified_projection_and_evidence": 2.1650898000225425,
+            "gaussian_enclosures": 1.2814023999962956
+          }
+        }
+      ]
+    },
+    {
+      "shift_exponent": -1,
+      "mode": "loose",
+      "records": [
+        {
+          "seed": 3367000,
+          "stops": {
+            "progress": {
+              "outer_probes": 117,
+              "cg_iterations": 1625,
+              "solve_attempts": 117,
+              "lower_dyadic": [
+                "2975468437473192964511974396246549406062925350282593193255389828219930850401",
+                -245
+              ],
+              "upper_dyadic": [
+                "58055097918696365883125968681497377533648926797504053676396974544823929958991",
+                -249
+              ]
+            },
+            "frozen_norm": {
+              "outer_probes": 77,
+              "cg_iterations": 1067,
+              "solve_attempts": 77,
+              "lower_dyadic": [
+                "91577920708950605897293325779427691654090815872463808082732836061099608862459",
+                -250
+              ],
+              "upper_dyadic": [
+                "111880245789243736777852376083828363376083752732950869443261564762680446570275",
+                -250
+              ]
+            }
+          },
+          "reference_exclusion_checks": {
+            "progress": 0,
+            "frozen_norm": 0
+          },
+          "failed_solve_gates": 7,
+          "probes_executed": 126,
+          "full_span_trace_enclosure": null,
+          "skipped_pivots": 0,
+          "solve_attempts": 126,
+          "cg_iterations": 1754,
+          "seconds": {
+            "cg": 0.10958910000044852,
+            "verified_projection_and_evidence": 1.3217166000395082,
+            "gaussian_enclosures": 1.2608000001637265
+          }
+        },
+        {
+          "seed": 3367001,
+          "stops": {
+            "progress": {
+              "outer_probes": 115,
+              "cg_iterations": 1589,
+              "solve_attempts": 115,
+              "lower_dyadic": [
+                "94168384361583193116647326086807492658622687526677290264731941895798592950841",
+                -250
+              ],
+              "upper_dyadic": [
+                "114692265953504874561602074797495560771823511085786080199166618158197745815555",
+                -250
+              ]
+            },
+            "frozen_norm": {
+              "outer_probes": 77,
+              "cg_iterations": 1063,
+              "solve_attempts": 77,
+              "lower_dyadic": [
+                "89498944126060662771202275840371082720285142023948316457186525299871007486147",
+                -250
+              ],
+              "upper_dyadic": [
+                "109358212880218282629734753356562551404207537273956837631222112046021704501387",
+                -250
+              ]
+            }
+          },
+          "reference_exclusion_checks": {
+            "progress": 0,
+            "frozen_norm": 0
+          },
+          "failed_solve_gates": 7,
+          "probes_executed": 126,
+          "full_span_trace_enclosure": null,
+          "skipped_pivots": 0,
+          "solve_attempts": 126,
+          "cg_iterations": 1745,
+          "seconds": {
+            "cg": 0.11065329983830452,
+            "verified_projection_and_evidence": 1.3455804000841454,
+            "gaussian_enclosures": 1.2907102003809996
+          }
+        },
+        {
+          "seed": 3367002,
+          "stops": {
+            "progress": {
+              "outer_probes": 117,
+              "cg_iterations": 1618,
+              "solve_attempts": 117,
+              "lower_dyadic": [
+                "47633082396564204806186750541651552988891479094660895171265985464200904193123",
+                -249
+              ],
+              "upper_dyadic": [
+                "58141783124894905074680213732382640051688166049967842648409427770420770870431",
+                -249
+              ]
+            },
+            "frozen_norm": {
+              "outer_probes": 77,
+              "cg_iterations": 1061,
+              "solve_attempts": 77,
+              "lower_dyadic": [
+                "22841187499701865643927393357313602957557136015008186032037327320566984251341",
+                -248
+              ],
+              "upper_dyadic": [
+                "111634874695594238688195206222923015008879635142151472859967164021624082612441",
+                -250
+              ]
+            }
+          },
+          "reference_exclusion_checks": {
+            "progress": 0,
+            "frozen_norm": 0
+          },
+          "failed_solve_gates": 4,
+          "probes_executed": 126,
+          "full_span_trace_enclosure": null,
+          "skipped_pivots": 0,
+          "solve_attempts": 126,
+          "cg_iterations": 1743,
+          "seconds": {
+            "cg": 0.10262399987550452,
+            "verified_projection_and_evidence": 1.2702546997461468,
+            "gaussian_enclosures": 1.217333099921234
+          }
+        },
+        {
+          "seed": 3367003,
+          "stops": {
+            "progress": {
+              "outer_probes": 117,
+              "cg_iterations": 1634,
+              "solve_attempts": 117,
+              "lower_dyadic": [
+                "23778080799571056796867216537571058215138636030701685821146739346635815741035",
+                -248
+              ],
+              "upper_dyadic": [
+                "58066280002401374811791535216003648244472819898456992979249147438146135147747",
+                -249
+              ]
+            },
+            "frozen_norm": {
+              "outer_probes": 77,
+              "cg_iterations": 1072,
+              "solve_attempts": 77,
+              "lower_dyadic": [
+                "45628717210650324139296534708646091880991067144730104119732022235350349853393",
+                -249
+              ],
+              "upper_dyadic": [
+                "55747207565719199166086417023004775267743315796100524882941636053621260075059",
+                -249
+              ]
+            }
+          },
+          "reference_exclusion_checks": {
+            "progress": 0,
+            "frozen_norm": 0
+          },
+          "failed_solve_gates": 4,
+          "probes_executed": 126,
+          "full_span_trace_enclosure": null,
+          "skipped_pivots": 0,
+          "solve_attempts": 126,
+          "cg_iterations": 1756,
+          "seconds": {
+            "cg": 0.10535199992591515,
+            "verified_projection_and_evidence": 1.2767001003958285,
+            "gaussian_enclosures": 1.21877159998985
+          }
+        }
+      ]
+    },
+    {
+      "shift_exponent": -1,
+      "mode": "tight",
+      "records": [
+        {
+          "seed": 3367000,
+          "stops": {
+            "progress": {
+              "outer_probes": 112,
+              "cg_iterations": 5387,
+              "solve_attempts": 112,
+              "lower_dyadic": [
+                "92854525038738137759439317526166899290966632880769564494082290409371326820137",
+                -250
+              ],
+              "upper_dyadic": [
+                "28185772328093408904781255422789032032041640139036551751027059732182318538599",
+                -248
+              ]
+            },
+            "frozen_norm": {
+              "outer_probes": 77,
+              "cg_iterations": 3699,
+              "solve_attempts": 77,
+              "lower_dyadic": [
+                "45808896885970022026100770464473469903599710108004047488440200678199009124575",
+                -249
+              ],
+              "upper_dyadic": [
+                "111837696255904730723097910785113262552217014900562398628166355111236802886619",
+                -250
+              ]
+            }
+          },
+          "reference_exclusion_checks": {
+            "progress": 0,
+            "frozen_norm": 0
+          },
+          "failed_solve_gates": 0,
+          "probes_executed": 126,
+          "full_span_trace_enclosure": null,
+          "skipped_pivots": 0,
+          "solve_attempts": 126,
+          "cg_iterations": 6062,
+          "seconds": {
+            "cg": 0.28325150022283196,
+            "verified_projection_and_evidence": 1.2934555011452176,
+            "gaussian_enclosures": 1.2037135995924473
+          }
+        },
+        {
+          "seed": 3367001,
+          "stops": {
+            "progress": {
+              "outer_probes": 110,
+              "cg_iterations": 5286,
+              "solve_attempts": 110,
+              "lower_dyadic": [
+                "22882879451190596293276912159447535079888132488498881492491376836665489440189",
+                -248
+              ],
+              "upper_dyadic": [
+                "111255311225534408243539770548575126449636698780279426562891488860632758039629",
+                -250
+              ]
+            },
+            "frozen_norm": {
+              "outer_probes": 77,
+              "cg_iterations": 3698,
+              "solve_attempts": 77,
+              "lower_dyadic": [
+                "44765777968474250502758001556947937942469322859869360816058411472015447628743",
+                -249
+              ],
+              "upper_dyadic": [
+                "54653053233104397261980700777623269106471146683676645572233000173108019949749",
+                -249
+              ]
+            }
+          },
+          "reference_exclusion_checks": {
+            "progress": 0,
+            "frozen_norm": 0
+          },
+          "failed_solve_gates": 0,
+          "probes_executed": 126,
+          "full_span_trace_enclosure": null,
+          "skipped_pivots": 0,
+          "solve_attempts": 126,
+          "cg_iterations": 6053,
+          "seconds": {
+            "cg": 0.3016279003932141,
+            "verified_projection_and_evidence": 1.3045882002916187,
+            "gaussian_enclosures": 1.2809967998764478
+          }
+        },
+        {
+          "seed": 3367002,
+          "stops": {
+            "progress": {
+              "outer_probes": 111,
+              "cg_iterations": 5340,
+              "solve_attempts": 111,
+              "lower_dyadic": [
+                "92395701298466716420948085417945813536172582709754611277578845506694902132673",
+                -250
+              ],
+              "upper_dyadic": [
+                "56417831166091228316081278310816496142913926388836073518465560048544677199611",
+                -249
+              ]
+            },
+            "frozen_norm": {
+              "outer_probes": 77,
+              "cg_iterations": 3706,
+              "solve_attempts": 77,
+              "lower_dyadic": [
+                "91391282258607879096499334922805452344007965130974129841915098398235796920891",
+                -250
+              ],
+              "upper_dyadic": [
+                "111571633209655668379816394426356673271765493571063854475022730640092316141049",
+                -250
+              ]
+            }
+          },
+          "reference_exclusion_checks": {
+            "progress": 0,
+            "frozen_norm": 0
+          },
+          "failed_solve_gates": 0,
+          "probes_executed": 126,
+          "full_span_trace_enclosure": null,
+          "skipped_pivots": 0,
+          "solve_attempts": 126,
+          "cg_iterations": 6065,
+          "seconds": {
+            "cg": 0.3336318002548069,
+            "verified_projection_and_evidence": 1.3616832997067831,
+            "gaussian_enclosures": 1.3063049000920728
+          }
+        },
+        {
+          "seed": 3367003,
+          "stops": {
+            "progress": {
+              "outer_probes": 112,
+              "cg_iterations": 5374,
+              "solve_attempts": 112,
+              "lower_dyadic": [
+                "23184326612548135011954171904806974053187735739323650404716176956370876103269",
+                -248
+              ],
+              "upper_dyadic": [
+                "56365074725724855005635154825107972534206845465620421691723647506899843569021",
+                -249
+              ]
+            },
+            "frozen_norm": {
+              "outer_probes": 77,
+              "cg_iterations": 3695,
+              "solve_attempts": 77,
+              "lower_dyadic": [
+                "91277478461616069719187776066976761692198091020560097658543472646367374517035",
+                -250
+              ],
+              "upper_dyadic": [
+                "111429505254239201861421102325722531035283456707746592641812839060665189615161",
+                -250
+              ]
+            }
+          },
+          "reference_exclusion_checks": {
+            "progress": 0,
+            "frozen_norm": 0
+          },
+          "failed_solve_gates": 0,
+          "probes_executed": 126,
+          "full_span_trace_enclosure": null,
+          "skipped_pivots": 0,
+          "solve_attempts": 126,
+          "cg_iterations": 6047,
+          "seconds": {
+            "cg": 0.2849706002161838,
+            "verified_projection_and_evidence": 1.2930311001837254,
+            "gaussian_enclosures": 1.1915985000669025
+          }
+        }
+      ]
+    },
+    {
+      "shift_exponent": -1,
+      "mode": "refine",
+      "records": [
+        {
+          "seed": 3367000,
+          "stops": {
+            "progress": {
+              "outer_probes": 117,
+              "cg_iterations": 1682,
+              "solve_attempts": 121,
+              "lower_dyadic": [
+                "2975418986567198183473756650833372588247402269642265980469898418674764788833",
+                -245
+              ],
+              "upper_dyadic": [
+                "1810428497480470389638414221860024075708946023902082770210583601536359155747",
+                -244
+              ]
+            },
+            "frozen_norm": {
+              "outer_probes": 77,
+              "cg_iterations": 1067,
+              "solve_attempts": 77,
+              "lower_dyadic": [
+                "91577920708950605897293325779427691654090815872463808082732836061099608862459",
+                -250
+              ],
+              "upper_dyadic": [
+                "111880245789243736777852376083828363376083752732950869443261564762680446570275",
+                -250
+              ]
+            }
+          },
+          "reference_exclusion_checks": {
+            "progress": 0,
+            "frozen_norm": 0
+          },
+          "failed_solve_gates": 0,
+          "probes_executed": 126,
+          "full_span_trace_enclosure": null,
+          "skipped_pivots": 0,
+          "solve_attempts": 133,
+          "cg_iterations": 1854,
+          "seconds": {
+            "cg": 0.10957190004410222,
+            "verified_projection_and_evidence": 1.3460058004711755,
+            "gaussian_enclosures": 1.1937328000785783
+          }
+        },
+        {
+          "seed": 3367001,
+          "stops": {
+            "progress": {
+              "outer_probes": 115,
+              "cg_iterations": 1634,
+              "solve_attempts": 118,
+              "lower_dyadic": [
+                "94167330349660589898070190557430985167096238999548047455865248966733478023737",
+                -250
+              ],
+              "upper_dyadic": [
+                "114495451445226994329365632099963073930655847410742856591718862253364059668711",
+                -250
+              ]
+            },
+            "frozen_norm": {
+              "outer_probes": 77,
+              "cg_iterations": 1063,
+              "solve_attempts": 77,
+              "lower_dyadic": [
+                "89498944126060662771202275840371082720285142023948316457186525299871007486147",
+                -250
+              ],
+              "upper_dyadic": [
+                "109358212880218282629734753356562551404207537273956837631222112046021704501387",
+                -250
+              ]
+            }
+          },
+          "reference_exclusion_checks": {
+            "progress": 0,
+            "frozen_norm": 0
+          },
+          "failed_solve_gates": 0,
+          "probes_executed": 126,
+          "full_span_trace_enclosure": null,
+          "skipped_pivots": 0,
+          "solve_attempts": 133,
+          "cg_iterations": 1847,
+          "seconds": {
+            "cg": 0.11593920004088432,
+            "verified_projection_and_evidence": 1.4142472004168667,
+            "gaussian_enclosures": 1.325130399724003
+          }
+        },
+        {
+          "seed": 3367002,
+          "stops": {
+            "progress": {
+              "outer_probes": 117,
+              "cg_iterations": 1646,
+              "solve_attempts": 119,
+              "lower_dyadic": [
+                "47632872372368489134529404707829038594640814996725988137844743693027512824931",
+                -249
+              ],
+              "upper_dyadic": [
+                "58078955024704230113247794948439105211166382191799101794605857725375259567787",
+                -249
+              ]
+            },
+            "frozen_norm": {
+              "outer_probes": 77,
+              "cg_iterations": 1061,
+              "solve_attempts": 77,
+              "lower_dyadic": [
+                "22841187499701865643927393357313602957557136015008186032037327320566984251341",
+                -248
+              ],
+              "upper_dyadic": [
+                "111634874695594238688195206222923015008879635142151472859967164021624082612441",
+                -250
+              ]
+            }
+          },
+          "reference_exclusion_checks": {
+            "progress": 0,
+            "frozen_norm": 0
+          },
+          "failed_solve_gates": 0,
+          "probes_executed": 126,
+          "full_span_trace_enclosure": null,
+          "skipped_pivots": 0,
+          "solve_attempts": 130,
+          "cg_iterations": 1800,
+          "seconds": {
+            "cg": 0.11031270015519112,
+            "verified_projection_and_evidence": 1.3961664996459149,
+            "gaussian_enclosures": 1.293978699890431
+          }
+        },
+        {
+          "seed": 3367003,
+          "stops": {
+            "progress": {
+              "outer_probes": 117,
+              "cg_iterations": 1649,
+              "solve_attempts": 118,
+              "lower_dyadic": [
+                "23778225065489663331434260634606610967296152729883318253398784963128251999851",
+                -248
+              ],
+              "upper_dyadic": [
+                "58032258721678460233452343706857164913472121059932842717771814036532724736611",
+                -249
+              ]
+            },
+            "frozen_norm": {
+              "outer_probes": 77,
+              "cg_iterations": 1072,
+              "solve_attempts": 77,
+              "lower_dyadic": [
+                "45628717210650324139296534708646091880991067144730104119732022235350349853393",
+                -249
+              ],
+              "upper_dyadic": [
+                "55747207565719199166086417023004775267743315796100524882941636053621260075059",
+                -249
+              ]
+            }
+          },
+          "reference_exclusion_checks": {
+            "progress": 0,
+            "frozen_norm": 0
+          },
+          "failed_solve_gates": 0,
+          "probes_executed": 126,
+          "full_span_trace_enclosure": null,
+          "skipped_pivots": 0,
+          "solve_attempts": 130,
+          "cg_iterations": 1814,
+          "seconds": {
+            "cg": 0.10884599963901564,
+            "verified_projection_and_evidence": 1.3119287003064528,
+            "gaussian_enclosures": 1.1943644999992102
+          }
+        }
+      ]
+    }
+  ],
+  "data_audit": {
+    "source": "https://snap.stanford.edu/data/ca-GrQc.txt.gz",
+    "sha256": "a254442cdf5d684712578b630c2e0d7543518ab154ef2341cabb607572ce7230",
+    "vertices_raw": 5242,
+    "vertices_connected_component": 4158,
+    "undirected_edges_after_deduplication": 13422,
+    "subgraph_rule": "Induced graph of the first 128 breadth-first vertices from compact index zero in the largest component, using sorted CSR neighbors.",
+    "subgraph_indices": [
+      0,
+      7,
+      18,
+      25,
+      42,
+      51,
+      180,
+      197,
+      227,
+      233,
+      238,
+      249,
+      253,
+      268,
+      319,
+      368,
+      432,
+      440,
+      471,
+      477,
+      567,
+      573,
+      579,
+      733,
+      742,
+      764,
+      770,
+      839,
+      841,
+      890,
+      909,
+      941,
+      953,
+      954,
+      1044,
+      1062,
+      1170,
+      1216,
+      1314,
+      1328,
+      1340,
+      1352,
+      1428,
+      1461,
+      1464,
+      1512,
+      1536,
+      1664,
+      1694,
+      1729,
+      1736,
+      1749,
+      1750,
+      1769,
+      1773,
+      1857,
+      1876,
+      1891,
+      1946,
+      1975,
+      2025,
+      2043,
+      2045,
+      2047,
+      2056,
+      2065,
+      2112,
+      2127,
+      2138,
+      2144,
+      2151,
+      2152,
+      2206,
+      2220,
+      2235,
+      2254,
+      2283,
+      2329,
+      2336,
+      2343,
+      2407,
+      2413,
+      2476,
+      2772,
+      2835,
+      2839,
+      2844,
+      2930,
+      2956,
+      2958,
+      2965,
+      3077,
+      3091,
+      3241,
+      3314,
+      3338,
+      3344,
+      3416,
+      3419,
+      3494,
+      3520,
+      3530,
+      3566,
+      3608,
+      3709,
+      3767,
+      3777,
+      3788,
+      3798,
+      3836,
+      3844,
+      3847,
+      3883,
+      3887,
+      3891,
+      3899,
+      3925,
+      3955,
+      3957,
+      4033,
+      4060,
+      4085,
+      4089,
+      4107,
+      4127,
+      4132,
+      4139,
+      4155
+    ],
+    "subgraph_edges": 244
+  }
+}

@@ -1,0 +1,932 @@
+{
+  "status": "PASS",
+  "precision_bits": 256,
+  "records": [
+    {
+      "matrix": [
+        [
+          1
+        ]
+      ],
+      "budget": 0,
+      "result": {
+        "seed": 7,
+        "stops": {
+          "progress": null,
+          "frozen_norm": null
+        },
+        "reference_exclusion_checks": {
+          "progress": 0,
+          "frozen_norm": 0
+        },
+        "failed_solve_gates": 0,
+        "probes_executed": 0,
+        "full_span_trace_enclosure": null,
+        "skipped_pivots": 0,
+        "solve_attempts": 0,
+        "cg_iterations": 0
+      }
+    },
+    {
+      "matrix": [
+        [
+          1
+        ]
+      ],
+      "budget": 4,
+      "result": {
+        "seed": 7,
+        "stops": {
+          "progress": {
+            "outer_probes": 1,
+            "cg_iterations": 1,
+            "solve_attempts": 1,
+            "lower_dyadic": [
+              "1",
+              0
+            ],
+            "upper_dyadic": [
+              "1",
+              0
+            ]
+          },
+          "frozen_norm": {
+            "outer_probes": 1,
+            "cg_iterations": 1,
+            "solve_attempts": 1,
+            "lower_dyadic": [
+              "1",
+              0
+            ],
+            "upper_dyadic": [
+              "1",
+              0
+            ]
+          }
+        },
+        "reference_exclusion_checks": {
+          "progress": 0,
+          "frozen_norm": 0
+        },
+        "failed_solve_gates": 0,
+        "probes_executed": 1,
+        "full_span_trace_enclosure": {
+          "lower_dyadic": [
+            "1",
+            0
+          ],
+          "upper_dyadic": [
+            "1",
+            0
+          ]
+        },
+        "skipped_pivots": 0,
+        "solve_attempts": 1,
+        "cg_iterations": 1
+      }
+    },
+    {
+      "matrix": [
+        [
+          1
+        ]
+      ],
+      "budget": 0,
+      "result": {
+        "seed": 19,
+        "stops": {
+          "progress": null,
+          "frozen_norm": null
+        },
+        "reference_exclusion_checks": {
+          "progress": 0,
+          "frozen_norm": 0
+        },
+        "failed_solve_gates": 0,
+        "probes_executed": 0,
+        "full_span_trace_enclosure": null,
+        "skipped_pivots": 0,
+        "solve_attempts": 0,
+        "cg_iterations": 0
+      }
+    },
+    {
+      "matrix": [
+        [
+          1
+        ]
+      ],
+      "budget": 4,
+      "result": {
+        "seed": 19,
+        "stops": {
+          "progress": {
+            "outer_probes": 1,
+            "cg_iterations": 1,
+            "solve_attempts": 1,
+            "lower_dyadic": [
+              "1",
+              0
+            ],
+            "upper_dyadic": [
+              "1",
+              0
+            ]
+          },
+          "frozen_norm": {
+            "outer_probes": 1,
+            "cg_iterations": 1,
+            "solve_attempts": 1,
+            "lower_dyadic": [
+              "1",
+              0
+            ],
+            "upper_dyadic": [
+              "1",
+              0
+            ]
+          }
+        },
+        "reference_exclusion_checks": {
+          "progress": 0,
+          "frozen_norm": 0
+        },
+        "failed_solve_gates": 0,
+        "probes_executed": 1,
+        "full_span_trace_enclosure": {
+          "lower_dyadic": [
+            "1",
+            0
+          ],
+          "upper_dyadic": [
+            "1",
+            0
+          ]
+        },
+        "skipped_pivots": 0,
+        "solve_attempts": 1,
+        "cg_iterations": 1
+      }
+    },
+    {
+      "matrix": [
+        [
+          1
+        ]
+      ],
+      "budget": 0,
+      "result": {
+        "seed": 114,
+        "stops": {
+          "progress": null,
+          "frozen_norm": null
+        },
+        "reference_exclusion_checks": {
+          "progress": 0,
+          "frozen_norm": 0
+        },
+        "failed_solve_gates": 0,
+        "probes_executed": 0,
+        "full_span_trace_enclosure": null,
+        "skipped_pivots": 0,
+        "solve_attempts": 0,
+        "cg_iterations": 0
+      }
+    },
+    {
+      "matrix": [
+        [
+          1
+        ]
+      ],
+      "budget": 4,
+      "result": {
+        "seed": 114,
+        "stops": {
+          "progress": {
+            "outer_probes": 1,
+            "cg_iterations": 1,
+            "solve_attempts": 1,
+            "lower_dyadic": [
+              "1",
+              0
+            ],
+            "upper_dyadic": [
+              "1",
+              0
+            ]
+          },
+          "frozen_norm": {
+            "outer_probes": 1,
+            "cg_iterations": 1,
+            "solve_attempts": 1,
+            "lower_dyadic": [
+              "1",
+              0
+            ],
+            "upper_dyadic": [
+              "1",
+              0
+            ]
+          }
+        },
+        "reference_exclusion_checks": {
+          "progress": 0,
+          "frozen_norm": 0
+        },
+        "failed_solve_gates": 0,
+        "probes_executed": 1,
+        "full_span_trace_enclosure": {
+          "lower_dyadic": [
+            "1",
+            0
+          ],
+          "upper_dyadic": [
+            "1",
+            0
+          ]
+        },
+        "skipped_pivots": 0,
+        "solve_attempts": 1,
+        "cg_iterations": 1
+      }
+    },
+    {
+      "matrix": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          4
+        ]
+      ],
+      "budget": 2,
+      "result": {
+        "seed": 7,
+        "stops": {
+          "progress": null,
+          "frozen_norm": null
+        },
+        "reference_exclusion_checks": {
+          "progress": 0,
+          "frozen_norm": 0
+        },
+        "failed_solve_gates": 0,
+        "probes_executed": 2,
+        "full_span_trace_enclosure": null,
+        "skipped_pivots": 0,
+        "solve_attempts": 2,
+        "cg_iterations": 6
+      }
+    },
+    {
+      "matrix": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          4
+        ]
+      ],
+      "budget": 8,
+      "result": {
+        "seed": 7,
+        "stops": {
+          "progress": {
+            "outer_probes": 3,
+            "cg_iterations": 9,
+            "solve_attempts": 3,
+            "lower_dyadic": [
+              "1583094970041432359306634560665654990181425571600554586476959156358187319295",
+              -249
+            ],
+            "upper_dyadic": [
+              "25329519520662917748906152970650479842902809145608873383631346501730997108749",
+              -253
+            ]
+          },
+          "frozen_norm": {
+            "outer_probes": 3,
+            "cg_iterations": 9,
+            "solve_attempts": 3,
+            "lower_dyadic": [
+              "1583094970041432359306634560665654990181425571600554586476959156358187319295",
+              -249
+            ],
+            "upper_dyadic": [
+              "25329519520662917748906152970650479842902809145608873383631346501730997108749",
+              -253
+            ]
+          }
+        },
+        "reference_exclusion_checks": {
+          "progress": 0,
+          "frozen_norm": 0
+        },
+        "failed_solve_gates": 0,
+        "probes_executed": 3,
+        "full_span_trace_enclosure": {
+          "lower_dyadic": [
+            "1583094970041432359306634560665654990181425571600554586476959156358187319295",
+            -249
+          ],
+          "upper_dyadic": [
+            "25329519520662917748906152970650479842902809145608873383631346501730997108749",
+            -253
+          ]
+        },
+        "skipped_pivots": 0,
+        "solve_attempts": 3,
+        "cg_iterations": 9
+      }
+    },
+    {
+      "matrix": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          4
+        ]
+      ],
+      "budget": 2,
+      "result": {
+        "seed": 19,
+        "stops": {
+          "progress": null,
+          "frozen_norm": null
+        },
+        "reference_exclusion_checks": {
+          "progress": 0,
+          "frozen_norm": 0
+        },
+        "failed_solve_gates": 0,
+        "probes_executed": 2,
+        "full_span_trace_enclosure": null,
+        "skipped_pivots": 0,
+        "solve_attempts": 2,
+        "cg_iterations": 6
+      }
+    },
+    {
+      "matrix": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          4
+        ]
+      ],
+      "budget": 8,
+      "result": {
+        "seed": 19,
+        "stops": {
+          "progress": {
+            "outer_probes": 3,
+            "cg_iterations": 9,
+            "solve_attempts": 3,
+            "lower_dyadic": [
+              "50659039041325835497812305941300959685805618291217746767262693003461994217463",
+              -254
+            ],
+            "upper_dyadic": [
+              "6332379880165729437226538242662619960725702286402218345907836625432749277185",
+              -251
+            ]
+          },
+          "frozen_norm": {
+            "outer_probes": 3,
+            "cg_iterations": 9,
+            "solve_attempts": 3,
+            "lower_dyadic": [
+              "50659039041325835497812305941300959685805618291217746767262693003461994217463",
+              -254
+            ],
+            "upper_dyadic": [
+              "6332379880165729437226538242662619960725702286402218345907836625432749277185",
+              -251
+            ]
+          }
+        },
+        "reference_exclusion_checks": {
+          "progress": 0,
+          "frozen_norm": 0
+        },
+        "failed_solve_gates": 0,
+        "probes_executed": 3,
+        "full_span_trace_enclosure": {
+          "lower_dyadic": [
+            "50659039041325835497812305941300959685805618291217746767262693003461994217463",
+            -254
+          ],
+          "upper_dyadic": [
+            "6332379880165729437226538242662619960725702286402218345907836625432749277185",
+            -251
+          ]
+        },
+        "skipped_pivots": 0,
+        "solve_attempts": 3,
+        "cg_iterations": 9
+      }
+    },
+    {
+      "matrix": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          4
+        ]
+      ],
+      "budget": 2,
+      "result": {
+        "seed": 114,
+        "stops": {
+          "progress": null,
+          "frozen_norm": null
+        },
+        "reference_exclusion_checks": {
+          "progress": 0,
+          "frozen_norm": 0
+        },
+        "failed_solve_gates": 0,
+        "probes_executed": 2,
+        "full_span_trace_enclosure": null,
+        "skipped_pivots": 0,
+        "solve_attempts": 2,
+        "cg_iterations": 6
+      }
+    },
+    {
+      "matrix": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          4
+        ]
+      ],
+      "budget": 8,
+      "result": {
+        "seed": 114,
+        "stops": {
+          "progress": {
+            "outer_probes": 3,
+            "cg_iterations": 9,
+            "solve_attempts": 3,
+            "lower_dyadic": [
+              "25329519520662917748906152970650479842902809145608873383631346501730997108731",
+              -253
+            ],
+            "upper_dyadic": [
+              "25329519520662917748906152970650479842902809145608873383631346501730997108741",
+              -253
+            ]
+          },
+          "frozen_norm": {
+            "outer_probes": 3,
+            "cg_iterations": 9,
+            "solve_attempts": 3,
+            "lower_dyadic": [
+              "25329519520662917748906152970650479842902809145608873383631346501730997108731",
+              -253
+            ],
+            "upper_dyadic": [
+              "25329519520662917748906152970650479842902809145608873383631346501730997108741",
+              -253
+            ]
+          }
+        },
+        "reference_exclusion_checks": {
+          "progress": 0,
+          "frozen_norm": 0
+        },
+        "failed_solve_gates": 0,
+        "probes_executed": 3,
+        "full_span_trace_enclosure": {
+          "lower_dyadic": [
+            "25329519520662917748906152970650479842902809145608873383631346501730997108731",
+            -253
+          ],
+          "upper_dyadic": [
+            "25329519520662917748906152970650479842902809145608873383631346501730997108741",
+            -253
+          ]
+        },
+        "skipped_pivots": 0,
+        "solve_attempts": 3,
+        "cg_iterations": 9
+      }
+    },
+    {
+      "matrix": [
+        [
+          3,
+          1,
+          0
+        ],
+        [
+          1,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "budget": 2,
+      "result": {
+        "seed": 7,
+        "stops": {
+          "progress": null,
+          "frozen_norm": null
+        },
+        "reference_exclusion_checks": {
+          "progress": 0,
+          "frozen_norm": 0
+        },
+        "failed_solve_gates": 0,
+        "probes_executed": 2,
+        "full_span_trace_enclosure": null,
+        "skipped_pivots": 0,
+        "solve_attempts": 2,
+        "cg_iterations": 4
+      }
+    },
+    {
+      "matrix": [
+        [
+          3,
+          1,
+          0
+        ],
+        [
+          1,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "budget": 8,
+      "result": {
+        "seed": 7,
+        "stops": {
+          "progress": {
+            "outer_probes": 3,
+            "cg_iterations": 6,
+            "solve_attempts": 3,
+            "lower_dyadic": [
+              "18092513943330655534932966407607485602073435104006338131165247501236426506227",
+              -253
+            ],
+            "upper_dyadic": [
+              "18092513943330655534932966407607485602073435104006338131165247501236426506253",
+              -253
+            ]
+          },
+          "frozen_norm": {
+            "outer_probes": 3,
+            "cg_iterations": 6,
+            "solve_attempts": 3,
+            "lower_dyadic": [
+              "18092513943330655534932966407607485602073435104006338131165247501236426506227",
+              -253
+            ],
+            "upper_dyadic": [
+              "18092513943330655534932966407607485602073435104006338131165247501236426506253",
+              -253
+            ]
+          }
+        },
+        "reference_exclusion_checks": {
+          "progress": 0,
+          "frozen_norm": 0
+        },
+        "failed_solve_gates": 0,
+        "probes_executed": 3,
+        "full_span_trace_enclosure": {
+          "lower_dyadic": [
+            "18092513943330655534932966407607485602073435104006338131165247501236426506227",
+            -253
+          ],
+          "upper_dyadic": [
+            "18092513943330655534932966407607485602073435104006338131165247501236426506253",
+            -253
+          ]
+        },
+        "skipped_pivots": 0,
+        "solve_attempts": 3,
+        "cg_iterations": 6
+      }
+    },
+    {
+      "matrix": [
+        [
+          3,
+          1,
+          0
+        ],
+        [
+          1,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "budget": 2,
+      "result": {
+        "seed": 19,
+        "stops": {
+          "progress": null,
+          "frozen_norm": null
+        },
+        "reference_exclusion_checks": {
+          "progress": 0,
+          "frozen_norm": 0
+        },
+        "failed_solve_gates": 0,
+        "probes_executed": 2,
+        "full_span_trace_enclosure": null,
+        "skipped_pivots": 0,
+        "solve_attempts": 2,
+        "cg_iterations": 4
+      }
+    },
+    {
+      "matrix": [
+        [
+          3,
+          1,
+          0
+        ],
+        [
+          1,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "budget": 8,
+      "result": {
+        "seed": 19,
+        "stops": {
+          "progress": {
+            "outer_probes": 3,
+            "cg_iterations": 6,
+            "solve_attempts": 3,
+            "lower_dyadic": [
+              "72370055773322622139731865630429942408293740416025352524660990004945706024947",
+              -255
+            ],
+            "upper_dyadic": [
+              "72370055773322622139731865630429942408293740416025352524660990004945706024973",
+              -255
+            ]
+          },
+          "frozen_norm": {
+            "outer_probes": 3,
+            "cg_iterations": 6,
+            "solve_attempts": 3,
+            "lower_dyadic": [
+              "72370055773322622139731865630429942408293740416025352524660990004945706024947",
+              -255
+            ],
+            "upper_dyadic": [
+              "72370055773322622139731865630429942408293740416025352524660990004945706024973",
+              -255
+            ]
+          }
+        },
+        "reference_exclusion_checks": {
+          "progress": 0,
+          "frozen_norm": 0
+        },
+        "failed_solve_gates": 0,
+        "probes_executed": 3,
+        "full_span_trace_enclosure": {
+          "lower_dyadic": [
+            "72370055773322622139731865630429942408293740416025352524660990004945706024947",
+            -255
+          ],
+          "upper_dyadic": [
+            "72370055773322622139731865630429942408293740416025352524660990004945706024973",
+            -255
+          ]
+        },
+        "skipped_pivots": 0,
+        "solve_attempts": 3,
+        "cg_iterations": 6
+      }
+    },
+    {
+      "matrix": [
+        [
+          3,
+          1,
+          0
+        ],
+        [
+          1,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "budget": 2,
+      "result": {
+        "seed": 114,
+        "stops": {
+          "progress": null,
+          "frozen_norm": null
+        },
+        "reference_exclusion_checks": {
+          "progress": 0,
+          "frozen_norm": 0
+        },
+        "failed_solve_gates": 0,
+        "probes_executed": 2,
+        "full_span_trace_enclosure": null,
+        "skipped_pivots": 0,
+        "solve_attempts": 2,
+        "cg_iterations": 4
+      }
+    },
+    {
+      "matrix": [
+        [
+          3,
+          1,
+          0
+        ],
+        [
+          1,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "budget": 8,
+      "result": {
+        "seed": 114,
+        "stops": {
+          "progress": {
+            "outer_probes": 3,
+            "cg_iterations": 6,
+            "solve_attempts": 3,
+            "lower_dyadic": [
+              "72370055773322622139731865630429942408293740416025352524660990004945706024945",
+              -255
+            ],
+            "upper_dyadic": [
+              "72370055773322622139731865630429942408293740416025352524660990004945706024973",
+              -255
+            ]
+          },
+          "frozen_norm": {
+            "outer_probes": 3,
+            "cg_iterations": 6,
+            "solve_attempts": 3,
+            "lower_dyadic": [
+              "72370055773322622139731865630429942408293740416025352524660990004945706024945",
+              -255
+            ],
+            "upper_dyadic": [
+              "72370055773322622139731865630429942408293740416025352524660990004945706024973",
+              -255
+            ]
+          }
+        },
+        "reference_exclusion_checks": {
+          "progress": 0,
+          "frozen_norm": 0
+        },
+        "failed_solve_gates": 0,
+        "probes_executed": 3,
+        "full_span_trace_enclosure": {
+          "lower_dyadic": [
+            "72370055773322622139731865630429942408293740416025352524660990004945706024945",
+            -255
+          ],
+          "upper_dyadic": [
+            "72370055773322622139731865630429942408293740416025352524660990004945706024973",
+            -255
+          ]
+        },
+        "skipped_pivots": 0,
+        "solve_attempts": 3,
+        "cg_iterations": 6
+      }
+    }
+  ],
+  "low_precision": {
+    "precision_bits": 5,
+    "budget": 12,
+    "result": {
+      "seed": 7,
+      "stops": {
+        "progress": null,
+        "frozen_norm": null
+      },
+      "reference_exclusion_checks": {
+        "progress": 0,
+        "frozen_norm": 0
+      },
+      "failed_solve_gates": 9,
+      "probes_executed": 9,
+      "full_span_trace_enclosure": {
+        "lower_dyadic": [
+          "17",
+          -4
+        ],
+        "upper_dyadic": [
+          "7",
+          -1
+        ]
+      },
+      "skipped_pivots": 7,
+      "solve_attempts": 9,
+      "cg_iterations": 9
+    }
+  },
+  "source_sha256": {
+    "validate_full_span.py": "9fba9067425fbcdd3893ee6851f6b2aa5e5ad27db963196a8aa03a01d51c6a5f",
+    "run_verified_norm_comparison.py": "7cdb2e069957d0720a163c20ea3d110195e580de27b380a61362e8ee0d28f39d",
+    "run_verified_galerkin.py": "7c09d9cbcd2792ad8da7649a99538f16ceeb54472451a59026bd8eca5dcc3390"
+  }
+}

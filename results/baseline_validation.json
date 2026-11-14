@@ -1,0 +1,211 @@
+{
+  "purpose": "independent numerical sanity checks; not real-data research results",
+  "environment": {
+    "python": "3.14.6",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1"
+  },
+  "baselines_sha256": "e1a2db59c8890f6a59961e3f6e57ee7c0535dc64d41d8f6e1b5849771fdc7f3f",
+  "seed_protocol": "numpy default_rng(seed), seed=0..999, separate stream per method",
+  "formula_sources": {
+    "Hutch++": "https://arxiv.org/abs/2010.09649",
+    "Nystrom++": "https://arxiv.org/abs/2109.10659",
+    "XNysTrace": "https://arxiv.org/abs/2301.07825"
+  },
+  "checks": {
+    "gaussian_hutchinson_mean_and_cost": {
+      "n": 24,
+      "budget": 12,
+      "replications": 1000,
+      "truth": 9.681759511091816,
+      "mean": 9.675910114506918,
+      "mean_mc_se": 0.043329273722389886,
+      "bias_mc_z": -0.13499872216586906,
+      "mean_squared_error": 1.875582750788884,
+      "reported_cost_matches_actual": true,
+      "max_matvecs": 12,
+      "pass": true
+    },
+    "hutchpp_mean_and_cost": {
+      "n": 24,
+      "budget": 12,
+      "replications": 1000,
+      "truth": 9.681759511091816,
+      "mean": 9.68559082956766,
+      "mean_mc_se": 0.04058108038639423,
+      "bias_mc_z": 0.09441144590939145,
+      "mean_squared_error": 1.6451919402429267,
+      "reported_cost_matches_actual": true,
+      "max_matvecs": 12,
+      "pass": true
+    },
+    "nystrompp_mean_and_cost": {
+      "n": 24,
+      "budget": 12,
+      "replications": 1000,
+      "truth": 9.681759511091816,
+      "mean": 9.677899160296715,
+      "mean_mc_se": 0.032440940749149653,
+      "bias_mc_z": -0.11899626539659242,
+      "mean_squared_error": 1.0513771243614096,
+      "reported_cost_matches_actual": true,
+      "max_matvecs": 12,
+      "pass": true
+    },
+    "xnystrace_mean_and_cost": {
+      "n": 24,
+      "budget": 12,
+      "replications": 1000,
+      "truth": 9.681759511091816,
+      "mean": 9.698864607799456,
+      "mean_mc_se": 0.01308033464347037,
+      "bias_mc_z": 1.3076956495282643,
+      "mean_squared_error": 0.17121664356416372,
+      "reported_cost_matches_actual": true,
+      "max_matvecs": 12,
+      "pass": true
+    },
+    "rank_three_exactness": {
+      "max_absolute_errors": {
+        "hutchpp": 7.105427357601002e-15,
+        "nystrompp": 2.3092638912203256e-14,
+        "xnystrace": 2.4868995751603507e-14
+      },
+      "pass": true
+    },
+    "zero_matrix": {
+      "estimates": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "pass": true
+    },
+    "xnystrace_fast_vs_direct": {
+      "cases": [
+        {
+          "improved": false,
+          "seed": 0,
+          "max_abs_difference": 2.7533531010703882e-14
+        },
+        {
+          "improved": false,
+          "seed": 1,
+          "max_abs_difference": 1.7763568394002505e-14
+        },
+        {
+          "improved": false,
+          "seed": 2,
+          "max_abs_difference": 1.4210854715202004e-14
+        },
+        {
+          "improved": false,
+          "seed": 3,
+          "max_abs_difference": 3.197442310920451e-14
+        },
+        {
+          "improved": false,
+          "seed": 4,
+          "max_abs_difference": 1.4210854715202004e-14
+        },
+        {
+          "improved": false,
+          "seed": 5,
+          "max_abs_difference": 3.907985046680551e-14
+        },
+        {
+          "improved": false,
+          "seed": 6,
+          "max_abs_difference": 1.0658141036401503e-14
+        },
+        {
+          "improved": false,
+          "seed": 7,
+          "max_abs_difference": 3.552713678800501e-15
+        },
+        {
+          "improved": false,
+          "seed": 8,
+          "max_abs_difference": 1.2434497875801753e-14
+        },
+        {
+          "improved": false,
+          "seed": 9,
+          "max_abs_difference": 2.3092638912203256e-14
+        },
+        {
+          "improved": true,
+          "seed": 0,
+          "max_abs_difference": 9.059419880941277e-14
+        },
+        {
+          "improved": true,
+          "seed": 1,
+          "max_abs_difference": 1.4210854715202004e-14
+        },
+        {
+          "improved": true,
+          "seed": 2,
+          "max_abs_difference": 2.842170943040401e-14
+        },
+        {
+          "improved": true,
+          "seed": 3,
+          "max_abs_difference": 3.907985046680551e-14
+        },
+        {
+          "improved": true,
+          "seed": 4,
+          "max_abs_difference": 1.7763568394002505e-14
+        },
+        {
+          "improved": true,
+          "seed": 5,
+          "max_abs_difference": 2.842170943040401e-14
+        },
+        {
+          "improved": true,
+          "seed": 6,
+          "max_abs_difference": 8.881784197001252e-15
+        },
+        {
+          "improved": true,
+          "seed": 7,
+          "max_abs_difference": 7.105427357601002e-15
+        },
+        {
+          "improved": true,
+          "seed": 8,
+          "max_abs_difference": 1.9539925233402755e-14
+        },
+        {
+          "improved": true,
+          "seed": 9,
+          "max_abs_difference": 1.4210854715202004e-14
+        }
+      ],
+      "pass": true
+    },
+    "rank_one_fixed_time_coverage": {
+      "probes": 16,
+      "replications": 10000,
+      "delta": 0.05,
+      "failures": 72,
+      "empirical_failure_rate": 0.0072,
+      "failure_rate_99pct_clopper_pearson": [
+        0.005207124934981254,
+        0.009675992047832972
+      ],
+      "pass": true,
+      "scope": "fixed-time Monte Carlo diagnostic; not proof and not optional-stopping validation"
+    },
+    "xnystrace_full_dimension": {
+      "n": 24,
+      "matvecs": 24,
+      "absolute_error": 1.2500223078859563e-11,
+      "pass": true
+    }
+  },
+  "all_checks_passed": true
+}

@@ -1,0 +1,9 @@
+{
+  "paths_reconstructed": 240,
+  "report_points_reconstructed": 24000,
+  "method_interval_checks": 192000,
+  "timing_runs_reanalyzed": 288,
+  "source_sha256": {
+    "validate_archived_replays.py": "04132cafa09687e9a1c054fd21d34c3b205fc35b13d7b9c74efddb0ff949942d"
+  }
+}

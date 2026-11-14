@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "results_sha256": "a820e24f3d8b36c795c9348dfd20df44e8f084fac56dc9c99003e27c3ea9f827",
+  "nontiming_case_sha256": "b401270e7308c4da41da0278b84601ef735b0be3fd8a20106574f9400b5ad782",
+  "validator_sha256": "4af94be5770dfb5e75c0106c2755613a59ff09c9413f9ce5f1819884d7a22dc8",
+  "source_file_hashes_checked": 8,
+  "cached_operator_sources_checked": [
+    "1138_bus.mtx.gz",
+    "494_bus.mtx.gz",
+    "bcsstk08.mtx.gz",
+    "bio-yeast.zip",
+    "email-Eu-core.txt.gz",
+    "har-240.zip",
+    "nos3.mtx.gz"
+  ],
+  "uncached_operator_sources": [],
+  "paths_checked": 240,
+  "method_setting_summaries_checked": 240,
+  "primary_contrasts_checked": 40
+}

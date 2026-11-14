@@ -1,0 +1,10 @@
+{
+  "endpoint_checks": 1440,
+  "max_discrepancy_relative_to_trace": 1.1010164849106313e-12,
+  "subnormal_variance_scale_checked": true,
+  "source_sha256": {
+    "validate_fast_evidence.py": "2dd358e66a91856815b5f473abea59a5ed193ae7de865b6237941013abf1a1b2",
+    "core.py": "a3bd2d26e828a9fadaeb3f7075a468ce61e320a7dcc54d4a982c637cba383da5",
+    "fast_evidence.py": "72a42ed2ee0a335566b43d01413cd0baca40ae3c6b717bfae805c2c88ca38de4"
+  }
+}

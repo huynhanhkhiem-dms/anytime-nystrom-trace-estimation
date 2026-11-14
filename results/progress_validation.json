@@ -1,0 +1,5 @@
+{
+  "interval_inversion_checks": 100000,
+  "width_cap_checks": 700,
+  "scope": "implementation checks on generated states, not a probabilistic coverage study"
+}

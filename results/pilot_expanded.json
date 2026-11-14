@@ -1,0 +1,2346 @@
+{
+  "summary": {
+    "status": "PILOT_ONLY_NOT_SUBMISSION_READY",
+    "date": "2026-11-06",
+    "dataset": "UCI Spambase",
+    "raw_shape": [
+      4601,
+      58
+    ],
+    "nonfinite_raw": 0,
+    "operator": "(standardized sample covariance + 0.1 I)^(-1)",
+    "operator_dimension": 57,
+    "trace_ground_truth_eigendecomposition": 75.67593234516642,
+    "ground_truth_warning": "Double precision reference, not interval-arithmetic certified.",
+    "matvec_implementation": "Spectral reference oracle; does not establish performance on expensive iterative solves.",
+    "random_seeds": 100,
+    "max_probes_per_seed": 55,
+    "alpha": 0.05,
+    "all_time_failures": 0,
+    "binomial_95pct_interval_failure_probability": [
+      0.0,
+      0.03621669264517641
+    ],
+    "stopped_at_5pct_within_budget": 90,
+    "median_final_relative_radius": 0.040458281618258055,
+    "math_sanity": {
+      "scalar_grid_min_gap": 0.0,
+      "largest_log_exact_gaussian_moment": 0.0,
+      "residual_min_eigenvalue_numeric": -3.35562732719106e-14,
+      "trace_increment_identity_abs_error": 1.4210854715202004e-14,
+      "note": "Numerical checks support derivation; they do not replace a proof or certify floating-point arithmetic."
+    },
+    "seconds": 29.577775239944458,
+    "limitations": [
+      "One real dataset/operator only",
+      "No baseline comparison yet",
+      "Not a novelty proof",
+      "No finite-precision guarantee",
+      "Pilot seeds are development data, not confirmatory evidence"
+    ]
+  },
+  "seeds": [
+    {
+      "seed": 0,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 53,
+      "final_lower": 73.67157820686153,
+      "final_upper": 78.14381071993039,
+      "final_relative_radius": 0.02945836087292475
+    },
+    {
+      "seed": 1,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 55,
+      "final_lower": 73.93985338980727,
+      "final_upper": 80.69018488720916,
+      "final_relative_radius": 0.043654723057811144
+    },
+    {
+      "seed": 2,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 53,
+      "final_lower": 73.85391801388747,
+      "final_upper": 78.86286799508322,
+      "final_relative_radius": 0.03279894838083828
+    },
+    {
+      "seed": 3,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": null,
+      "final_lower": 74.15266018633271,
+      "final_upper": 82.2414566715991,
+      "final_relative_radius": 0.051720593125726314
+    },
+    {
+      "seed": 4,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.88542217433275,
+      "final_upper": 79.26922637520124,
+      "final_relative_radius": 0.035152731254691504
+    },
+    {
+      "seed": 5,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.96776275200556,
+      "final_upper": 79.84367573259682,
+      "final_relative_radius": 0.03820205466175058
+    },
+    {
+      "seed": 6,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.85145752096282,
+      "final_upper": 79.97261869096597,
+      "final_relative_radius": 0.039793258121503756
+    },
+    {
+      "seed": 7,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 55,
+      "final_lower": 73.83703691209499,
+      "final_upper": 80.51205596476521,
+      "final_relative_radius": 0.04324624737506917
+    },
+    {
+      "seed": 8,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": null,
+      "final_lower": 73.84865192495224,
+      "final_upper": 82.40579161914482,
+      "final_relative_radius": 0.05476413662295401
+    },
+    {
+      "seed": 9,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.50738810910448,
+      "final_upper": 79.82384032842506,
+      "final_relative_radius": 0.041194819109494324
+    },
+    {
+      "seed": 10,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 53,
+      "final_lower": 73.52253631880625,
+      "final_upper": 78.62633166113581,
+      "final_relative_radius": 0.03354474739176108
+    },
+    {
+      "seed": 11,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": null,
+      "final_lower": 73.55926420027956,
+      "final_upper": 82.04716676896349,
+      "final_relative_radius": 0.05454724792423035
+    },
+    {
+      "seed": 12,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.90528941861238,
+      "final_upper": 79.26523684455422,
+      "final_relative_radius": 0.034993334270672694
+    },
+    {
+      "seed": 13,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 53,
+      "final_lower": 73.5859571111702,
+      "final_upper": 77.95297833295966,
+      "final_relative_radius": 0.02881781641787706
+    },
+    {
+      "seed": 14,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 74.30554794218124,
+      "final_upper": 80.12153954538758,
+      "final_relative_radius": 0.037661732134101934
+    },
+    {
+      "seed": 15,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.65934698934906,
+      "final_upper": 79.73478114606195,
+      "final_relative_radius": 0.0396066931020313
+    },
+    {
+      "seed": 16,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 55,
+      "final_lower": 73.94055919794964,
+      "final_upper": 81.51242733627063,
+      "final_relative_radius": 0.04870841215169693
+    },
+    {
+      "seed": 17,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": null,
+      "final_lower": 73.73370856112787,
+      "final_upper": 82.24392249300685,
+      "final_relative_radius": 0.054560476873285524
+    },
+    {
+      "seed": 18,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 55,
+      "final_lower": 73.91587559657144,
+      "final_upper": 81.18478795149413,
+      "final_relative_radius": 0.04686577212914412
+    },
+    {
+      "seed": 19,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.8106444251083,
+      "final_upper": 79.2410296296584,
+      "final_relative_radius": 0.03548073053161734
+    },
+    {
+      "seed": 20,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 55,
+      "final_lower": 73.55908912932443,
+      "final_upper": 80.02991065030483,
+      "final_relative_radius": 0.04213076151459272
+    },
+    {
+      "seed": 21,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 53,
+      "final_lower": 73.98839686106632,
+      "final_upper": 78.42462169885789,
+      "final_relative_radius": 0.02910660047092618
+    },
+    {
+      "seed": 22,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 53,
+      "final_lower": 73.9088284300123,
+      "final_upper": 78.58728216781525,
+      "final_relative_radius": 0.030679167615895828
+    },
+    {
+      "seed": 23,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 55,
+      "final_lower": 73.76194571967346,
+      "final_upper": 80.82611991484458,
+      "final_relative_radius": 0.04569676298215971
+    },
+    {
+      "seed": 24,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.96540702531794,
+      "final_upper": 79.99885485769623,
+      "final_relative_radius": 0.03918732671197845
+    },
+    {
+      "seed": 25,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": null,
+      "final_lower": 73.77200388858789,
+      "final_upper": 82.25107010109025,
+      "final_relative_radius": 0.054344950369733774
+    },
+    {
+      "seed": 26,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": null,
+      "final_lower": 73.7605311380759,
+      "final_upper": 81.7266239937155,
+      "final_relative_radius": 0.051233125005647674
+    },
+    {
+      "seed": 27,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.80675518707889,
+      "final_upper": 79.53816287021215,
+      "final_relative_radius": 0.03737592191344711
+    },
+    {
+      "seed": 28,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.76281931964857,
+      "final_upper": 79.39119055464127,
+      "final_relative_radius": 0.036749747784028085
+    },
+    {
+      "seed": 29,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 55,
+      "final_lower": 73.73494576731864,
+      "final_upper": 81.06060442600779,
+      "final_relative_radius": 0.04732473672234136
+    },
+    {
+      "seed": 30,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 55,
+      "final_lower": 73.60125374650804,
+      "final_upper": 80.79970292818386,
+      "final_relative_radius": 0.04662179131987034
+    },
+    {
+      "seed": 31,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": null,
+      "final_lower": 74.0515540967823,
+      "final_upper": 82.73890576909767,
+      "final_relative_radius": 0.05540739965777647
+    },
+    {
+      "seed": 32,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 53,
+      "final_lower": 73.80293848848866,
+      "final_upper": 78.06734164421393,
+      "final_relative_radius": 0.028079247315531866
+    },
+    {
+      "seed": 33,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.88894820593119,
+      "final_upper": 79.34564631708511,
+      "final_relative_radius": 0.0356100926696048
+    },
+    {
+      "seed": 34,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.94415511434329,
+      "final_upper": 79.78340804398383,
+      "final_relative_radius": 0.03798442393591169
+    },
+    {
+      "seed": 35,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.90763737311647,
+      "final_upper": 79.90589686600222,
+      "final_relative_radius": 0.038996955128544473
+    },
+    {
+      "seed": 36,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.69261884130503,
+      "final_upper": 79.79795171418685,
+      "final_relative_radius": 0.03977659898446034
+    },
+    {
+      "seed": 37,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 74.12050990744483,
+      "final_upper": 80.01511087481418,
+      "final_relative_radius": 0.038242950834164506
+    },
+    {
+      "seed": 38,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.8212078973456,
+      "final_upper": 80.20334320587014,
+      "final_relative_radius": 0.04143583125425056
+    },
+    {
+      "seed": 39,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.88522186306868,
+      "final_upper": 79.54051097875671,
+      "final_relative_radius": 0.036860108216125446
+    },
+    {
+      "seed": 40,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": null,
+      "final_lower": 73.64979580805831,
+      "final_upper": 81.67788320529218,
+      "final_relative_radius": 0.05168484746716548
+    },
+    {
+      "seed": 41,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 55,
+      "final_lower": 73.82655220000026,
+      "final_upper": 81.13442651807442,
+      "final_relative_radius": 0.047159448646549904
+    },
+    {
+      "seed": 42,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.58211304144335,
+      "final_upper": 79.28927819576116,
+      "final_relative_radius": 0.037333114509713744
+    },
+    {
+      "seed": 43,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.92902764627486,
+      "final_upper": 79.99218064729466,
+      "final_relative_radius": 0.03939127731804003
+    },
+    {
+      "seed": 44,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.80676262632463,
+      "final_upper": 80.33740300806782,
+      "final_relative_radius": 0.04236709417359932
+    },
+    {
+      "seed": 45,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 55,
+      "final_lower": 73.87834812669547,
+      "final_upper": 80.7214045267273,
+      "final_relative_radius": 0.04426304882500292
+    },
+    {
+      "seed": 46,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 53,
+      "final_lower": 73.63561417650324,
+      "final_upper": 78.3770263944969,
+      "final_relative_radius": 0.03119090754679113
+    },
+    {
+      "seed": 47,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.72745303683737,
+      "final_upper": 79.94581373456747,
+      "final_relative_radius": 0.04046481752079985
+    },
+    {
+      "seed": 48,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.85578493329315,
+      "final_upper": 79.80863858002519,
+      "final_relative_radius": 0.038739309403103925
+    },
+    {
+      "seed": 49,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.72897936896558,
+      "final_upper": 79.38223799550886,
+      "final_relative_radius": 0.03692256337486983
+    },
+    {
+      "seed": 50,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.6494826971803,
+      "final_upper": 79.92838814534431,
+      "final_relative_radius": 0.04088418086354552
+    },
+    {
+      "seed": 51,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 74.03490358169871,
+      "final_upper": 80.59713783816409,
+      "final_relative_radius": 0.04243773926936233
+    },
+    {
+      "seed": 52,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 55,
+      "final_lower": 73.76795311603699,
+      "final_upper": 81.23405450851145,
+      "final_relative_radius": 0.04816777219143588
+    },
+    {
+      "seed": 53,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.79759423726,
+      "final_upper": 79.11617403097802,
+      "final_relative_radius": 0.03478156253652894
+    },
+    {
+      "seed": 54,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 55,
+      "final_lower": 73.82451092487361,
+      "final_upper": 80.64892091676687,
+      "final_relative_radius": 0.04417853549657234
+    },
+    {
+      "seed": 55,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 55,
+      "final_lower": 73.66268597759075,
+      "final_upper": 80.62486248456486,
+      "final_relative_radius": 0.04512468165039138
+    },
+    {
+      "seed": 56,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": null,
+      "final_lower": 73.99315595218937,
+      "final_upper": 81.90316280438067,
+      "final_relative_radius": 0.05073889438366193
+    },
+    {
+      "seed": 57,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 53,
+      "final_lower": 73.46401593658503,
+      "final_upper": 78.03791491371231,
+      "final_relative_radius": 0.03019036755146615
+    },
+    {
+      "seed": 58,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 55,
+      "final_lower": 73.80752881135797,
+      "final_upper": 81.26819930763548,
+      "final_relative_radius": 0.04810985308128141
+    },
+    {
+      "seed": 59,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 74.0062188587111,
+      "final_upper": 79.31874171301837,
+      "final_relative_radius": 0.03464878017576229
+    },
+    {
+      "seed": 60,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.78243771517522,
+      "final_upper": 79.43668743835103,
+      "final_relative_radius": 0.03690302837527773
+    },
+    {
+      "seed": 61,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 55,
+      "final_lower": 74.05456857327935,
+      "final_upper": 81.57587554792447,
+      "final_relative_radius": 0.04832799274663495
+    },
+    {
+      "seed": 62,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.94678282887857,
+      "final_upper": 80.04013598717124,
+      "final_relative_radius": 0.039570589535411704
+    },
+    {
+      "seed": 63,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 74.11806528068256,
+      "final_upper": 80.03230307957395,
+      "final_relative_radius": 0.03836667963757016
+    },
+    {
+      "seed": 64,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 55,
+      "final_lower": 73.88159890256561,
+      "final_upper": 80.62412050678864,
+      "final_relative_radius": 0.043639301056287085
+    },
+    {
+      "seed": 65,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 55,
+      "final_lower": 73.74713369984549,
+      "final_upper": 81.29753277894629,
+      "final_relative_radius": 0.048698218717079196
+    },
+    {
+      "seed": 66,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.77975563337644,
+      "final_upper": 80.53488800103547,
+      "final_relative_radius": 0.043775057302161614
+    },
+    {
+      "seed": 67,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 55,
+      "final_lower": 73.78896109450388,
+      "final_upper": 80.65170320554338,
+      "final_relative_radius": 0.04443610847015379
+    },
+    {
+      "seed": 68,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 55,
+      "final_lower": 73.91112805288691,
+      "final_upper": 80.142881681134,
+      "final_relative_radius": 0.04045174571571626
+    },
+    {
+      "seed": 69,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 53,
+      "final_lower": 73.59392124275892,
+      "final_upper": 78.91336573687762,
+      "final_relative_radius": 0.03487993655561504
+    },
+    {
+      "seed": 70,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 55,
+      "final_lower": 73.72487411686461,
+      "final_upper": 81.37945372550264,
+      "final_relative_radius": 0.04935116714742732
+    },
+    {
+      "seed": 71,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 53,
+      "final_lower": 73.88978505963841,
+      "final_upper": 78.86275527653109,
+      "final_relative_radius": 0.03255572840849935
+    },
+    {
+      "seed": 72,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 55,
+      "final_lower": 73.77373160898517,
+      "final_upper": 80.9957962243207,
+      "final_relative_radius": 0.046663349797862234
+    },
+    {
+      "seed": 73,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.7893327011783,
+      "final_upper": 79.35572940188872,
+      "final_relative_radius": 0.03634721632072099
+    },
+    {
+      "seed": 74,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 55,
+      "final_lower": 73.64385089261606,
+      "final_upper": 80.67529216427926,
+      "final_relative_radius": 0.04556428406986943
+    },
+    {
+      "seed": 75,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.71296767013249,
+      "final_upper": 79.01301001026397,
+      "final_relative_radius": 0.03470295244220122
+    },
+    {
+      "seed": 76,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 55,
+      "final_lower": 73.86527069451034,
+      "final_upper": 80.48616218407825,
+      "final_relative_radius": 0.04289491432694274
+    },
+    {
+      "seed": 77,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 55,
+      "final_lower": 73.70386974778238,
+      "final_upper": 80.6117616477301,
+      "final_relative_radius": 0.04476469322957137
+    },
+    {
+      "seed": 78,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 53,
+      "final_lower": 73.96536446553172,
+      "final_upper": 79.11890614299156,
+      "final_relative_radius": 0.03366473679479979
+    },
+    {
+      "seed": 79,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 55,
+      "final_lower": 73.82204541522033,
+      "final_upper": 81.30498542985796,
+      "final_relative_radius": 0.04823749912489893
+    },
+    {
+      "seed": 80,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.80011114990643,
+      "final_upper": 79.84278439988101,
+      "final_relative_radius": 0.039329337216353594
+    },
+    {
+      "seed": 81,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 55,
+      "final_lower": 73.8052559203079,
+      "final_upper": 80.24041597739395,
+      "final_relative_radius": 0.04177436456221562
+    },
+    {
+      "seed": 82,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 55,
+      "final_lower": 74.05356405885989,
+      "final_upper": 80.76373779563437,
+      "final_relative_radius": 0.043342531205466085
+    },
+    {
+      "seed": 83,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.88015555512204,
+      "final_upper": 80.06436795983448,
+      "final_relative_radius": 0.04017169473463998
+    },
+    {
+      "seed": 84,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 74.02319190129596,
+      "final_upper": 79.36088081894638,
+      "final_relative_radius": 0.034799499211276334
+    },
+    {
+      "seed": 85,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.77969111852636,
+      "final_upper": 80.31522062323499,
+      "final_relative_radius": 0.042412364112717406
+    },
+    {
+      "seed": 86,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 55,
+      "final_lower": 73.90007657082703,
+      "final_upper": 81.43571726453843,
+      "final_relative_radius": 0.048511939892605445
+    },
+    {
+      "seed": 87,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 55,
+      "final_lower": 73.87672799722732,
+      "final_upper": 81.37747236057555,
+      "final_relative_radius": 0.04831266623422634
+    },
+    {
+      "seed": 88,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.6846907376207,
+      "final_upper": 80.21008219853543,
+      "final_relative_radius": 0.04240164455502214
+    },
+    {
+      "seed": 89,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.68816103867879,
+      "final_upper": 79.09764260388621,
+      "final_relative_radius": 0.035405655736593496
+    },
+    {
+      "seed": 90,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.75078454178062,
+      "final_upper": 78.6204695013428,
+      "final_relative_radius": 0.03195934161035376
+    },
+    {
+      "seed": 91,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 53,
+      "final_lower": 73.92790248532616,
+      "final_upper": 78.78198895993846,
+      "final_relative_radius": 0.031786326535057086
+    },
+    {
+      "seed": 92,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": null,
+      "final_lower": 73.76377532202528,
+      "final_upper": 81.58386678648849,
+      "final_relative_radius": 0.050339299382482404
+    },
+    {
+      "seed": 93,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.72786727657508,
+      "final_upper": 79.16492288258438,
+      "final_relative_radius": 0.035561229540970435
+    },
+    {
+      "seed": 94,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 54,
+      "final_lower": 73.78278902142479,
+      "final_upper": 79.14403853570157,
+      "final_relative_radius": 0.03505761284607872
+    },
+    {
+      "seed": 95,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 55,
+      "final_lower": 73.77658618416702,
+      "final_upper": 80.66115561380872,
+      "final_relative_radius": 0.04457828345254877
+    },
+    {
+      "seed": 96,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 52,
+      "final_lower": 73.82920564567709,
+      "final_upper": 77.28789861833528,
+      "final_relative_radius": 0.022887501646508532
+    },
+    {
+      "seed": 97,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 55,
+      "final_lower": 73.6934469711356,
+      "final_upper": 80.687598213469,
+      "final_relative_radius": 0.045304468783521894
+    },
+    {
+      "seed": 98,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 53,
+      "final_lower": 73.69976812859468,
+      "final_upper": 78.33212527983177,
+      "final_relative_radius": 0.030469640595690534
+    },
+    {
+      "seed": 99,
+      "all_checked_times_covered": true,
+      "stop_at_5pct": 55,
+      "final_lower": 73.73018615451022,
+      "final_upper": 81.09363863500099,
+      "final_relative_radius": 0.04756020264001134
+    }
+  ],
+  "example_paths": [
+    {
+      "seed": 0,
+      "rows": [
+        {
+          "step": 1,
+          "t_before": 0.0,
+          "q": 56.635329639966386,
+          "v": 110.76798911208303,
+          "trace_sketch": 1.9558107954211736,
+          "lower": 3.6993389793065914,
+          "upper": 14631.588329562897
+        },
+        {
+          "step": 2,
+          "t_before": 1.9558107954211736,
+          "q": 68.59380723896895,
+          "v": 104.3388429906528,
+          "trace_sketch": 3.476922499093698,
+          "lower": 10.378889768620922,
+          "upper": 505.37805970294204
+        },
+        {
+          "step": 3,
+          "t_before": 3.476922499093698,
+          "q": 62.72773589395591,
+          "v": 86.74113328877606,
+          "trace_sketch": 4.859741949733777,
+          "lower": 15.243657242992095,
+          "upper": 325.6597155302793
+        },
+        {
+          "step": 4,
+          "t_before": 4.859741949733777,
+          "q": 80.43272198247676,
+          "v": 307.446868597705,
+          "trace_sketch": 8.682152294924954,
+          "lower": 20.33179545476392,
+          "upper": 272.0029369606524
+        },
+        {
+          "step": 5,
+          "t_before": 8.682152294924954,
+          "q": 93.66720184175196,
+          "v": 218.80140659530338,
+          "trace_sketch": 11.018097025770679,
+          "lower": 27.01767176069401,
+          "upper": 201.1841013712032
+        },
+        {
+          "step": 6,
+          "t_before": 11.018097025770679,
+          "q": 50.46911345472442,
+          "v": 75.82941579056293,
+          "trace_sketch": 12.520588561679848,
+          "lower": 29.708700194529136,
+          "upper": 160.91937993690038
+        },
+        {
+          "step": 7,
+          "t_before": 12.520588561679848,
+          "q": 55.714438428406936,
+          "v": 91.86407576184729,
+          "trace_sketch": 14.1694264276469,
+          "lower": 32.52317719402056,
+          "upper": 141.82420846391526
+        },
+        {
+          "step": 8,
+          "t_before": 14.1694264276469,
+          "q": 67.56037657218275,
+          "v": 105.03955943857602,
+          "trace_sketch": 15.724177374399689,
+          "lower": 35.94252542263372,
+          "upper": 132.7598866993028
+        },
+        {
+          "step": 9,
+          "t_before": 15.724177374399689,
+          "q": 57.152244964225766,
+          "v": 72.67411454919662,
+          "trace_sketch": 16.99576547377683,
+          "lower": 38.38367429349461,
+          "upper": 124.78281519445521
+        },
+        {
+          "step": 10,
+          "t_before": 16.99576547377683,
+          "q": 50.623287340446765,
+          "v": 65.43572873056591,
+          "trace_sketch": 18.28836680743784,
+          "lower": 40.21121606053301,
+          "upper": 118.20835217763337
+        },
+        {
+          "step": 11,
+          "t_before": 18.28836680743784,
+          "q": 89.76676950890683,
+          "v": 260.5882795190772,
+          "trace_sketch": 21.191314980182554,
+          "lower": 44.09397613582157,
+          "upper": 118.20835217763337
+        },
+        {
+          "step": 12,
+          "t_before": 21.191314980182554,
+          "q": 48.211545951336085,
+          "v": 75.04676556796458,
+          "trace_sketch": 22.747928942400556,
+          "lower": 45.5855906999996,
+          "upper": 116.01582142572771
+        },
+        {
+          "step": 13,
+          "t_before": 22.747928942400556,
+          "q": 48.53004391162895,
+          "v": 69.12701148449672,
+          "trace_sketch": 24.172345776029925,
+          "lower": 47.066520276206376,
+          "upper": 112.53531614476753
+        },
+        {
+          "step": 14,
+          "t_before": 24.172345776029925,
+          "q": 57.611122912139216,
+          "v": 88.62501033964917,
+          "trace_sketch": 25.710677366525186,
+          "lower": 49.00188271759241,
+          "upper": 110.78459498800424
+        },
+        {
+          "step": 15,
+          "t_before": 25.710677366525186,
+          "q": 22.588630608478958,
+          "v": 30.723700595906994,
+          "trace_sketch": 27.07081739132042,
+          "lower": 49.00188271759241,
+          "upper": 105.94828004276053
+        },
+        {
+          "step": 16,
+          "t_before": 27.07081739132042,
+          "q": 36.777089351091604,
+          "v": 58.68558220872571,
+          "trace_sketch": 28.666527743721755,
+          "lower": 49.70970568750744,
+          "upper": 103.24682429726737
+        },
+        {
+          "step": 17,
+          "t_before": 28.666527743721755,
+          "q": 42.09037542832141,
+          "v": 55.40826212100852,
+          "trace_sketch": 29.982939430649257,
+          "lower": 50.83808733720849,
+          "upper": 101.34882121250887
+        },
+        {
+          "step": 18,
+          "t_before": 29.982939430649257,
+          "q": 42.29542353996148,
+          "v": 55.36306586389162,
+          "trace_sketch": 31.29190057183711,
+          "lower": 51.9575133821389,
+          "upper": 99.7600351791721
+        },
+        {
+          "step": 19,
+          "t_before": 31.29190057183711,
+          "q": 59.31841501919505,
+          "v": 106.69062328131186,
+          "trace_sketch": 33.090509372270965,
+          "lower": 53.89632254555644,
+          "upper": 99.7600351791721
+        },
+        {
+          "step": 20,
+          "t_before": 33.090509372270965,
+          "q": 31.144197229134363,
+          "v": 37.73479292762588,
+          "trace_sketch": 34.302124898913156,
+          "lower": 54.40063440820578,
+          "upper": 97.85365610787858
+        },
+        {
+          "step": 21,
+          "t_before": 34.302124898913156,
+          "q": 34.56793737211119,
+          "v": 42.15333287919413,
+          "trace_sketch": 35.521559325255375,
+          "lower": 55.108367777475806,
+          "upper": 96.20638859274719
+        },
+        {
+          "step": 22,
+          "t_before": 35.521559325255375,
+          "q": 39.67152830323497,
+          "v": 50.91377730590738,
+          "trace_sketch": 36.80494263523882,
+          "lower": 56.08015109102454,
+          "upper": 95.1214634905728
+        },
+        {
+          "step": 23,
+          "t_before": 36.80494263523882,
+          "q": 39.09293439285355,
+          "v": 42.56482169375887,
+          "trace_sketch": 37.89375375558132,
+          "lower": 57.029589127846315,
+          "upper": 94.09089271124901
+        },
+        {
+          "step": 24,
+          "t_before": 37.89375375558132,
+          "q": 49.76183070669385,
+          "v": 67.65120155818225,
+          "trace_sketch": 39.25325360913237,
+          "lower": 58.4455565130728,
+          "upper": 93.96955340291522
+        },
+        {
+          "step": 25,
+          "t_before": 39.25325360913237,
+          "q": 45.24950366813546,
+          "v": 51.784929132042556,
+          "trace_sketch": 40.397684485365595,
+          "lower": 59.629637973536894,
+          "upper": 93.57548261512864
+        },
+        {
+          "step": 26,
+          "t_before": 40.397684485365595,
+          "q": 44.179029823059096,
+          "v": 64.1816972915542,
+          "trace_sketch": 41.850448331665696,
+          "lower": 60.71665454251709,
+          "upper": 93.24207352381198
+        },
+        {
+          "step": 27,
+          "t_before": 41.850448331665696,
+          "q": 19.575853103446857,
+          "v": 24.21843709872864,
+          "trace_sketch": 43.0876070378916,
+          "lower": 60.72061535277054,
+          "upper": 91.4295181101514
+        },
+        {
+          "step": 28,
+          "t_before": 43.0876070378916,
+          "q": 33.703984852067926,
+          "v": 46.467632636600214,
+          "trace_sketch": 44.46630551644107,
+          "lower": 61.42096318567356,
+          "upper": 90.70999896908724
+        },
+        {
+          "step": 29,
+          "t_before": 44.46630551644107,
+          "q": 31.798787516659555,
+          "v": 38.61345381176958,
+          "trace_sketch": 45.68061136981802,
+          "lower": 62.072984588332275,
+          "upper": 89.99465302867645
+        },
+        {
+          "step": 30,
+          "t_before": 45.68061136981802,
+          "q": 24.18978935662231,
+          "v": 29.145048742778688,
+          "trace_sketch": 46.88546058586957,
+          "lower": 62.40276095403504,
+          "upper": 88.9531855247837
+        },
+        {
+          "step": 31,
+          "t_before": 46.88546058586957,
+          "q": 34.18576325785796,
+          "v": 42.64608654780289,
+          "trace_sketch": 48.13294148094657,
+          "lower": 63.22682212330994,
+          "upper": 88.64254026285398
+        },
+        {
+          "step": 32,
+          "t_before": 48.13294148094657,
+          "q": 20.623807703801702,
+          "v": 25.231110068811233,
+          "trace_sketch": 49.35633875225454,
+          "lower": 63.45232097842478,
+          "upper": 87.64860265529911
+        },
+        {
+          "step": 33,
+          "t_before": 49.35633875225454,
+          "q": 25.81379819490477,
+          "v": 29.53493097645169,
+          "trace_sketch": 50.50049161009633,
+          "lower": 63.97109300511775,
+          "upper": 87.07627070525096
+        },
+        {
+          "step": 34,
+          "t_before": 50.50049161009633,
+          "q": 21.591537975848325,
+          "v": 26.41327335340504,
+          "trace_sketch": 51.723807586149086,
+          "lower": 64.32115565337354,
+          "upper": 86.3765180938138
+        },
+        {
+          "step": 35,
+          "t_before": 51.723807586149086,
+          "q": 29.98331082023739,
+          "v": 30.981992347492397,
+          "trace_sketch": 52.757115499782856,
+          "lower": 65.11656197178677,
+          "upper": 86.23413545506372
+        },
+        {
+          "step": 36,
+          "t_before": 52.757115499782856,
+          "q": 35.46958414424471,
+          "v": 39.96026794761033,
+          "trace_sketch": 53.88372210969131,
+          "lower": 66.14552801453546,
+          "upper": 86.23413545506372
+        },
+        {
+          "step": 37,
+          "t_before": 53.88372210969131,
+          "q": 19.52837648994901,
+          "v": 19.896402520385276,
+          "trace_sketch": 54.902567815099836,
+          "lower": 66.45379372007781,
+          "upper": 85.88085578008751
+        },
+        {
+          "step": 38,
+          "t_before": 54.902567815099836,
+          "q": 22.73512946694931,
+          "v": 24.24559901944103,
+          "trace_sketch": 55.96900550812848,
+          "lower": 66.94163985125246,
+          "upper": 85.55993531664659
+        },
+        {
+          "step": 39,
+          "t_before": 55.96900550812848,
+          "q": 19.491609300158437,
+          "v": 21.11430997233051,
+          "trace_sketch": 57.052256749582355,
+          "lower": 67.31011880650735,
+          "upper": 85.14510178326456
+        },
+        {
+          "step": 40,
+          "t_before": 57.052256749582355,
+          "q": 14.6405898797435,
+          "v": 14.790137204036034,
+          "trace_sketch": 58.06247131918104,
+          "lower": 67.49414347046381,
+          "upper": 84.5503588817099
+        },
+        {
+          "step": 41,
+          "t_before": 58.06247131918104,
+          "q": 14.617048824675527,
+          "v": 14.861485205137079,
+          "trace_sketch": 59.07919400947191,
+          "lower": 67.72219448647647,
+          "upper": 84.03527262443356
+        },
+        {
+          "step": 42,
+          "t_before": 59.07919400947191,
+          "q": 24.767536435792096,
+          "v": 26.249459132415584,
+          "trace_sketch": 60.13902727954564,
+          "lower": 68.48468923165659,
+          "upper": 84.03527262443356
+        },
+        {
+          "step": 43,
+          "t_before": 60.13902727954564,
+          "q": 10.111763804760555,
+          "v": 11.31342106396834,
+          "trace_sketch": 61.25786483176793,
+          "lower": 68.54371076504601,
+          "upper": 83.5152527603097
+        },
+        {
+          "step": 44,
+          "t_before": 61.25786483176793,
+          "q": 11.11254957194023,
+          "v": 12.095928726001945,
+          "trace_sketch": 62.34635749924226,
+          "lower": 68.71693933441435,
+          "upper": 83.02945285428216
+        },
+        {
+          "step": 45,
+          "t_before": 62.34635749924226,
+          "q": 7.406612364091836,
+          "v": 7.282244463749491,
+          "trace_sketch": 63.329566030453464,
+          "lower": 68.74689938340106,
+          "upper": 82.40846114058711
+        },
+        {
+          "step": 46,
+          "t_before": 63.329566030453464,
+          "q": 10.113963939344934,
+          "v": 10.341905900700437,
+          "trace_sketch": 64.35210338205195,
+          "lower": 69.00073860802438,
+          "upper": 82.01388535744867
+        },
+        {
+          "step": 47,
+          "t_before": 64.35210338205195,
+          "q": 7.910875410143303,
+          "v": 8.490991734760755,
+          "trace_sketch": 65.42543487756174,
+          "lower": 69.1750544975409,
+          "upper": 81.56384191161173
+        },
+        {
+          "step": 48,
+          "t_before": 65.42543487756174,
+          "q": 5.386641390492132,
+          "v": 5.658606248535705,
+          "trace_sketch": 66.47592364010005,
+          "lower": 69.25172808709286,
+          "upper": 81.03020669042475
+        },
+        {
+          "step": 49,
+          "t_before": 66.47592364010005,
+          "q": 6.534924511595347,
+          "v": 6.878030093133749,
+          "trace_sketch": 67.52842701346414,
+          "lower": 69.51090386882186,
+          "upper": 80.64084750226172
+        },
+        {
+          "step": 50,
+          "t_before": 67.52842701346414,
+          "q": 4.632084565273151,
+          "v": 4.59744406892049,
+          "trace_sketch": 68.52094863178425,
+          "lower": 69.70536023210654,
+          "upper": 80.1919275894523
+        },
+        {
+          "step": 51,
+          "t_before": 68.52094863178425,
+          "q": 3.142918998944378,
+          "v": 3.6176230299217726,
+          "trace_sketch": 69.67198785078315,
+          "lower": 69.80688206505958,
+          "upper": 79.70911832718117
+        },
+        {
+          "step": 52,
+          "t_before": 69.67198785078315,
+          "q": 1.1127341888820097,
+          "v": 1.0144700635240782,
+          "trace_sketch": 70.58367913668077,
+          "lower": 70.58367913668077,
+          "upper": 79.12249483674621
+        },
+        {
+          "step": 53,
+          "t_before": 70.58367913668077,
+          "q": 5.205439819760705,
+          "v": 6.024321103796468,
+          "trace_sketch": 71.74099173895641,
+          "lower": 71.74099173895641,
+          "upper": 78.98736693250115
+        },
+        {
+          "step": 54,
+          "t_before": 71.74099173895641,
+          "q": 1.0188547609260714,
+          "v": 1.0699663605607788,
+          "trace_sketch": 72.79115747561966,
+          "lower": 72.79115747561966,
+          "upper": 78.51351759052338
+        },
+        {
+          "step": 55,
+          "t_before": 72.79115747561966,
+          "q": 1.3289496571998494,
+          "v": 1.1700348289755202,
+          "trace_sketch": 73.67157820686153,
+          "lower": 73.67157820686153,
+          "upper": 78.14381071993039
+        }
+      ]
+    },
+    {
+      "seed": 1,
+      "rows": [
+        {
+          "step": 1,
+          "t_before": 0.0,
+          "q": 94.87160757186716,
+          "v": 535.0578312507738,
+          "trace_sketch": 5.639809896184764,
+          "lower": 5.639809896184764,
+          "upper": 32101.44356324248
+        },
+        {
+          "step": 2,
+          "t_before": 5.639809896184764,
+          "q": 48.22747386840168,
+          "v": 71.11322401570187,
+          "trace_sketch": 7.114347505385457,
+          "lower": 12.359932881605562,
+          "upper": 770.5594369549567
+        },
+        {
+          "step": 3,
+          "t_before": 7.114347505385457,
+          "q": 61.36988743687586,
+          "v": 91.04221216455397,
+          "trace_sketch": 8.597847247147222,
+          "lower": 18.023546473710216,
+          "upper": 458.13777823649474
+        },
+        {
+          "step": 4,
+          "t_before": 8.597847247147222,
+          "q": 73.94066933354586,
+          "v": 116.67053063419966,
+          "trace_sketch": 10.175741140802684,
+          "lower": 23.57698376389525,
+          "upper": 289.3728148730583
+        },
+        {
+          "step": 5,
+          "t_before": 10.175741140802684,
+          "q": 52.899196843321704,
+          "v": 67.07051666441428,
+          "trace_sketch": 11.443634051598014,
+          "lower": 26.73647132523586,
+          "upper": 190.33686835601083
+        },
+        {
+          "step": 6,
+          "t_before": 11.443634051598014,
+          "q": 52.46392405228634,
+          "v": 90.38721570089592,
+          "trace_sketch": 13.16647917486433,
+          "lower": 29.464638889890924,
+          "upper": 154.99027095907084
+        },
+        {
+          "step": 7,
+          "t_before": 13.16647917486433,
+          "q": 49.45980501962252,
+          "v": 96.96406359683493,
+          "trace_sketch": 15.126941080413001,
+          "lower": 31.7939454005767,
+          "upper": 136.40892455774173
+        },
+        {
+          "step": 8,
+          "t_before": 15.126941080413001,
+          "q": 53.73740699549235,
+          "v": 90.21870744424541,
+          "trace_sketch": 16.805822003190187,
+          "lower": 34.377282682481585,
+          "upper": 125.94226406021399
+        },
+        {
+          "step": 9,
+          "t_before": 16.805822003190187,
+          "q": 74.60194044804977,
+          "v": 152.07598101415863,
+          "trace_sketch": 18.844321003361088,
+          "lower": 38.12585066237458,
+          "upper": 123.21645994076161
+        },
+        {
+          "step": 10,
+          "t_before": 18.844321003361088,
+          "q": 62.72152795394185,
+          "v": 92.18992118755284,
+          "trace_sketch": 20.314150010958773,
+          "lower": 40.91616056073108,
+          "upper": 119.12479725455636
+        },
+        {
+          "step": 11,
+          "t_before": 20.314150010958773,
+          "q": 64.87423433857164,
+          "v": 83.28014231992796,
+          "trace_sketch": 21.59786677723763,
+          "lower": 43.62785844478007,
+          "upper": 116.31892218941084
+        },
+        {
+          "step": 12,
+          "t_before": 21.59786677723763,
+          "q": 73.8372685686987,
+          "v": 120.9503064979135,
+          "trace_sketch": 23.235932605544654,
+          "lower": 46.59472576741211,
+          "upper": 115.63950415919848
+        },
+        {
+          "step": 13,
+          "t_before": 23.235932605544654,
+          "q": 68.57625313628691,
+          "v": 94.53359491485234,
+          "trace_sketch": 24.614450541293905,
+          "lower": 49.10039240130326,
+          "upper": 114.4550076569987
+        },
+        {
+          "step": 14,
+          "t_before": 24.614450541293905,
+          "q": 47.74178265387986,
+          "v": 52.83354571335504,
+          "trace_sketch": 25.72110267651872,
+          "lower": 50.341523288138006,
+          "upper": 111.33714975418552
+        },
+        {
+          "step": 15,
+          "t_before": 25.72110267651872,
+          "q": 48.13077439778444,
+          "v": 86.58312263273955,
+          "trace_sketch": 27.520016650292746,
+          "lower": 51.521910223119896,
+          "upper": 109.16008830591967
+        },
+        {
+          "step": 16,
+          "t_before": 27.520016650292746,
+          "q": 70.75276691451256,
+          "v": 106.69163429183068,
+          "trace_sketch": 29.027966642138882,
+          "lower": 53.898799150082,
+          "upper": 109.16008830591967
+        },
+        {
+          "step": 17,
+          "t_before": 29.027966642138882,
+          "q": 39.50281539896366,
+          "v": 55.00497289666736,
+          "trace_sketch": 30.420398354692473,
+          "lower": 54.604410348684546,
+          "upper": 106.86193840497855
+        },
+        {
+          "step": 18,
+          "t_before": 30.420398354692473,
+          "q": 51.28555545370929,
+          "v": 94.41850461242232,
+          "trace_sketch": 32.261433394229975,
+          "lower": 55.896014091141325,
+          "upper": 105.89923286253871
+        },
+        {
+          "step": 19,
+          "t_before": 32.261433394229975,
+          "q": 47.62003706101794,
+          "v": 54.65861304832134,
+          "trace_sketch": 33.4092404187874,
+          "lower": 57.06233812333015,
+          "upper": 104.57697584868434
+        },
+        {
+          "step": 20,
+          "t_before": 33.4092404187874,
+          "q": 24.54070658837869,
+          "v": 28.21636760921985,
+          "trace_sketch": 34.55901854386313,
+          "lower": 57.07769230544736,
+          "upper": 101.73811207524486
+        },
+        {
+          "step": 21,
+          "t_before": 34.55901854386313,
+          "q": 48.42892238019203,
+          "v": 58.40079357807421,
+          "trace_sketch": 35.7649258964901,
+          "lower": 58.29443212618388,
+          "upper": 100.92214472312871
+        },
+        {
+          "step": 22,
+          "t_before": 35.7649258964901,
+          "q": 34.284272517270935,
+          "v": 40.46136344441869,
+          "trace_sketch": 36.945098625079744,
+          "lower": 58.821156569693095,
+          "upper": 99.22514622840313
+        },
+        {
+          "step": 23,
+          "t_before": 36.945098625079744,
+          "q": 45.086834759619855,
+          "v": 61.19879731768277,
+          "trace_sketch": 38.30245266521061,
+          "lower": 59.86146209458503,
+          "upper": 98.47416560880177
+        },
+        {
+          "step": 24,
+          "t_before": 38.30245266521061,
+          "q": 35.93590600667649,
+          "v": 42.07161707486306,
+          "trace_sketch": 39.47319306805579,
+          "lower": 60.494312683356924,
+          "upper": 97.18147887911726
+        },
+        {
+          "step": 25,
+          "t_before": 39.47319306805579,
+          "q": 46.09713305226012,
+          "v": 58.690226671563295,
+          "trace_sketch": 40.74637911641646,
+          "lower": 61.59216728915688,
+          "upper": 96.70721509859683
+        },
+        {
+          "step": 26,
+          "t_before": 40.74637911641646,
+          "q": 45.30138060106746,
+          "v": 54.52116840122272,
+          "trace_sketch": 41.94990023824157,
+          "lower": 62.64500390909065,
+          "upper": 96.26224937387633
+        },
+        {
+          "step": 27,
+          "t_before": 41.94990023824157,
+          "q": 33.07586003986894,
+          "v": 33.532996073679,
+          "trace_sketch": 42.96372107413998,
+          "lower": 63.16462064849893,
+          "upper": 95.14205888798125
+        },
+        {
+          "step": 28,
+          "t_before": 42.96372107413998,
+          "q": 37.86164326072041,
+          "v": 45.4738558447006,
+          "trace_sketch": 44.16477448673387,
+          "lower": 63.89581596430308,
+          "upper": 94.46389098793892
+        },
+        {
+          "step": 29,
+          "t_before": 44.16477448673387,
+          "q": 23.10092551155263,
+          "v": 29.01920023120184,
+          "trace_sketch": 45.4209665911017,
+          "lower": 64.01306371056002,
+          "upper": 93.04422296266569
+        },
+        {
+          "step": 30,
+          "t_before": 45.4209665911017,
+          "q": 36.47354206212273,
+          "v": 47.10104049158593,
+          "trace_sketch": 46.71234214249077,
+          "lower": 64.75252496657137,
+          "upper": 92.56339238675307
+        },
+        {
+          "step": 31,
+          "t_before": 46.71234214249077,
+          "q": 23.720416393059157,
+          "v": 26.436783833941877,
+          "trace_sketch": 47.82685815249123,
+          "lower": 64.97439235737211,
+          "upper": 91.45908153414372
+        },
+        {
+          "step": 32,
+          "t_before": 47.82685815249123,
+          "q": 19.749012097675575,
+          "v": 20.445652039863354,
+          "trace_sketch": 48.86213282540866,
+          "lower": 65.0656889522446,
+          "upper": 90.26751770053231
+        },
+        {
+          "step": 33,
+          "t_before": 48.86213282540866,
+          "q": 16.042716483529762,
+          "v": 17.707953654110277,
+          "trace_sketch": 49.96593302485057,
+          "lower": 65.0656889522446,
+          "upper": 89.01113555766733
+        },
+        {
+          "step": 34,
+          "t_before": 49.96593302485057,
+          "q": 26.883800625558248,
+          "v": 29.21553659393515,
+          "trace_sketch": 51.052666891123934,
+          "lower": 65.53852975146754,
+          "upper": 88.4756107156107
+        },
+        {
+          "step": 35,
+          "t_before": 51.052666891123934,
+          "q": 23.726348995551817,
+          "v": 27.220333424195633,
+          "trace_sketch": 52.199928672921835,
+          "lower": 65.9254675757023,
+          "upper": 87.86965107161024
+        },
+        {
+          "step": 36,
+          "t_before": 52.199928672921835,
+          "q": 16.86642205411517,
+          "v": 18.69000654032284,
+          "trace_sketch": 53.30804789822977,
+          "lower": 66.04278172802803,
+          "upper": 86.9949210387376
+        },
+        {
+          "step": 37,
+          "t_before": 53.30804789822977,
+          "q": 17.79149664547746,
+          "v": 19.196896455075247,
+          "trace_sketch": 54.38704067987162,
+          "lower": 66.252539747168,
+          "upper": 86.2727792778558
+        },
+        {
+          "step": 38,
+          "t_before": 54.38704067987162,
+          "q": 12.169130551229998,
+          "v": 12.874216471424624,
+          "trace_sketch": 55.444981213685956,
+          "lower": 66.252539747168,
+          "upper": 85.34725517761707
+        },
+        {
+          "step": 39,
+          "t_before": 55.444981213685956,
+          "q": 32.007509574745335,
+          "v": 39.425319801650794,
+          "trace_sketch": 56.67673339701603,
+          "lower": 67.21814913742966,
+          "upper": 85.34725517761707
+        },
+        {
+          "step": 40,
+          "t_before": 56.67673339701603,
+          "q": 12.406065136549614,
+          "v": 14.32200737260893,
+          "trace_sketch": 57.83116932935808,
+          "lower": 67.27968177779665,
+          "upper": 84.83732287087105
+        },
+        {
+          "step": 41,
+          "t_before": 57.83116932935808,
+          "q": 17.851890702631756,
+          "v": 17.423124102049346,
+          "trace_sketch": 58.80715133553745,
+          "lower": 67.67910619350604,
+          "upper": 84.45928181180204
+        },
+        {
+          "step": 42,
+          "t_before": 58.80715133553745,
+          "q": 15.264350921991666,
+          "v": 16.558755450075473,
+          "trace_sketch": 59.891950521215165,
+          "lower": 67.97539651975885,
+          "upper": 84.02283165596937
+        },
+        {
+          "step": 43,
+          "t_before": 59.891950521215165,
+          "q": 15.04435465929759,
+          "v": 18.45368742585846,
+          "trace_sketch": 61.11856926583867,
+          "lower": 68.30320102483543,
+          "upper": 83.6601171311612
+        },
+        {
+          "step": 44,
+          "t_before": 61.11856926583867,
+          "q": 19.82593572115173,
+          "v": 25.22343303761971,
+          "trace_sketch": 62.39081353175292,
+          "lower": 68.9406995468426,
+          "upper": 83.64204678132623
+        },
+        {
+          "step": 45,
+          "t_before": 62.39081353175292,
+          "q": 9.014568248361329,
+          "v": 9.629399414782753,
+          "trace_sketch": 63.4590177040973,
+          "lower": 69.0495902769011,
+          "upper": 83.083384680567
+        },
+        {
+          "step": 46,
+          "t_before": 63.4590177040973,
+          "q": 11.53759304533041,
+          "v": 11.60903330366324,
+          "trace_sketch": 64.46520965921759,
+          "lower": 69.37980043030947,
+          "upper": 82.7386040732609
+        },
+        {
+          "step": 47,
+          "t_before": 64.46520965921759,
+          "q": 13.471824649848134,
+          "v": 15.54878205874447,
+          "trace_sketch": 65.61938011963252,
+          "lower": 69.86900004289151,
+          "upper": 82.58501408242739
+        },
+        {
+          "step": 48,
+          "t_before": 65.61938011963252,
+          "q": 10.033823546523234,
+          "v": 10.365470473094039,
+          "trace_sketch": 66.65243301567291,
+          "lower": 70.21503850920092,
+          "upper": 82.29199565948355
+        },
+        {
+          "step": 49,
+          "t_before": 66.65243301567291,
+          "q": 12.252726455201472,
+          "v": 12.717337496417132,
+          "trace_sketch": 67.69035200806324,
+          "lower": 70.77221121879951,
+          "upper": 82.20269956800261
+        },
+        {
+          "step": 50,
+          "t_before": 67.69035200806324,
+          "q": 4.275273475715275,
+          "v": 4.594317052350505,
+          "trace_sketch": 68.76497731061932,
+          "lower": 70.81480111797212,
+          "upper": 81.68352200840295
+        },
+        {
+          "step": 51,
+          "t_before": 68.76497731061932,
+          "q": 2.541052312479181,
+          "v": 2.5748168141132664,
+          "trace_sketch": 69.77826491649357,
+          "lower": 70.81480111797212,
+          "upper": 81.1104744255839
+        },
+        {
+          "step": 52,
+          "t_before": 69.77826491649357,
+          "q": 4.099747018864361,
+          "v": 4.196753396044917,
+          "trace_sketch": 70.80192646847085,
+          "lower": 71.05583679243453,
+          "upper": 80.71511202402002
+        },
+        {
+          "step": 53,
+          "t_before": 70.80192646847085,
+          "q": 12.319396291712572,
+          "v": 14.026729898843389,
+          "trace_sketch": 71.9405155329593,
+          "lower": 72.20550277975873,
+          "upper": 80.71511202402002
+        },
+        {
+          "step": 54,
+          "t_before": 71.9405155329593,
+          "q": 7.946626470532579,
+          "v": 8.618600282143579,
+          "trace_sketch": 73.02507642355894,
+          "lower": 73.02507642355894,
+          "upper": 80.71511202402002
+        },
+        {
+          "step": 55,
+          "t_before": 73.02507642355894,
+          "q": 1.7758286427375465,
+          "v": 1.624487138380324,
+          "trace_sketch": 73.93985338980727,
+          "lower": 73.93985338980727,
+          "upper": 80.69018488720916
+        }
+      ]
+    },
+    {
+      "seed": 2,
+      "rows": [
+        {
+          "step": 1,
+          "t_before": 0.0,
+          "q": 72.07086256808432,
+          "v": 119.62997586143872,
+          "trace_sketch": 1.6598937711953423,
+          "lower": 5.38087182894941,
+          "upper": 15230.761855170465
+        },
+        {
+          "step": 2,
+          "t_before": 1.6598937711953423,
+          "q": 66.24657438061801,
+          "v": 108.126169800669,
+          "trace_sketch": 3.29207129601999,
+          "lower": 11.156877072609452,
+          "upper": 531.0985620518081
+        },
+        {
+          "step": 3,
+          "t_before": 3.29207129601999,
+          "q": 60.568138057330806,
+          "v": 145.46390236640872,
+          "trace_sketch": 5.693728454916302,
+          "lower": 15.523838834615603,
+          "upper": 357.44404349229194
+        },
+        {
+          "step": 4,
+          "t_before": 5.693728454916302,
+          "q": 79.28927375265688,
+          "v": 124.07829431375129,
+          "trace_sketch": 7.258609660674522,
+          "lower": 21.413516800785782,
+          "upper": 273.968004888346
+        },
+        {
+          "step": 5,
+          "t_before": 7.258609660674522,
+          "q": 83.72569148917243,
+          "v": 141.21357110802353,
+          "trace_sketch": 8.945231396444665,
+          "lower": 26.72483495256677,
+          "upper": 195.46189604871867
+        },
+        {
+          "step": 6,
+          "t_before": 8.945231396444665,
+          "q": 72.65957322911717,
+          "v": 172.95967575002885,
+          "trace_sketch": 11.325642787035079,
+          "lower": 30.570542587991547,
+          "upper": 164.72513848745314
+        },
+        {
+          "step": 7,
+          "t_before": 11.325642787035079,
+          "q": 64.08104051510058,
+          "v": 190.1281525166865,
+          "trace_sketch": 14.292638188301748,
+          "lower": 33.5929763299089,
+          "upper": 148.03719295531442
+        },
+        {
+          "step": 8,
+          "t_before": 14.292638188301748,
+          "q": 83.4077792342819,
+          "v": 144.06776851259846,
+          "trace_sketch": 16.01990835225049,
+          "lower": 38.094528880957476,
+          "upper": 141.22759291686233
+        },
+        {
+          "step": 9,
+          "t_before": 16.01990835225049,
+          "q": 39.1256803545489,
+          "v": 52.955185652081624,
+          "trace_sketch": 17.37337198974414,
+          "lower": 39.21259536704493,
+          "upper": 128.80504165988614
+        },
+        {
+          "step": 10,
+          "t_before": 17.37337198974414,
+          "q": 61.288100275583794,
+          "v": 120.94072640516212,
+          "trace_sketch": 19.346686970325173,
+          "lower": 41.69039525185507,
+          "upper": 123.87203596659724
+        },
+        {
+          "step": 11,
+          "t_before": 19.346686970325173,
+          "q": 76.30640971362502,
+          "v": 130.0963232395633,
+          "trace_sketch": 21.051606959718065,
+          "lower": 45.00367581587034,
+          "upper": 122.25563677884013
+        },
+        {
+          "step": 12,
+          "t_before": 21.051606959718065,
+          "q": 46.15014285780628,
+          "v": 76.61547017199491,
+          "trace_sketch": 22.711742019495794,
+          "lower": 46.28979685580045,
+          "upper": 117.38278500457892
+        },
+        {
+          "step": 13,
+          "t_before": 22.711742019495794,
+          "q": 49.93275209571284,
+          "v": 60.5646575439227,
+          "trace_sketch": 23.924666502965685,
+          "lower": 47.81836165176492,
+          "upper": 113.77549980832305
+        },
+        {
+          "step": 14,
+          "t_before": 23.924666502965685,
+          "q": 63.498645506671934,
+          "v": 79.9031278284912,
+          "trace_sketch": 25.18301031787581,
+          "lower": 50.022010539471985,
+          "upper": 112.31023363392204
+        },
+        {
+          "step": 15,
+          "t_before": 25.18301031787581,
+          "q": 41.89796689911539,
+          "v": 68.3334310959011,
+          "trace_sketch": 26.813958933125775,
+          "lower": 50.90087998528733,
+          "upper": 109.29215577147144
+        },
+        {
+          "step": 16,
+          "t_before": 26.813958933125775,
+          "q": 47.26170321147259,
+          "v": 89.19946414903126,
+          "trace_sketch": 28.701310807642614,
+          "lower": 52.08311063571314,
+          "upper": 107.43685660968096
+        },
+        {
+          "step": 17,
+          "t_before": 28.701310807642614,
+          "q": 50.65897952230962,
+          "v": 60.032777352722825,
+          "trace_sketch": 29.88634804918999,
+          "lower": 53.51117782941117,
+          "upper": 105.92826353951375
+        },
+        {
+          "step": 18,
+          "t_before": 29.88634804918999,
+          "q": 38.9086795519932,
+          "v": 51.88318298109859,
+          "trace_sketch": 31.21980843845269,
+          "lower": 54.267596293304706,
+          "upper": 103.77939765763522
+        },
+        {
+          "step": 19,
+          "t_before": 31.21980843845269,
+          "q": 44.59891799109353,
+          "v": 64.57833308380789,
+          "trace_sketch": 32.66778825483981,
+          "lower": 55.32236611119574,
+          "upper": 102.42363730070426
+        },
+        {
+          "step": 20,
+          "t_before": 32.66778825483981,
+          "q": 25.200425112666373,
+          "v": 33.41981489649199,
+          "trace_sketch": 33.993949013917415,
+          "lower": 55.41737662758688,
+          "upper": 99.75169185957485
+        },
+        {
+          "step": 21,
+          "t_before": 33.993949013917415,
+          "q": 40.57857863256298,
+          "v": 47.92460657981873,
+          "trace_sketch": 35.174981179035214,
+          "lower": 56.35041585361134,
+          "upper": 98.4657188452807
+        },
+        {
+          "step": 22,
+          "t_before": 35.174981179035214,
+          "q": 34.909604990599654,
+          "v": 43.31036421832283,
+          "trace_sketch": 36.41562438396364,
+          "lower": 56.99517546955995,
+          "upper": 96.94250241408989
+        },
+        {
+          "step": 23,
+          "t_before": 36.41562438396364,
+          "q": 40.098919916921474,
+          "v": 50.17567029495663,
+          "trace_sketch": 37.666921685709234,
+          "lower": 57.90862494874823,
+          "upper": 95.94402936987474
+        },
+        {
+          "step": 24,
+          "t_before": 37.666921685709234,
+          "q": 46.594417526049156,
+          "v": 51.88089954580183,
+          "trace_sketch": 38.780379097571874,
+          "lower": 59.13067995216185,
+          "upper": 95.47589689184993
+        },
+        {
+          "step": 25,
+          "t_before": 38.780379097571874,
+          "q": 58.28421565018181,
+          "v": 77.197032984221,
+          "trace_sketch": 40.10487205202034,
+          "lower": 60.81995792339908,
+          "upper": 95.47589689184993
+        },
+        {
+          "step": 26,
+          "t_before": 40.10487205202034,
+          "q": 48.5617233746481,
+          "v": 78.32746881439837,
+          "trace_sketch": 41.71781869747011,
+          "lower": 62.005525645851854,
+          "upper": 95.47589689184993
+        },
+        {
+          "step": 27,
+          "t_before": 41.71781869747011,
+          "q": 22.23629735373911,
+          "v": 23.918746048934466,
+          "trace_sketch": 42.79348096571696,
+          "lower": 62.06887810723387,
+          "upper": 93.974991542627
+        },
+        {
+          "step": 28,
+          "t_before": 42.79348096571696,
+          "q": 34.15948082438212,
+          "v": 43.0654779700815,
+          "trace_sketch": 44.05419913036022,
+          "lower": 62.70253607105214,
+          "upper": 93.12774968024509
+        },
+        {
+          "step": 29,
+          "t_before": 44.05419913036022,
+          "q": 19.71944441955021,
+          "v": 25.641526761472704,
+          "trace_sketch": 45.354516026512286,
+          "lower": 62.721103159095485,
+          "upper": 91.54936588889363
+        },
+        {
+          "step": 30,
+          "t_before": 45.354516026512286,
+          "q": 36.65593609993814,
+          "v": 54.638327255102325,
+          "trace_sketch": 46.84508844310908,
+          "lower": 63.54987661014207,
+          "upper": 91.17021659954702
+        },
+        {
+          "step": 31,
+          "t_before": 46.84508844310908,
+          "q": 25.468574944284065,
+          "v": 26.689665021600256,
+          "trace_sketch": 47.89303341372433,
+          "lower": 63.92684148880535,
+          "upper": 90.21776383195407
+        },
+        {
+          "step": 32,
+          "t_before": 47.89303341372433,
+          "q": 21.47639529401344,
+          "v": 23.232130174121014,
+          "trace_sketch": 48.9747852559712,
+          "lower": 64.15082791485,
+          "upper": 89.16964795951787
+        },
+        {
+          "step": 33,
+          "t_before": 48.9747852559712,
+          "q": 19.505056456746683,
+          "v": 21.955858324518477,
+          "trace_sketch": 50.10043482141627,
+          "lower": 64.32412945376785,
+          "upper": 88.14439690133884
+        },
+        {
+          "step": 34,
+          "t_before": 50.10043482141627,
+          "q": 20.04365061611026,
+          "v": 24.106068978665814,
+          "trace_sketch": 51.30311338733033,
+          "lower": 64.56687584506425,
+          "upper": 87.2803928918513
+        },
+        {
+          "step": 35,
+          "t_before": 51.30311338733033,
+          "q": 26.7074719726893,
+          "v": 27.1519335396827,
+          "trace_sketch": 52.319755230760805,
+          "lower": 65.17823387340445,
+          "upper": 86.88731780925387
+        },
+        {
+          "step": 36,
+          "t_before": 52.319755230760805,
+          "q": 27.42205720639651,
+          "v": 29.262959870446625,
+          "trace_sketch": 53.38688741745979,
+          "lower": 65.83015994371397,
+          "upper": 86.61828593513661
+        },
+        {
+          "step": 37,
+          "t_before": 53.38688741745979,
+          "q": 22.131932959935632,
+          "v": 28.522924929413914,
+          "trace_sketch": 54.67565532494657,
+          "lower": 66.24513283269559,
+          "upper": 86.15868734433614
+        },
+        {
+          "step": 38,
+          "t_before": 54.67565532494657,
+          "q": 17.070898730167606,
+          "v": 19.14267332937703,
+          "trace_sketch": 55.79701827319886,
+          "lower": 66.48003818943232,
+          "upper": 85.50979955455068
+        },
+        {
+          "step": 39,
+          "t_before": 55.79701827319886,
+          "q": 15.866074434104934,
+          "v": 19.059739789415413,
+          "trace_sketch": 56.99830721638228,
+          "lower": 66.70262362844451,
+          "upper": 84.8934769588388
+        },
+        {
+          "step": 40,
+          "t_before": 56.99830721638228,
+          "q": 15.973195532392635,
+          "v": 17.64762371698598,
+          "trace_sketch": 58.103134593045745,
+          "lower": 66.9917969571301,
+          "upper": 84.36961376205424
+        },
+        {
+          "step": 41,
+          "t_before": 58.103134593045745,
+          "q": 19.941094676044266,
+          "v": 24.571320390044942,
+          "trace_sketch": 59.33532975530848,
+          "lower": 67.52454722207911,
+          "upper": 84.1548033327634
+        },
+        {
+          "step": 42,
+          "t_before": 59.33532975530848,
+          "q": 12.078195040889801,
+          "v": 13.326029848715857,
+          "trace_sketch": 60.43864277547429,
+          "lower": 67.70231811483981,
+          "upper": 83.57810885414797
+        },
+        {
+          "step": 43,
+          "t_before": 60.43864277547429,
+          "q": 10.075938443266718,
+          "v": 12.248104926339721,
+          "trace_sketch": 61.654222346082385,
+          "lower": 67.82422551008194,
+          "upper": 82.97737846099378
+        },
+        {
+          "step": 44,
+          "t_before": 61.654222346082385,
+          "q": 5.3065445047640525,
+          "v": 4.900751337992637,
+          "trace_sketch": 62.577752024122944,
+          "lower": 67.82422551008194,
+          "upper": 82.17448872130878
+        },
+        {
+          "step": 45,
+          "t_before": 62.577752024122944,
+          "q": 9.435077216692779,
+          "v": 10.193995425374897,
+          "trace_sketch": 63.65818784793787,
+          "lower": 67.98442261027968,
+          "upper": 81.69783534364244
+        },
+        {
+          "step": 46,
+          "t_before": 63.65818784793787,
+          "q": 16.023085064463203,
+          "v": 16.13051689610411,
+          "trace_sketch": 64.66489266359656,
+          "lower": 68.74376793855197,
+          "upper": 81.68982430064413
+        },
+        {
+          "step": 47,
+          "t_before": 64.66489266359656,
+          "q": 6.889776992324044,
+          "v": 6.773272925606735,
+          "trace_sketch": 65.6479829629129,
+          "lower": 68.90331086415992,
+          "upper": 81.18977041445585
+        },
+        {
+          "step": 48,
+          "t_before": 65.6479829629129,
+          "q": 5.997361691104566,
+          "v": 5.868172883676866,
+          "trace_sketch": 66.62644202306609,
+          "lower": 69.07343543223912,
+          "upper": 80.70458993072592
+        },
+        {
+          "step": 49,
+          "t_before": 66.62644202306609,
+          "q": 10.553905742133002,
+          "v": 10.970626821393344,
+          "trace_sketch": 67.66592703358657,
+          "lower": 69.67925346098428,
+          "upper": 80.59656911002801
+        },
+        {
+          "step": 50,
+          "t_before": 67.66592703358657,
+          "q": 4.802159266767949,
+          "v": 5.575626123003081,
+          "trace_sketch": 68.82699350665999,
+          "lower": 69.85382080067816,
+          "upper": 80.17317199390085
+        },
+        {
+          "step": 51,
+          "t_before": 68.82699350665999,
+          "q": 3.794816375973092,
+          "v": 3.835683494199185,
+          "trace_sketch": 69.83776270184025,
+          "lower": 70.07175042984852,
+          "upper": 79.74470401158996
+        },
+        {
+          "step": 52,
+          "t_before": 69.83776270184025,
+          "q": 1.5918614344571145,
+          "v": 1.596505683465933,
+          "trace_sketch": 70.84068019761487,
+          "lower": 70.84068019761487,
+          "upper": 79.20574400141304
+        },
+        {
+          "step": 53,
+          "t_before": 70.84068019761487,
+          "q": 13.163777005314929,
+          "v": 13.670940067378686,
+          "trace_sketch": 71.87920736666818,
+          "lower": 71.87920736666818,
+          "upper": 79.20574400141304
+        },
+        {
+          "step": 54,
+          "t_before": 71.87920736666818,
+          "q": 1.7083594091014855,
+          "v": 1.6212966231880754,
+          "trace_sketch": 72.82824456255942,
+          "lower": 72.82824456255942,
+          "upper": 79.20574400141304
+        },
+        {
+          "step": 55,
+          "t_before": 72.82824456255942,
+          "q": 0.3682314247361697,
+          "v": 0.37768519629659186,
+          "trace_sketch": 73.85391801388747,
+          "lower": 73.85391801388747,
+          "upper": 78.86286799508322
+        }
+      ]
+    }
+  ]
+}

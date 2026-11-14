@@ -1,0 +1,9 @@
+# Downloaded external inputs and local runtime output
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+matrices/
+spambase.data
+*.tmp
+*.log

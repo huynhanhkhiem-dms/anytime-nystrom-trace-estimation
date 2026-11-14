@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "records": [
+    {
+      "interval": [
+        6e+307,
+        1.5e+308
+      ],
+      "relative_radius": 0.4285714285714286,
+      "harmonic_center": 8.571428571428571e+307
+    },
+    {
+      "interval": [
+        1e+308,
+        1.5e+308
+      ],
+      "relative_radius": 0.2,
+      "harmonic_center": 1.2e+308
+    },
+    {
+      "interval": [
+        1.7e+308,
+        1.7e+308
+      ],
+      "relative_radius": 0.0,
+      "harmonic_center": 1.7e+308
+    }
+  ],
+  "subnormal_risk": {
+    "alpha": 1e-310,
+    "interval": [
+      0.6998452895883507,
+      1.750617160188142
+    ]
+  },
+  "source_sha256": {
+    "validate_numeric_extremes.py": "4bdf03027434816a61685d5d365372343b9bcba33eed3e86615a544462e6b38a",
+    "progress_certificate.py": "22bcbd7010b46fdc6f3a4b4703ab1e804befcb840430e19828b463f236e3c3fd"
+  }
+}

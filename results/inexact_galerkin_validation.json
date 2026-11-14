@@ -1,0 +1,13 @@
+{
+  "cases": {
+    "positive_pivots": 800,
+    "skipped_pivots": 320,
+    "zero_residuals": 160,
+    "positive_angles": 320,
+    "comparison_with_exact_solve": 320
+  },
+  "scope": "Exact deterministic algebra checks on integer probes and rational matrices.",
+  "source_sha256": {
+    "validate_inexact_galerkin.py": "e40341078a7c87f7115920dd4c717401469a00f508cd8d9bdca84cbb3d50c91d"
+  }
+}

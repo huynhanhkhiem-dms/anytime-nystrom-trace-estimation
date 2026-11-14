@@ -1,0 +1,24 @@
+# Matched frozen-scale trace evidence comparison
+
+This follow-up was specified after the original prespecified study. It uses new Gaussian paths on the eight original operators and adds two source matrices. The repeated operators provide a new path comparison on the same operators.
+
+## Operators and reference checks
+
+Reuse the eight original operators, ordered as in `confirmatory_protocol.txt`. Add the shifted inverse of [BCSSTK08](https://math.nist.gov/MatrixMarket/data/Harwell-Boeing/bcsstruc1/bcsstk08.html), followed by the shifted inverse of [1138 BUS](https://math.nist.gov/MatrixMarket/data/Harwell-Boeing/psadmit/1138_bus.html). The additional matrices are scaled by their median diagonal and shifted by 0.01 as in the original inverse benchmark. Each operator is subject to the existing reference and inverse-action checks at tolerance 1e-8. Retain any source or audit failure explicitly. The additional operators give two new datasets from existing application domains. Report any numerical breakdown on a probe stream or method separately.
+
+## Paths, methods and reporting
+
+Use 24 paired Gaussian paths per operator with seeds `8100000 + 1000 * case_index + path_index`, for zero-based indices. All methods use the same evolving Nyström sketch and its pathwise lower bound. Use nominal error probabilities 0.05 and 0.01 and relative radius targets 0.05 and 0.10. Evaluate and intersect confidence intervals at probes 4, 8, 12, and every fourth probe thereafter through 400. Replay every path to the cap unless a numerical exception ends the calculation. Four-probe spacing and the 400-probe cap resolve the initial-anchor progress bounds for both nominal error probabilities and targets, including the risk allocation of the hybrid. Stop when the running interval is positive, finite, nonempty, and meets the target. Record the harmonic center's error against the independent numerical reference.
+
+- **Progress.** Use a single origin anchor and stake 1/3 in the closed-form trace-progress interval.
+- **Frozen-scale norm.** Use the same moving sketch and residual observations as progress, with one stake 1/2 on each side of the origin-anchored observed-norm test. The candidate scale is frozen at the origin.
+- **Moving-scale norm.** Use the existing full finite sign mixtures with scale updated before each probe and `FastTraceEvidence` inversion.
+- **Chi-square.** Use the existing moving-scale rank-one envelope and its original finite sign mixtures.
+- **Frozen residual control.** Freeze the residual operator after the first 32 probes and apply the same 1/2-stake norm test to the remaining independent probes, with full nominal risk. The held-out residual products reuse the shared oracle outputs and the method also receives the growing full-sketch lower bound. Before the split, this lower bound gives the only interval information. No checkpoint or split-fraction spending is used.
+- **Frozen hybrid.** Intersect the origin progress and frozen-scale norm intervals with half of the nominal risk allocated to each component.
+
+## Endpoints and interpretation
+
+The primary contrast is frozen-scale norm minus progress, paired by seed and measured in probe count with non-stops charged 400. There are 40 planned contrasts, one per operator, nominal error probability and radius target. Report mean differences, 5,000 paired percentile bootstrap intervals for descriptive uncertainty, win/tie/loss counts and two-sided exact sign-test p-values adjusted by Holm over all 40 planned contrasts. Negative differences favor frozen-scale norm. Also report completion counts, terminal radii, capped mean cost and descriptive paired differences against the other controls. An incorrect stop is recorded even if it occurs before a later numerical failure. A later interruption makes that path incomplete for full-path coverage accounting. Report reference exclusions among complete and incomplete paths and exact one-sided 95% failure-rate bounds for complete paths.
+
+The code records evidence-processing time and common oracle/sketch time on the execution host. Method evaluation order rotates by seed and checkpoint. The evidence timings exclude source loading, oracle products and the common sketch. The frozen-residual control includes its additional residual multiplication as a separate measure. CPU concurrency and local implementations limit timing comparisons. The theorem concerns the exact model. The comparisons use binary64 matrix actions and numerical trace references. Independent probe paths quantify behavior on the specified operators. They provide no sampling inference over operators.

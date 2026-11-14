@@ -1,0 +1,3262 @@
+{
+  "status": "EXPLORATORY_PILOT",
+  "alpha": 0.05,
+  "inspections_every": 4,
+  "budget": 256,
+  "seed_start": 701000,
+  "seeds_per_matrix": 24,
+  "source_sha256": {
+    "run_progress_pilot.py": "2a4828535b927554f9b391ee9b8bc0e82ae95c5acce1bd21069954fcda8aff34",
+    "progress_certificate.py": "b2a0a72d5db81b9a80036ef60ba811a03e4df3e78d5038d60e7334f2a83f5553",
+    "core.py": "a3bd2d26e828a9fadaeb3f7075a468ce61e320a7dcc54d4a982c637cba383da5",
+    "chi2_comparator.py": "19a9a133c5a05481e6480ec8c16729259125c463f043d5789e64ef7d51d1ddfb"
+  },
+  "matrices": {
+    "bcsstk14": {
+      "data_audit": {
+        "source": "https://math.nist.gov/pub/MatrixMarket2/Harwell-Boeing/bcsstruc2/bcsstk14.mtx.gz",
+        "bytes": 299854,
+        "sha256": "9ec9a34b7df5c84a819ded555a2ef2cb398127b593d24bcd88f5e407b1eaa1aa",
+        "dimension": 1806,
+        "nnz": 63454,
+        "trace_from_all_unit_solves": 40.005335754913574,
+        "trace_from_dense_eigenspectrum_if_computed": 40.00533414274975,
+        "one_probe_relative_linear_solve_residual": 4.251599377101151e-14,
+        "reference_is_floating_point": true
+      },
+      "summary": {
+        "successful_paths": 24,
+        "numerical_failures": 0,
+        "progress_single": {
+          "pathwise_coverage_failures": 0,
+          "median_finite_final_radius": 0.031596608726399786,
+          "finite_final_radius_count": 24,
+          "stops": {
+            "0.1": {
+              "stopped": 24,
+              "median_matvecs_among_stops": 88.0,
+              "incorrect_stops": 0
+            },
+            "0.05": {
+              "stopped": 24,
+              "median_matvecs_among_stops": 168.0,
+              "incorrect_stops": 0
+            },
+            "0.02": {
+              "stopped": 0,
+              "median_matvecs_among_stops": null,
+              "incorrect_stops": 0
+            }
+          }
+        },
+        "progress_anchored": {
+          "pathwise_coverage_failures": 0,
+          "median_finite_final_radius": 1.59916867349618e-05,
+          "finite_final_radius_count": 24,
+          "stops": {
+            "0.1": {
+              "stopped": 24,
+              "median_matvecs_among_stops": 92.0,
+              "incorrect_stops": 0
+            },
+            "0.05": {
+              "stopped": 24,
+              "median_matvecs_among_stops": 96.0,
+              "incorrect_stops": 0
+            },
+            "0.02": {
+              "stopped": 24,
+              "median_matvecs_among_stops": 96.0,
+              "incorrect_stops": 0
+            }
+          }
+        },
+        "residual_v": {
+          "pathwise_coverage_failures": 0,
+          "median_finite_final_radius": 3.702029830277506e-06,
+          "finite_final_radius_count": 24,
+          "stops": {
+            "0.1": {
+              "stopped": 24,
+              "median_matvecs_among_stops": 40.0,
+              "incorrect_stops": 0
+            },
+            "0.05": {
+              "stopped": 24,
+              "median_matvecs_among_stops": 44.0,
+              "incorrect_stops": 0
+            },
+            "0.02": {
+              "stopped": 24,
+              "median_matvecs_among_stops": 48.0,
+              "incorrect_stops": 0
+            }
+          }
+        },
+        "doob": {
+          "pathwise_coverage_failures": 0,
+          "median_finite_final_radius": 0.01569962910462273,
+          "finite_final_radius_count": 24,
+          "stops": {
+            "0.1": {
+              "stopped": 24,
+              "median_matvecs_among_stops": 44.0,
+              "incorrect_stops": 0
+            },
+            "0.05": {
+              "stopped": 24,
+              "median_matvecs_among_stops": 84.0,
+              "incorrect_stops": 0
+            },
+            "0.02": {
+              "stopped": 23,
+              "median_matvecs_among_stops": 204.0,
+              "incorrect_stops": 0
+            }
+          }
+        },
+        "chi_square": {
+          "pathwise_coverage_failures": 0,
+          "median_finite_final_radius": 1.7645697001640796e-05,
+          "finite_final_radius_count": 24,
+          "stops": {
+            "0.1": {
+              "stopped": 24,
+              "median_matvecs_among_stops": 56.0,
+              "incorrect_stops": 0
+            },
+            "0.05": {
+              "stopped": 24,
+              "median_matvecs_among_stops": 64.0,
+              "incorrect_stops": 0
+            },
+            "0.02": {
+              "stopped": 24,
+              "median_matvecs_among_stops": 68.0,
+              "incorrect_stops": 0
+            }
+          }
+        },
+        "hybrid": {
+          "pathwise_coverage_failures": 0,
+          "median_finite_final_radius": 4.040808501449975e-06,
+          "finite_final_radius_count": 24,
+          "stops": {
+            "0.1": {
+              "stopped": 24,
+              "median_matvecs_among_stops": 40.0,
+              "incorrect_stops": 0
+            },
+            "0.05": {
+              "stopped": 24,
+              "median_matvecs_among_stops": 44.0,
+              "incorrect_stops": 0
+            },
+            "0.02": {
+              "stopped": 24,
+              "median_matvecs_among_stops": 48.0,
+              "incorrect_stops": 0
+            }
+          }
+        }
+      },
+      "seconds_including_reference": 42.09700010000961,
+      "records": [
+        {
+          "seed": 701000,
+          "final_sketch_fraction": 0.9999782069510922,
+          "v_sum_relative": 0.5210390505529197,
+          "metrics": {
+            "progress_single": {
+              "coverage_failure": false,
+              "final_radius": 0.03230423652410464,
+              "stops": {
+                "0.1": {
+                  "matvecs": 88,
+                  "radius": 0.09908126600940831,
+                  "relative_error": 0.09896341139680653
+                },
+                "0.05": {
+                  "matvecs": 168,
+                  "radius": 0.049931569763824374,
+                  "relative_error": 0.04989062121407861
+                },
+                "0.02": null
+              }
+            },
+            "progress_anchored": {
+              "coverage_failure": false,
+              "final_radius": 1.5803793786940422e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 92,
+                  "radius": 0.09377938791982655,
+                  "relative_error": 0.09367271176490277
+                },
+                "0.05": {
+                  "matvecs": 96,
+                  "radius": 0.0038595119916330863,
+                  "relative_error": 0.0037690446348188633
+                },
+                "0.02": {
+                  "matvecs": 96,
+                  "radius": 0.0038595119916330863,
+                  "relative_error": 0.0037690446348188633
+                }
+              }
+            },
+            "residual_v": {
+              "coverage_failure": false,
+              "final_radius": 3.938350515665812e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.055500215830180964,
+                  "relative_error": 0.04931437954534834
+                },
+                "0.05": {
+                  "matvecs": 44,
+                  "radius": 0.03379748556262499,
+                  "relative_error": 0.03265961132930717
+                },
+                "0.02": {
+                  "matvecs": 48,
+                  "radius": 0.01943170702123699,
+                  "relative_error": 0.01872455622434943
+                }
+              }
+            },
+            "doob": {
+              "coverage_failure": false,
+              "final_radius": 0.016410561850476263,
+              "stops": {
+                "0.1": {
+                  "matvecs": 48,
+                  "radius": 0.09389783106382701,
+                  "relative_error": 0.0931390252334583
+                },
+                "0.05": {
+                  "matvecs": 88,
+                  "radius": 0.049170475338645984,
+                  "relative_error": 0.04905797266596079
+                },
+                "0.02": {
+                  "matvecs": 212,
+                  "radius": 0.019879568514460055,
+                  "relative_error": 0.019850426047797187
+                }
+              }
+            },
+            "chi_square": {
+              "coverage_failure": false,
+              "final_radius": 1.865551780549324e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 56,
+                  "radius": 0.08084808590064442,
+                  "relative_error": 0.08048963717479607
+                },
+                "0.05": {
+                  "matvecs": 64,
+                  "radius": 0.037988068956525685,
+                  "relative_error": 0.037783266428124795
+                },
+                "0.02": {
+                  "matvecs": 72,
+                  "radius": 0.011941626417920813,
+                  "relative_error": 0.011796902117255925
+                }
+              }
+            },
+            "hybrid": {
+              "coverage_failure": false,
+              "final_radius": 4.2929535197590684e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.06006174967847753,
+                  "relative_error": 0.05384918019059093
+                },
+                "0.05": {
+                  "matvecs": 44,
+                  "radius": 0.037224841762965505,
+                  "relative_error": 0.03608319512706082
+                },
+                "0.02": {
+                  "matvecs": 52,
+                  "radius": 0.011526656351176388,
+                  "relative_error": 0.011091608836027333
+                }
+              }
+            }
+          }
+        },
+        {
+          "seed": 701001,
+          "final_sketch_fraction": 0.9999782180445139,
+          "v_sum_relative": 0.5116901665122302,
+          "metrics": {
+            "progress_single": {
+              "coverage_failure": false,
+              "final_radius": 0.03155003530151726,
+              "stops": {
+                "0.1": {
+                  "matvecs": 88,
+                  "radius": 0.09692655376407894,
+                  "relative_error": 0.09680705651115629
+                },
+                "0.05": {
+                  "matvecs": 168,
+                  "radius": 0.048786697807937006,
+                  "relative_error": 0.04874557147874525
+                },
+                "0.02": null
+              }
+            },
+            "progress_anchored": {
+              "coverage_failure": false,
+              "final_radius": 1.6286639894403862e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 92,
+                  "radius": 0.09112155859876712,
+                  "relative_error": 0.0910111233251889
+                },
+                "0.05": {
+                  "matvecs": 96,
+                  "radius": 0.00426227767505303,
+                  "relative_error": 0.004168638178816186
+                },
+                "0.02": {
+                  "matvecs": 96,
+                  "radius": 0.00426227767505303,
+                  "relative_error": 0.004168638178816186
+                }
+              }
+            },
+            "residual_v": {
+              "coverage_failure": false,
+              "final_radius": 3.3160186111014135e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.04563064443407125,
+                  "relative_error": 0.03927605941363721
+                },
+                "0.05": {
+                  "matvecs": 40,
+                  "radius": 0.04563064443407125,
+                  "relative_error": 0.03927605941363721
+                },
+                "0.02": {
+                  "matvecs": 48,
+                  "radius": 0.009659189631556916,
+                  "relative_error": 0.0087489164939345
+                }
+              }
+            },
+            "doob": {
+              "coverage_failure": false,
+              "final_radius": 0.01565283855403265,
+              "stops": {
+                "0.1": {
+                  "matvecs": 44,
+                  "radius": 0.09969194418724944,
+                  "relative_error": 0.09707503588105104
+                },
+                "0.05": {
+                  "matvecs": 84,
+                  "radius": 0.04932630978525864,
+                  "relative_error": 0.049200884412313295
+                },
+                "0.02": {
+                  "matvecs": 204,
+                  "radius": 0.019723503484138996,
+                  "relative_error": 0.01969295321859188
+                }
+              }
+            },
+            "chi_square": {
+              "coverage_failure": false,
+              "final_radius": 1.675154833000264e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 56,
+                  "radius": 0.07143797429799587,
+                  "relative_error": 0.07106613331129208
+                },
+                "0.05": {
+                  "matvecs": 60,
+                  "radius": 0.047272435237646224,
+                  "relative_error": 0.04697705297524579
+                },
+                "0.02": {
+                  "matvecs": 68,
+                  "radius": 0.013195558439663633,
+                  "relative_error": 0.013002202416264597
+                }
+              }
+            },
+            "hybrid": {
+              "coverage_failure": false,
+              "final_radius": 3.629941397022592e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.05031596736776988,
+                  "relative_error": 0.043932908351198785
+                },
+                "0.05": {
+                  "matvecs": 44,
+                  "radius": 0.02706283082686861,
+                  "relative_error": 0.02461875613196396
+                },
+                "0.02": {
+                  "matvecs": 48,
+                  "radius": 0.011917373722528076,
+                  "relative_error": 0.011005064685724042
+                }
+              }
+            }
+          }
+        },
+        {
+          "seed": 701002,
+          "final_sketch_fraction": 0.9999781862271928,
+          "v_sum_relative": 0.5397340112406885,
+          "metrics": {
+            "progress_single": {
+              "coverage_failure": false,
+              "final_radius": 0.03373277560574369,
+              "stops": {
+                "0.1": {
+                  "matvecs": 92,
+                  "radius": 0.09832969251358861,
+                  "relative_error": 0.09822061217187006
+                },
+                "0.05": {
+                  "matvecs": 176,
+                  "radius": 0.04964073305998829,
+                  "relative_error": 0.049602092655592456
+                },
+                "0.02": null
+              }
+            },
+            "progress_anchored": {
+              "coverage_failure": false,
+              "final_radius": 1.6027634053414638e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 92,
+                  "radius": 0.0916945288341481,
+                  "relative_error": 0.09158610746206897
+                },
+                "0.05": {
+                  "matvecs": 96,
+                  "radius": 0.004143667026458253,
+                  "relative_error": 0.004051585749535347
+                },
+                "0.02": {
+                  "matvecs": 96,
+                  "radius": 0.004143667026458253,
+                  "relative_error": 0.004051585749535347
+                }
+              }
+            },
+            "residual_v": {
+              "coverage_failure": false,
+              "final_radius": 3.5958513310428018e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.06060974250246182,
+                  "relative_error": 0.05185218098968236
+                },
+                "0.05": {
+                  "matvecs": 44,
+                  "radius": 0.03596450365877144,
+                  "relative_error": 0.03378085424437294
+                },
+                "0.02": {
+                  "matvecs": 48,
+                  "radius": 0.019107802420198487,
+                  "relative_error": 0.018358291723642672
+                }
+              }
+            },
+            "doob": {
+              "coverage_failure": false,
+              "final_radius": 0.01784580953157689,
+              "stops": {
+                "0.1": {
+                  "matvecs": 52,
+                  "radius": 0.09301808574377306,
+                  "relative_error": 0.09237284414982838
+                },
+                "0.05": {
+                  "matvecs": 96,
+                  "radius": 0.048703974555526906,
+                  "relative_error": 0.04860780704059642
+                },
+                "0.02": {
+                  "matvecs": 232,
+                  "radius": 0.019720097568801127,
+                  "relative_error": 0.019694368628182746
+                }
+              }
+            },
+            "chi_square": {
+              "coverage_failure": false,
+              "final_radius": 1.781590113638675e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 56,
+                  "radius": 0.08809932153710975,
+                  "relative_error": 0.08768974994965362
+                },
+                "0.05": {
+                  "matvecs": 64,
+                  "radius": 0.041954412606528664,
+                  "relative_error": 0.041740471926671185
+                },
+                "0.02": {
+                  "matvecs": 72,
+                  "radius": 0.012499545249408875,
+                  "relative_error": 0.0123547306271794
+                }
+              }
+            },
+            "hybrid": {
+              "coverage_failure": false,
+              "final_radius": 3.9312588944603956e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.06556817489241586,
+                  "relative_error": 0.05676967110377218
+                },
+                "0.05": {
+                  "matvecs": 44,
+                  "radius": 0.03978722430428353,
+                  "relative_error": 0.037595517199037864
+                },
+                "0.02": {
+                  "matvecs": 52,
+                  "radius": 0.01008932793518454,
+                  "relative_error": 0.00949304169208931
+                }
+              }
+            }
+          }
+        },
+        {
+          "seed": 701003,
+          "final_sketch_fraction": 0.9999781808686588,
+          "v_sum_relative": 0.5070515669239407,
+          "metrics": {
+            "progress_single": {
+              "coverage_failure": false,
+              "final_radius": 0.03118054144027238,
+              "stops": {
+                "0.1": {
+                  "matvecs": 88,
+                  "radius": 0.0958638983007335,
+                  "relative_error": 0.09575129081173883
+                },
+                "0.05": {
+                  "matvecs": 164,
+                  "radius": 0.04945436445820584,
+                  "relative_error": 0.04941145615685749
+                },
+                "0.02": null
+              }
+            },
+            "progress_anchored": {
+              "coverage_failure": false,
+              "final_radius": 1.5637481493337446e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 92,
+                  "radius": 0.09542048239598877,
+                  "relative_error": 0.0953165414243764
+                },
+                "0.05": {
+                  "matvecs": 96,
+                  "radius": 0.004236082688409091,
+                  "relative_error": 0.004147705450168848
+                },
+                "0.02": {
+                  "matvecs": 96,
+                  "radius": 0.004236082688409091,
+                  "relative_error": 0.004147705450168848
+                }
+              }
+            },
+            "residual_v": {
+              "coverage_failure": false,
+              "final_radius": 4.209701617173276e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.06066317937585465,
+                  "relative_error": 0.04400384691616166
+                },
+                "0.05": {
+                  "matvecs": 44,
+                  "radius": 0.03661883198685499,
+                  "relative_error": 0.03423843826675377
+                },
+                "0.02": {
+                  "matvecs": 52,
+                  "radius": 0.013273880075025092,
+                  "relative_error": 0.012894209402270151
+                }
+              }
+            },
+            "doob": {
+              "coverage_failure": false,
+              "final_radius": 0.015281624159983385,
+              "stops": {
+                "0.1": {
+                  "matvecs": 44,
+                  "radius": 0.09747844562328828,
+                  "relative_error": 0.09495829962622881
+                },
+                "0.05": {
+                  "matvecs": 84,
+                  "radius": 0.04819226556772271,
+                  "relative_error": 0.048072755756441765
+                },
+                "0.02": {
+                  "matvecs": 200,
+                  "radius": 0.019651058333010975,
+                  "relative_error": 0.019619478238107835
+                }
+              }
+            },
+            "chi_square": {
+              "coverage_failure": false,
+              "final_radius": 1.910310751630025e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 56,
+                  "radius": 0.0796402242703017,
+                  "relative_error": 0.07929546981656888
+                },
+                "0.05": {
+                  "matvecs": 64,
+                  "radius": 0.039039713476177657,
+                  "relative_error": 0.03882638984654041
+                },
+                "0.02": {
+                  "matvecs": 72,
+                  "radius": 0.014364474268171673,
+                  "relative_error": 0.014217148949553504
+                }
+              }
+            },
+            "hybrid": {
+              "coverage_failure": false,
+              "final_radius": 4.5771257681774475e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.0649787999869847,
+                  "relative_error": 0.04825168412542702
+                },
+                "0.05": {
+                  "matvecs": 44,
+                  "radius": 0.03983580752539251,
+                  "relative_error": 0.03744802664606417
+                },
+                "0.02": {
+                  "matvecs": 52,
+                  "radius": 0.015108357024445752,
+                  "relative_error": 0.014708577714681148
+                }
+              }
+            }
+          }
+        },
+        {
+          "seed": 701004,
+          "final_sketch_fraction": 0.9999782602225209,
+          "v_sum_relative": 0.512968066571406,
+          "metrics": {
+            "progress_single": {
+              "coverage_failure": false,
+              "final_radius": 0.031643182151282305,
+              "stops": {
+                "0.1": {
+                  "matvecs": 88,
+                  "radius": 0.09719168771059647,
+                  "relative_error": 0.0970721064173461
+                },
+                "0.05": {
+                  "matvecs": 168,
+                  "radius": 0.04892785051018568,
+                  "relative_error": 0.0488872568846046
+                },
+                "0.02": null
+              }
+            },
+            "progress_anchored": {
+              "coverage_failure": false,
+              "final_radius": 1.604760389140672e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 92,
+                  "radius": 0.09042572438454129,
+                  "relative_error": 0.09031679122273117
+                },
+                "0.05": {
+                  "matvecs": 96,
+                  "radius": 0.004967042735495945,
+                  "relative_error": 0.004874743314543295
+                },
+                "0.02": {
+                  "matvecs": 96,
+                  "radius": 0.004967042735495945,
+                  "relative_error": 0.004874743314543295
+                }
+              }
+            },
+            "residual_v": {
+              "coverage_failure": false,
+              "final_radius": 3.4190987830971347e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.04732113859051586,
+                  "relative_error": 0.0332280168511494
+                },
+                "0.05": {
+                  "matvecs": 40,
+                  "radius": 0.04732113859051586,
+                  "relative_error": 0.0332280168511494
+                },
+                "0.02": {
+                  "matvecs": 48,
+                  "radius": 0.010123124896710696,
+                  "relative_error": 0.008827349271791629
+                }
+              }
+            },
+            "doob": {
+              "coverage_failure": false,
+              "final_radius": 0.015746419655212812,
+              "stops": {
+                "0.1": {
+                  "matvecs": 44,
+                  "radius": 0.09988763178692846,
+                  "relative_error": 0.09811995465278445
+                },
+                "0.05": {
+                  "matvecs": 84,
+                  "radius": 0.04960849448038056,
+                  "relative_error": 0.049484690186440305
+                },
+                "0.02": {
+                  "matvecs": 204,
+                  "radius": 0.019840833292424472,
+                  "relative_error": 0.019810479082418953
+                }
+              }
+            },
+            "chi_square": {
+              "coverage_failure": false,
+              "final_radius": 1.6943031735045798e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 52,
+                  "radius": 0.09759755776898009,
+                  "relative_error": 0.09689267641108379
+                },
+                "0.05": {
+                  "matvecs": 60,
+                  "radius": 0.04538014800661204,
+                  "relative_error": 0.04503994371325781
+                },
+                "0.02": {
+                  "matvecs": 68,
+                  "radius": 0.01303229039045483,
+                  "relative_error": 0.012813384649049908
+                }
+              }
+            },
+            "hybrid": {
+              "coverage_failure": false,
+              "final_radius": 3.738413761601872e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.051873349447287984,
+                  "relative_error": 0.0377189715569437
+                },
+                "0.05": {
+                  "matvecs": 44,
+                  "radius": 0.026304234683449126,
+                  "relative_error": 0.02465481661937119
+                },
+                "0.02": {
+                  "matvecs": 48,
+                  "radius": 0.012255453902873067,
+                  "relative_error": 0.010956942948089354
+                }
+              }
+            }
+          }
+        },
+        {
+          "seed": 701005,
+          "final_sketch_fraction": 0.9999782421776259,
+          "v_sum_relative": 0.527865398826277,
+          "metrics": {
+            "progress_single": {
+              "coverage_failure": false,
+              "final_radius": 0.03280505872255572,
+              "stops": {
+                "0.1": {
+                  "matvecs": 92,
+                  "radius": 0.09580354389281663,
+                  "relative_error": 0.09569234918890568
+                },
+                "0.05": {
+                  "matvecs": 172,
+                  "radius": 0.049465408057217934,
+                  "relative_error": 0.04942550730770301
+                },
+                "0.02": null
+              }
+            },
+            "progress_anchored": {
+              "coverage_failure": false,
+              "final_radius": 1.6490446203277655e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 92,
+                  "radius": 0.09397706835679916,
+                  "relative_error": 0.09386605899122502
+                },
+                "0.05": {
+                  "matvecs": 96,
+                  "radius": 0.004373401448507424,
+                  "relative_error": 0.00428096861055427
+                },
+                "0.02": {
+                  "matvecs": 96,
+                  "radius": 0.004373401448507424,
+                  "relative_error": 0.00428096861055427
+                }
+              }
+            },
+            "residual_v": {
+              "coverage_failure": false,
+              "final_radius": 3.7611387215026904e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.07060601209188701,
+                  "relative_error": 0.049359878455380146
+                },
+                "0.05": {
+                  "matvecs": 44,
+                  "radius": 0.04114625993964506,
+                  "relative_error": 0.039902925371415154
+                },
+                "0.02": {
+                  "matvecs": 52,
+                  "radius": 0.012681197830154381,
+                  "relative_error": 0.012225489326633365
+                }
+              }
+            },
+            "doob": {
+              "coverage_failure": false,
+              "final_radius": 0.016913730398819996,
+              "stops": {
+                "0.1": {
+                  "matvecs": 48,
+                  "radius": 0.09652448345967868,
+                  "relative_error": 0.09583488842930565
+                },
+                "0.05": {
+                  "matvecs": 92,
+                  "radius": 0.04833368058477724,
+                  "relative_error": 0.0482273028003084
+                },
+                "0.02": {
+                  "matvecs": 220,
+                  "radius": 0.019729004091809808,
+                  "relative_error": 0.01970157341081391
+                }
+              }
+            },
+            "chi_square": {
+              "coverage_failure": false,
+              "final_radius": 1.7675528965551895e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 56,
+                  "radius": 0.09264437092819894,
+                  "relative_error": 0.09225731718632901
+                },
+                "0.05": {
+                  "matvecs": 64,
+                  "radius": 0.04745845949013458,
+                  "relative_error": 0.04720729810617841
+                },
+                "0.02": {
+                  "matvecs": 72,
+                  "radius": 0.01754623523988541,
+                  "relative_error": 0.017371104226225897
+                }
+              }
+            },
+            "hybrid": {
+              "coverage_failure": false,
+              "final_radius": 4.0979800215175115e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.07552123006914938,
+                  "relative_error": 0.05417755412780023
+                },
+                "0.05": {
+                  "matvecs": 44,
+                  "radius": 0.044951642429650183,
+                  "relative_error": 0.0437037634820403
+                },
+                "0.02": {
+                  "matvecs": 52,
+                  "radius": 0.014712594261357567,
+                  "relative_error": 0.014255971625501962
+                }
+              }
+            }
+          }
+        },
+        {
+          "seed": 701006,
+          "final_sketch_fraction": 0.999978423822083,
+          "v_sum_relative": 0.5076182185285224,
+          "metrics": {
+            "progress_single": {
+              "coverage_failure": false,
+              "final_radius": 0.03129347853808237,
+              "stops": {
+                "0.1": {
+                  "matvecs": 88,
+                  "radius": 0.0961902494413231,
+                  "relative_error": 0.09606998400396716
+                },
+                "0.05": {
+                  "matvecs": 164,
+                  "radius": 0.049629829179123224,
+                  "relative_error": 0.04958763225534768
+                },
+                "0.02": null
+              }
+            },
+            "progress_anchored": {
+              "coverage_failure": false,
+              "final_radius": 1.5920224703424663e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 92,
+                  "radius": 0.09137882234935844,
+                  "relative_error": 0.09126621491204845
+                },
+                "0.05": {
+                  "matvecs": 96,
+                  "radius": 0.004546686852180603,
+                  "relative_error": 0.00445178913781219
+                },
+                "0.02": {
+                  "matvecs": 96,
+                  "radius": 0.004546686852180603,
+                  "relative_error": 0.00445178913781219
+                }
+              }
+            },
+            "residual_v": {
+              "coverage_failure": false,
+              "final_radius": 3.992649236460159e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.04888994954859181,
+                  "relative_error": 0.0407256609110227
+                },
+                "0.05": {
+                  "matvecs": 40,
+                  "radius": 0.04888994954859181,
+                  "relative_error": 0.0407256609110227
+                },
+                "0.02": {
+                  "matvecs": 48,
+                  "radius": 0.015458759856344977,
+                  "relative_error": 0.014662749540808706
+                }
+              }
+            },
+            "doob": {
+              "coverage_failure": false,
+              "final_radius": 0.015395086797093163,
+              "stops": {
+                "0.1": {
+                  "matvecs": 44,
+                  "radius": 0.09771834295009534,
+                  "relative_error": 0.09619881144475562
+                },
+                "0.05": {
+                  "matvecs": 84,
+                  "radius": 0.048541111850499134,
+                  "relative_error": 0.0484134736468127
+                },
+                "0.02": {
+                  "matvecs": 200,
+                  "radius": 0.01979614347348859,
+                  "relative_error": 0.019764991102298124
+                }
+              }
+            },
+            "chi_square": {
+              "coverage_failure": false,
+              "final_radius": 1.8416063692118434e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 56,
+                  "radius": 0.07440847186116427,
+                  "relative_error": 0.07402631281713279
+                },
+                "0.05": {
+                  "matvecs": 64,
+                  "radius": 0.032645395728391834,
+                  "relative_error": 0.03239734480050904
+                },
+                "0.02": {
+                  "matvecs": 68,
+                  "radius": 0.01865506349137743,
+                  "relative_error": 0.01845220138925363
+                }
+              }
+            },
+            "hybrid": {
+              "coverage_failure": false,
+              "final_radius": 4.345272446201189e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.05344406158368845,
+                  "relative_error": 0.0452443249135035
+                },
+                "0.05": {
+                  "matvecs": 44,
+                  "radius": 0.03206079781613259,
+                  "relative_error": 0.030632153658203043
+                },
+                "0.02": {
+                  "matvecs": 48,
+                  "radius": 0.017690606852151642,
+                  "relative_error": 0.016892847008912693
+                }
+              }
+            }
+          }
+        },
+        {
+          "seed": 701007,
+          "final_sketch_fraction": 0.9999779546379146,
+          "v_sum_relative": 0.520045315006714,
+          "metrics": {
+            "progress_single": {
+              "coverage_failure": false,
+              "final_radius": 0.03220300672519837,
+              "stops": {
+                "0.1": {
+                  "matvecs": 88,
+                  "radius": 0.09879497879569743,
+                  "relative_error": 0.09867258341326224
+                },
+                "0.05": {
+                  "matvecs": 168,
+                  "radius": 0.049778111447736924,
+                  "relative_error": 0.04973634389354742
+                },
+                "0.02": null
+              }
+            },
+            "progress_anchored": {
+              "coverage_failure": false,
+              "final_radius": 1.632213200317454e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 92,
+                  "radius": 0.09525795004832338,
+                  "relative_error": 0.09514629174362588
+                },
+                "0.05": {
+                  "matvecs": 96,
+                  "radius": 0.00391298119414343,
+                  "relative_error": 0.003819002640846003
+                },
+                "0.02": {
+                  "matvecs": 96,
+                  "radius": 0.00391298119414343,
+                  "relative_error": 0.003819002640846003
+                }
+              }
+            },
+            "residual_v": {
+              "coverage_failure": false,
+              "final_radius": 3.7542739660068893e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.05811223831216216,
+                  "relative_error": 0.049922275902333
+                },
+                "0.05": {
+                  "matvecs": 44,
+                  "radius": 0.03421646458418919,
+                  "relative_error": 0.03253081431522964
+                },
+                "0.02": {
+                  "matvecs": 48,
+                  "radius": 0.018270107002875617,
+                  "relative_error": 0.01768434974447075
+                }
+              }
+            },
+            "doob": {
+              "coverage_failure": false,
+              "final_radius": 0.01630885852156171,
+              "stops": {
+                "0.1": {
+                  "matvecs": 48,
+                  "radius": 0.09330425971549672,
+                  "relative_error": 0.09267533925385374
+                },
+                "0.05": {
+                  "matvecs": 88,
+                  "radius": 0.04887878758413951,
+                  "relative_error": 0.0487619523939431
+                },
+                "0.02": {
+                  "matvecs": 212,
+                  "radius": 0.0197569252169102,
+                  "relative_error": 0.01972739633254461
+                }
+              }
+            },
+            "chi_square": {
+              "coverage_failure": false,
+              "final_radius": 1.8296378571236173e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 56,
+                  "radius": 0.0843518628450088,
+                  "relative_error": 0.08401764242363141
+                },
+                "0.05": {
+                  "matvecs": 64,
+                  "radius": 0.03974223856605508,
+                  "relative_error": 0.03953434317813587
+                },
+                "0.02": {
+                  "matvecs": 72,
+                  "radius": 0.011650163048330775,
+                  "relative_error": 0.011503994789553662
+                }
+              }
+            },
+            "hybrid": {
+              "coverage_failure": false,
+              "final_radius": 4.099345287969687e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.06292599195745506,
+                  "relative_error": 0.054698770304250965
+                },
+                "0.05": {
+                  "matvecs": 44,
+                  "radius": 0.03792113204984268,
+                  "relative_error": 0.03622944361196634
+                },
+                "0.02": {
+                  "matvecs": 52,
+                  "radius": 0.009738440192338656,
+                  "relative_error": 0.009348096324853339
+                }
+              }
+            }
+          }
+        },
+        {
+          "seed": 701008,
+          "final_sketch_fraction": 0.9999783490738122,
+          "v_sum_relative": 0.5094036365734793,
+          "metrics": {
+            "progress_single": {
+              "coverage_failure": false,
+              "final_radius": 0.03136774112104298,
+              "stops": {
+                "0.1": {
+                  "matvecs": 88,
+                  "radius": 0.0964038385563661,
+                  "relative_error": 0.09628537499373535
+                },
+                "0.05": {
+                  "matvecs": 164,
+                  "radius": 0.049745210020977475,
+                  "relative_error": 0.04970333139964245
+                },
+                "0.02": null
+              }
+            },
+            "progress_anchored": {
+              "coverage_failure": false,
+              "final_radius": 1.6533602091372743e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 92,
+                  "radius": 0.0897092670866356,
+                  "relative_error": 0.0896003216042105
+                },
+                "0.05": {
+                  "matvecs": 96,
+                  "radius": 0.004460364451893991,
+                  "relative_error": 0.004366288318232714
+                },
+                "0.02": {
+                  "matvecs": 96,
+                  "radius": 0.004460364451893991,
+                  "relative_error": 0.004366288318232714
+                }
+              }
+            },
+            "residual_v": {
+              "coverage_failure": false,
+              "final_radius": 3.428634230032214e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.053591499415770544,
+                  "relative_error": 0.03908336228773246
+                },
+                "0.05": {
+                  "matvecs": 44,
+                  "radius": 0.028397627728741322,
+                  "relative_error": 0.027099970331685874
+                },
+                "0.02": {
+                  "matvecs": 48,
+                  "radius": 0.014106888307529077,
+                  "relative_error": 0.013314893091271651
+                }
+              }
+            },
+            "doob": {
+              "coverage_failure": false,
+              "final_radius": 0.015469695118893194,
+              "stops": {
+                "0.1": {
+                  "matvecs": 44,
+                  "radius": 0.09809181694085899,
+                  "relative_error": 0.09670621770328935
+                },
+                "0.05": {
+                  "matvecs": 84,
+                  "radius": 0.04876911586859153,
+                  "relative_error": 0.04864266968608799
+                },
+                "0.02": {
+                  "matvecs": 200,
+                  "radius": 0.019891594197153323,
+                  "relative_error": 0.019860477795813347
+                }
+              }
+            },
+            "chi_square": {
+              "coverage_failure": false,
+              "final_radius": 1.7073582105967663e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 56,
+                  "radius": 0.07622248344643873,
+                  "relative_error": 0.07583196138569726
+                },
+                "0.05": {
+                  "matvecs": 64,
+                  "radius": 0.03293748208599741,
+                  "relative_error": 0.0327001463125185
+                },
+                "0.02": {
+                  "matvecs": 68,
+                  "radius": 0.017946748882290926,
+                  "relative_error": 0.01776267496558881
+                }
+              }
+            },
+            "hybrid": {
+              "coverage_failure": false,
+              "final_radius": 3.7495260039642782e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.05827538211709866,
+                  "relative_error": 0.043702747114352514
+                },
+                "0.05": {
+                  "matvecs": 44,
+                  "radius": 0.03186535984749105,
+                  "relative_error": 0.030563326780836952
+                },
+                "0.02": {
+                  "matvecs": 48,
+                  "radius": 0.01652406872209387,
+                  "relative_error": 0.015730185740999048
+                }
+              }
+            }
+          }
+        },
+        {
+          "seed": 701009,
+          "final_sketch_fraction": 0.9999781116250467,
+          "v_sum_relative": 0.4650208835226871,
+          "metrics": {
+            "progress_single": {
+              "coverage_failure": false,
+              "final_radius": 0.027929527766371184,
+              "stops": {
+                "0.1": {
+                  "matvecs": 80,
+                  "radius": 0.09606569200098111,
+                  "relative_error": 0.09591979380838045
+                },
+                "0.05": {
+                  "matvecs": 148,
+                  "radius": 0.04945212136605283,
+                  "relative_error": 0.04940374248179258
+                },
+                "0.02": null
+              }
+            },
+            "progress_anchored": {
+              "coverage_failure": false,
+              "final_radius": 1.5975911620192378e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 88,
+                  "radius": 0.09931168607611793,
+                  "relative_error": 0.09919077976634094
+                },
+                "0.05": {
+                  "matvecs": 96,
+                  "radius": 0.004314331439773819,
+                  "relative_error": 0.004220927853341605
+                },
+                "0.02": {
+                  "matvecs": 96,
+                  "radius": 0.004314331439773819,
+                  "relative_error": 0.004220927853341605
+                }
+              }
+            },
+            "residual_v": {
+              "coverage_failure": false,
+              "final_radius": 3.458752411910602e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 36,
+                  "radius": 0.08431489355631169,
+                  "relative_error": 0.026689217570864177
+                },
+                "0.05": {
+                  "matvecs": 40,
+                  "radius": 0.030361482088122227,
+                  "relative_error": 0.019049440254000016
+                },
+                "0.02": {
+                  "matvecs": 44,
+                  "radius": 0.013366404281846116,
+                  "relative_error": 0.011480150820705859
+                }
+              }
+            },
+            "doob": {
+              "coverage_failure": false,
+              "final_radius": 0.012015613475159047,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.09132513762634852,
+                  "relative_error": 0.07934379338351061
+                },
+                "0.05": {
+                  "matvecs": 68,
+                  "radius": 0.04787507406162314,
+                  "relative_error": 0.047670468935447685
+                },
+                "0.02": {
+                  "matvecs": 156,
+                  "radius": 0.019971657502747677,
+                  "relative_error": 0.019927847267026344
+                }
+              }
+            },
+            "chi_square": {
+              "coverage_failure": false,
+              "final_radius": 1.6787472055936204e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 52,
+                  "radius": 0.07304330652845398,
+                  "relative_error": 0.0724485412193352
+                },
+                "0.05": {
+                  "matvecs": 56,
+                  "radius": 0.04740501360395955,
+                  "relative_error": 0.0469887023291955
+                },
+                "0.02": {
+                  "matvecs": 64,
+                  "radius": 0.013529209110372538,
+                  "relative_error": 0.01329699671824014
+                }
+              }
+            },
+            "hybrid": {
+              "coverage_failure": false,
+              "final_radius": 3.777085109132911e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 36,
+                  "radius": 0.09015232135428454,
+                  "relative_error": 0.02144938230605098
+                },
+                "0.05": {
+                  "matvecs": 40,
+                  "radius": 0.03410465690884436,
+                  "relative_error": 0.02275151983688506
+                },
+                "0.02": {
+                  "matvecs": 44,
+                  "radius": 0.015685487656813157,
+                  "relative_error": 0.013794917515127292
+                }
+              }
+            }
+          }
+        },
+        {
+          "seed": 701010,
+          "final_sketch_fraction": 0.9999781946368459,
+          "v_sum_relative": 0.5200006267924978,
+          "metrics": {
+            "progress_single": {
+              "coverage_failure": false,
+              "final_radius": 0.032227721411066376,
+              "stops": {
+                "0.1": {
+                  "matvecs": 88,
+                  "radius": 0.09886159764756916,
+                  "relative_error": 0.09874598259432399
+                },
+                "0.05": {
+                  "matvecs": 168,
+                  "radius": 0.049815353459318513,
+                  "relative_error": 0.04977456424632609
+                },
+                "0.02": null
+              }
+            },
+            "progress_anchored": {
+              "coverage_failure": false,
+              "final_radius": 1.5644013282566048e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 92,
+                  "radius": 0.09247906368902149,
+                  "relative_error": 0.09237211411837887
+                },
+                "0.05": {
+                  "matvecs": 96,
+                  "radius": 0.0041082594461794705,
+                  "relative_error": 0.004018422873413252
+                },
+                "0.02": {
+                  "matvecs": 96,
+                  "radius": 0.0041082594461794705,
+                  "relative_error": 0.004018422873413252
+                }
+              }
+            },
+            "residual_v": {
+              "coverage_failure": false,
+              "final_radius": 3.7707150540171998e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.05777951650596369,
+                  "relative_error": 0.05114690712680914
+                },
+                "0.05": {
+                  "matvecs": 44,
+                  "radius": 0.035286514058611794,
+                  "relative_error": 0.033619761513215884
+                },
+                "0.02": {
+                  "matvecs": 48,
+                  "radius": 0.019589445157266776,
+                  "relative_error": 0.01891690092761622
+                }
+              }
+            },
+            "doob": {
+              "coverage_failure": false,
+              "final_radius": 0.016333688794430125,
+              "stops": {
+                "0.1": {
+                  "matvecs": 48,
+                  "radius": 0.09347340846219218,
+                  "relative_error": 0.09275212870137217
+                },
+                "0.05": {
+                  "matvecs": 88,
+                  "radius": 0.04894666256566328,
+                  "relative_error": 0.048836299236465486
+                },
+                "0.02": {
+                  "matvecs": 212,
+                  "radius": 0.019786721632713902,
+                  "relative_error": 0.019757844151583548
+                }
+              }
+            },
+            "chi_square": {
+              "coverage_failure": false,
+              "final_radius": 1.839138242346035e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 56,
+                  "radius": 0.08393440681261352,
+                  "relative_error": 0.08358483062813638
+                },
+                "0.05": {
+                  "matvecs": 64,
+                  "radius": 0.040075524817106696,
+                  "relative_error": 0.03985946378898575
+                },
+                "0.02": {
+                  "matvecs": 72,
+                  "radius": 0.012446579902283365,
+                  "relative_error": 0.012298540414372283
+                }
+              }
+            },
+            "hybrid": {
+              "coverage_failure": false,
+              "final_radius": 4.117826924037617e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.06248880581122004,
+                  "relative_error": 0.055826667710883404
+                },
+                "0.05": {
+                  "matvecs": 44,
+                  "radius": 0.03889410387685726,
+                  "relative_error": 0.03722154331654881
+                },
+                "0.02": {
+                  "matvecs": 52,
+                  "radius": 0.011008749304900489,
+                  "relative_error": 0.010585677547836347
+                }
+              }
+            }
+          }
+        },
+        {
+          "seed": 701011,
+          "final_sketch_fraction": 0.9999782892874881,
+          "v_sum_relative": 0.4948364220460511,
+          "metrics": {
+            "progress_single": {
+              "coverage_failure": false,
+              "final_radius": 0.030217335430887275,
+              "stops": {
+                "0.1": {
+                  "matvecs": 84,
+                  "radius": 0.0979517062550576,
+                  "relative_error": 0.09781871871788272
+                },
+                "0.05": {
+                  "matvecs": 160,
+                  "radius": 0.0492102828746504,
+                  "relative_error": 0.04916610541107236
+                },
+                "0.02": null
+              }
+            },
+            "progress_anchored": {
+              "coverage_failure": false,
+              "final_radius": 1.632855612308576e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 88,
+                  "radius": 0.09586891396010944,
+                  "relative_error": 0.09574723780382843
+                },
+                "0.05": {
+                  "matvecs": 96,
+                  "radius": 0.004223982626622109,
+                  "relative_error": 0.004130723028467065
+                },
+                "0.02": {
+                  "matvecs": 96,
+                  "radius": 0.004223982626622109,
+                  "relative_error": 0.004130723028467065
+                }
+              }
+            },
+            "residual_v": {
+              "coverage_failure": false,
+              "final_radius": 3.4641170753810583e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.04558401075766189,
+                  "relative_error": 0.01729134461713966
+                },
+                "0.05": {
+                  "matvecs": 40,
+                  "radius": 0.04558401075766189,
+                  "relative_error": 0.01729134461713966
+                },
+                "0.02": {
+                  "matvecs": 44,
+                  "radius": 0.016442474599509555,
+                  "relative_error": 0.014796636019518639
+                }
+              }
+            },
+            "doob": {
+              "coverage_failure": false,
+              "final_radius": 0.014313948421373736,
+              "stops": {
+                "0.1": {
+                  "matvecs": 44,
+                  "radius": 0.09154911933231508,
+                  "relative_error": 0.08978166697033041
+                },
+                "0.05": {
+                  "matvecs": 80,
+                  "radius": 0.04763714343349237,
+                  "relative_error": 0.047492521599797444
+                },
+                "0.02": {
+                  "matvecs": 188,
+                  "radius": 0.01961500756458663,
+                  "relative_error": 0.01958108046781515
+                }
+              }
+            },
+            "chi_square": {
+              "coverage_failure": false,
+              "final_radius": 1.7038411072149937e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 52,
+                  "radius": 0.08929584007999357,
+                  "relative_error": 0.08877512016294387
+                },
+                "0.05": {
+                  "matvecs": 60,
+                  "radius": 0.03776292282590478,
+                  "relative_error": 0.03746765383366246
+                },
+                "0.02": {
+                  "matvecs": 68,
+                  "radius": 0.008582052588773224,
+                  "relative_error": 0.00838536849992444
+                }
+              }
+            },
+            "hybrid": {
+              "coverage_failure": false,
+              "final_radius": 3.785663136910395e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.05013054624759414,
+                  "relative_error": 0.021714854497087988
+                },
+                "0.05": {
+                  "matvecs": 44,
+                  "radius": 0.01942242199482695,
+                  "relative_error": 0.017771758240256785
+                },
+                "0.02": {
+                  "matvecs": 44,
+                  "radius": 0.01942242199482695,
+                  "relative_error": 0.017771758240256785
+                }
+              }
+            }
+          }
+        },
+        {
+          "seed": 701012,
+          "final_sketch_fraction": 0.9999783700653668,
+          "v_sum_relative": 0.5174168898898098,
+          "metrics": {
+            "progress_single": {
+              "coverage_failure": false,
+              "final_radius": 0.03199837914297249,
+              "stops": {
+                "0.1": {
+                  "matvecs": 88,
+                  "radius": 0.09821189317517581,
+                  "relative_error": 0.0980867313595104
+                },
+                "0.05": {
+                  "matvecs": 168,
+                  "radius": 0.049467462562069416,
+                  "relative_error": 0.049426310210912705
+                },
+                "0.02": null
+              }
+            },
+            "progress_anchored": {
+              "coverage_failure": false,
+              "final_radius": 1.6439417955572353e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 92,
+                  "radius": 0.09382626264944932,
+                  "relative_error": 0.09371192836893227
+                },
+                "0.05": {
+                  "matvecs": 96,
+                  "radius": 0.004178251536354435,
+                  "relative_error": 0.00408109533623624
+                },
+                "0.02": {
+                  "matvecs": 96,
+                  "radius": 0.004178251536354435,
+                  "relative_error": 0.00408109533623624
+                }
+              }
+            },
+            "residual_v": {
+              "coverage_failure": false,
+              "final_radius": 3.4210929402858067e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.05847744535220424,
+                  "relative_error": 0.050629866330992535
+                },
+                "0.05": {
+                  "matvecs": 44,
+                  "radius": 0.03511268383729376,
+                  "relative_error": 0.0333913395982437
+                },
+                "0.02": {
+                  "matvecs": 48,
+                  "radius": 0.01947781196300873,
+                  "relative_error": 0.01841882508378534
+                }
+              }
+            },
+            "doob": {
+              "coverage_failure": false,
+              "final_radius": 0.016103274488837385,
+              "stops": {
+                "0.1": {
+                  "matvecs": 48,
+                  "radius": 0.09245449080562475,
+                  "relative_error": 0.09131969909330251
+                },
+                "0.05": {
+                  "matvecs": 88,
+                  "radius": 0.04828472243734033,
+                  "relative_error": 0.048165250757958855
+                },
+                "0.02": {
+                  "matvecs": 208,
+                  "radius": 0.019890951676622193,
+                  "relative_error": 0.01986138830247164
+                }
+              }
+            },
+            "chi_square": {
+              "coverage_failure": false,
+              "final_radius": 1.700221602560913e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 56,
+                  "radius": 0.08359956639545424,
+                  "relative_error": 0.0831993083131275
+                },
+                "0.05": {
+                  "matvecs": 64,
+                  "radius": 0.03973042788854946,
+                  "relative_error": 0.03948975955052014
+                },
+                "0.02": {
+                  "matvecs": 72,
+                  "radius": 0.01193396343560126,
+                  "relative_error": 0.011763019774118533
+                }
+              }
+            },
+            "hybrid": {
+              "coverage_failure": false,
+              "final_radius": 3.740503422719792e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.06316758565419302,
+                  "relative_error": 0.05528523381207506
+                },
+                "0.05": {
+                  "matvecs": 44,
+                  "radius": 0.03871751548650799,
+                  "relative_error": 0.0369901765801246
+                },
+                "0.02": {
+                  "matvecs": 52,
+                  "radius": 0.010814143053274756,
+                  "relative_error": 0.010345567223648544
+                }
+              }
+            }
+          }
+        },
+        {
+          "seed": 701013,
+          "final_sketch_fraction": 0.9999780891554996,
+          "v_sum_relative": 0.48885859990709907,
+          "metrics": {
+            "progress_single": {
+              "coverage_failure": false,
+              "final_radius": 0.02975942631141927,
+              "stops": {
+                "0.1": {
+                  "matvecs": 84,
+                  "radius": 0.09656731413867652,
+                  "relative_error": 0.09644112117184345
+                },
+                "0.05": {
+                  "matvecs": 156,
+                  "radius": 0.049783846414792145,
+                  "relative_error": 0.04973796995646196
+                },
+                "0.02": null
+              }
+            },
+            "progress_anchored": {
+              "coverage_failure": false,
+              "final_radius": 1.5917003803313635e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 92,
+                  "radius": 0.08989193034610503,
+                  "relative_error": 0.08978468839604337
+                },
+                "0.05": {
+                  "matvecs": 96,
+                  "radius": 0.0038419437440015817,
+                  "relative_error": 0.003749597171009089
+                },
+                "0.02": {
+                  "matvecs": 96,
+                  "radius": 0.0038419437440015817,
+                  "relative_error": 0.003749597171009089
+                }
+              }
+            },
+            "residual_v": {
+              "coverage_failure": false,
+              "final_radius": 3.6497856945481224e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.04849130088003539,
+                  "relative_error": 0.02776818037407769
+                },
+                "0.05": {
+                  "matvecs": 40,
+                  "radius": 0.04849130088003539,
+                  "relative_error": 0.02776818037407769
+                },
+                "0.02": {
+                  "matvecs": 48,
+                  "radius": 0.010775930181934797,
+                  "relative_error": 0.009938100688464901
+                }
+              }
+            },
+            "doob": {
+              "coverage_failure": false,
+              "final_radius": 0.013853922194544717,
+              "stops": {
+                "0.1": {
+                  "matvecs": 44,
+                  "radius": 0.08918124887810129,
+                  "relative_error": 0.08661471734541704
+                },
+                "0.05": {
+                  "matvecs": 76,
+                  "radius": 0.048736007516500535,
+                  "relative_error": 0.04858653404427682
+                },
+                "0.02": {
+                  "matvecs": 180,
+                  "radius": 0.01985347844363718,
+                  "relative_error": 0.01981744380422401
+                }
+              }
+            },
+            "chi_square": {
+              "coverage_failure": false,
+              "final_radius": 1.7607308437634875e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 52,
+                  "radius": 0.09145248493213254,
+                  "relative_error": 0.09094562429416264
+                },
+                "0.05": {
+                  "matvecs": 60,
+                  "radius": 0.04241679073179292,
+                  "relative_error": 0.04213343367435196
+                },
+                "0.02": {
+                  "matvecs": 68,
+                  "radius": 0.012684108510818257,
+                  "relative_error": 0.012517910989604086
+                }
+              }
+            },
+            "hybrid": {
+              "coverage_failure": false,
+              "final_radius": 3.983636981382439e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.05275250077646963,
+                  "relative_error": 0.031945158914665095
+                },
+                "0.05": {
+                  "matvecs": 44,
+                  "radius": 0.026004370865939253,
+                  "relative_error": 0.02358670844913613
+                },
+                "0.02": {
+                  "matvecs": 48,
+                  "radius": 0.0128037197880561,
+                  "relative_error": 0.011964209465148201
+                }
+              }
+            }
+          }
+        },
+        {
+          "seed": 701014,
+          "final_sketch_fraction": 0.9999780950293043,
+          "v_sum_relative": 0.5008311536175124,
+          "metrics": {
+            "progress_single": {
+              "coverage_failure": false,
+              "final_radius": 0.030724677190823762,
+              "stops": {
+                "0.1": {
+                  "matvecs": 84,
+                  "radius": 0.0994797365968721,
+                  "relative_error": 0.09934685437731039
+                },
+                "0.05": {
+                  "matvecs": 164,
+                  "radius": 0.04874469098776099,
+                  "relative_error": 0.048702085497246195
+                },
+                "0.02": null
+              }
+            },
+            "progress_anchored": {
+              "coverage_failure": false,
+              "final_radius": 1.5878690732081242e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 92,
+                  "radius": 0.08974702822238875,
+                  "relative_error": 0.08963668921473378
+                },
+                "0.05": {
+                  "matvecs": 96,
+                  "radius": 0.00393902432897271,
+                  "relative_error": 0.003846930179447261
+                },
+                "0.02": {
+                  "matvecs": 96,
+                  "radius": 0.00393902432897271,
+                  "relative_error": 0.003846930179447261
+                }
+              }
+            },
+            "residual_v": {
+              "coverage_failure": false,
+              "final_radius": 3.830601518591338e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 36,
+                  "radius": 0.09889256089727423,
+                  "relative_error": 0.012599549941263444
+                },
+                "0.05": {
+                  "matvecs": 40,
+                  "radius": 0.03872535032907069,
+                  "relative_error": 0.03366661712653363
+                },
+                "0.02": {
+                  "matvecs": 48,
+                  "radius": 0.011404616395929401,
+                  "relative_error": 0.010795848731931068
+                }
+              }
+            },
+            "doob": {
+              "coverage_failure": false,
+              "final_radius": 0.014823641711343876,
+              "stops": {
+                "0.1": {
+                  "matvecs": 44,
+                  "radius": 0.09474101311440225,
+                  "relative_error": 0.09239460473483385
+                },
+                "0.05": {
+                  "matvecs": 80,
+                  "radius": 0.049272554110607256,
+                  "relative_error": 0.04912956541051172
+                },
+                "0.02": {
+                  "matvecs": 192,
+                  "radius": 0.019876989636333726,
+                  "relative_error": 0.019843652235291387
+                }
+              }
+            },
+            "chi_square": {
+              "coverage_failure": false,
+              "final_radius": 1.7615865037729693e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 52,
+                  "radius": 0.08818770255071923,
+                  "relative_error": 0.08774182434626199
+                },
+                "0.05": {
+                  "matvecs": 60,
+                  "radius": 0.0389858677183956,
+                  "relative_error": 0.03872130345523739
+                },
+                "0.02": {
+                  "matvecs": 68,
+                  "radius": 0.011399567253751434,
+                  "relative_error": 0.011218674030557096
+                }
+              }
+            },
+            "hybrid": {
+              "coverage_failure": false,
+              "final_radius": 4.168893962039985e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.04273808937644586,
+                  "relative_error": 0.03765981359102555
+                },
+                "0.05": {
+                  "matvecs": 40,
+                  "radius": 0.04273808937644586,
+                  "relative_error": 0.03765981359102555
+                },
+                "0.02": {
+                  "matvecs": 48,
+                  "radius": 0.013153056076138458,
+                  "relative_error": 0.012543236020720494
+                }
+              }
+            }
+          }
+        },
+        {
+          "seed": 701015,
+          "final_sketch_fraction": 0.9999783125524632,
+          "v_sum_relative": 0.4947093812349293,
+          "metrics": {
+            "progress_single": {
+              "coverage_failure": false,
+              "final_radius": 0.030251276865426606,
+              "stops": {
+                "0.1": {
+                  "matvecs": 84,
+                  "radius": 0.09805259104772615,
+                  "relative_error": 0.09792245416959777
+                },
+                "0.05": {
+                  "matvecs": 160,
+                  "radius": 0.04926431137299961,
+                  "relative_error": 0.04922079106368571
+                },
+                "0.02": null
+              }
+            },
+            "progress_anchored": {
+              "coverage_failure": false,
+              "final_radius": 1.5870134508512905e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 92,
+                  "radius": 0.09415289006177427,
+                  "relative_error": 0.09404491540938942
+                },
+                "0.05": {
+                  "matvecs": 96,
+                  "radius": 0.0038521385254908815,
+                  "relative_error": 0.0037599820132649953
+                },
+                "0.02": {
+                  "matvecs": 96,
+                  "radius": 0.0038521385254908815,
+                  "relative_error": 0.0037599820132649953
+                }
+              }
+            },
+            "residual_v": {
+              "coverage_failure": false,
+              "final_radius": 3.948711704168479e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.05029436556774761,
+                  "relative_error": 0.04428350607375986
+                },
+                "0.05": {
+                  "matvecs": 44,
+                  "radius": 0.029561700368016326,
+                  "relative_error": 0.02825053387786025
+                },
+                "0.02": {
+                  "matvecs": 48,
+                  "radius": 0.015940186445131725,
+                  "relative_error": 0.015366503264573117
+                }
+              }
+            },
+            "doob": {
+              "coverage_failure": false,
+              "final_radius": 0.014348046981772623,
+              "stops": {
+                "0.1": {
+                  "matvecs": 44,
+                  "radius": 0.09154886201769147,
+                  "relative_error": 0.09015875369321313
+                },
+                "0.05": {
+                  "matvecs": 80,
+                  "radius": 0.04774354164320528,
+                  "relative_error": 0.04760600416688554
+                },
+                "0.02": {
+                  "matvecs": 188,
+                  "radius": 0.0196615071426023,
+                  "relative_error": 0.01962761717929573
+                }
+              }
+            },
+            "chi_square": {
+              "coverage_failure": false,
+              "final_radius": 1.8659294389291673e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 56,
+                  "radius": 0.07388229762880835,
+                  "relative_error": 0.0735581197087316
+                },
+                "0.05": {
+                  "matvecs": 64,
+                  "radius": 0.03277807893797897,
+                  "relative_error": 0.03258134777013422
+                },
+                "0.02": {
+                  "matvecs": 68,
+                  "radius": 0.018604644241169834,
+                  "relative_error": 0.01843865244685805
+                }
+              }
+            },
+            "hybrid": {
+              "coverage_failure": false,
+              "final_radius": 4.303951064197155e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.05471128635646967,
+                  "relative_error": 0.048675148720346284
+                },
+                "0.05": {
+                  "matvecs": 44,
+                  "radius": 0.0328560954347501,
+                  "relative_error": 0.03154073346955322
+                },
+                "0.02": {
+                  "matvecs": 48,
+                  "radius": 0.018284399108526004,
+                  "relative_error": 0.017709392193170137
+                }
+              }
+            }
+          }
+        },
+        {
+          "seed": 701016,
+          "final_sketch_fraction": 0.9999780464747573,
+          "v_sum_relative": 0.505359031281391,
+          "metrics": {
+            "progress_single": {
+              "coverage_failure": false,
+              "final_radius": 0.031044076099654535,
+              "stops": {
+                "0.1": {
+                  "matvecs": 88,
+                  "radius": 0.09547505746085305,
+                  "relative_error": 0.095355506514061
+                },
+                "0.05": {
+                  "matvecs": 164,
+                  "radius": 0.04924180982199835,
+                  "relative_error": 0.04919916273809988
+                },
+                "0.02": null
+              }
+            },
+            "progress_anchored": {
+              "coverage_failure": false,
+              "final_radius": 1.600746184973122e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 88,
+                  "radius": 0.09794855486414168,
+                  "relative_error": 0.09782873398061809
+                },
+                "0.05": {
+                  "matvecs": 96,
+                  "radius": 0.0047527521041127365,
+                  "relative_error": 0.004662521230010208
+                },
+                "0.02": {
+                  "matvecs": 96,
+                  "radius": 0.0047527521041127365,
+                  "relative_error": 0.004662521230010208
+                }
+              }
+            },
+            "residual_v": {
+              "coverage_failure": false,
+              "final_radius": 3.4442331672938824e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.04519275479935602,
+                  "relative_error": 0.03237522811707638
+                },
+                "0.05": {
+                  "matvecs": 40,
+                  "radius": 0.04519275479935602,
+                  "relative_error": 0.03237522811707638
+                },
+                "0.02": {
+                  "matvecs": 48,
+                  "radius": 0.009561048537700569,
+                  "relative_error": 0.008725611886239326
+                }
+              }
+            },
+            "doob": {
+              "coverage_failure": false,
+              "final_radius": 0.015144524202499047,
+              "stops": {
+                "0.1": {
+                  "matvecs": 44,
+                  "radius": 0.09625872695259136,
+                  "relative_error": 0.09478253376797574
+                },
+                "0.05": {
+                  "matvecs": 84,
+                  "radius": 0.04777734602914388,
+                  "relative_error": 0.047651332194214246
+                },
+                "0.02": {
+                  "matvecs": 196,
+                  "radius": 0.01988163204323441,
+                  "relative_error": 0.01984907537956726
+                }
+              }
+            },
+            "chi_square": {
+              "coverage_failure": false,
+              "final_radius": 1.6980460761219943e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 52,
+                  "radius": 0.09559755575154796,
+                  "relative_error": 0.09502182490650446
+                },
+                "0.05": {
+                  "matvecs": 60,
+                  "radius": 0.04355225377579338,
+                  "relative_error": 0.04321621235518869
+                },
+                "0.02": {
+                  "matvecs": 68,
+                  "radius": 0.011866545686262643,
+                  "relative_error": 0.011649529199958542
+                }
+              }
+            },
+            "hybrid": {
+              "coverage_failure": false,
+              "final_radius": 3.7644182983721295e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.049691418251255844,
+                  "relative_error": 0.036818723047605806
+                },
+                "0.05": {
+                  "matvecs": 40,
+                  "radius": 0.049691418251255844,
+                  "relative_error": 0.036818723047605806
+                },
+                "0.02": {
+                  "matvecs": 48,
+                  "radius": 0.011543545178577743,
+                  "relative_error": 0.010706467962281252
+                }
+              }
+            }
+          }
+        },
+        {
+          "seed": 701017,
+          "final_sketch_fraction": 0.9999782495603248,
+          "v_sum_relative": 0.5694030262017638,
+          "metrics": {
+            "progress_single": {
+              "coverage_failure": false,
+              "final_radius": 0.036023283108229394,
+              "stops": {
+                "0.1": {
+                  "matvecs": 96,
+                  "radius": 0.09989802909888813,
+                  "relative_error": 0.09979590651996206
+                },
+                "0.05": {
+                  "matvecs": 188,
+                  "radius": 0.04946531277606701,
+                  "relative_error": 0.04943021213611476
+                },
+                "0.02": null
+              }
+            },
+            "progress_anchored": {
+              "coverage_failure": false,
+              "final_radius": 1.612729728030991e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 92,
+                  "radius": 0.09259727702473428,
+                  "relative_error": 0.09248699545151218
+                },
+                "0.05": {
+                  "matvecs": 96,
+                  "radius": 0.0038314603851065886,
+                  "relative_error": 0.0037382573291597776
+                },
+                "0.02": {
+                  "matvecs": 96,
+                  "radius": 0.0038314603851065886,
+                  "relative_error": 0.0037382573291597776
+                }
+              }
+            },
+            "residual_v": {
+              "coverage_failure": false,
+              "final_radius": 3.8119966289116155e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.08545675979146475,
+                  "relative_error": 0.07200249661189861
+                },
+                "0.05": {
+                  "matvecs": 48,
+                  "radius": 0.037554516058842254,
+                  "relative_error": 0.0369176929757673
+                },
+                "0.02": {
+                  "matvecs": 56,
+                  "radius": 0.012815604865388111,
+                  "relative_error": 0.012587150281822224
+                }
+              }
+            },
+            "doob": {
+              "coverage_failure": false,
+              "final_radius": 0.020147175749385363,
+              "stops": {
+                "0.1": {
+                  "matvecs": 56,
+                  "radius": 0.09603767324139198,
+                  "relative_error": 0.09568778971589098
+                },
+                "0.05": {
+                  "matvecs": 108,
+                  "radius": 0.0485104277621605,
+                  "relative_error": 0.04843117687945431
+                },
+                "0.02": null
+              }
+            },
+            "chi_square": {
+              "coverage_failure": false,
+              "final_radius": 1.8635614601051466e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 60,
+                  "radius": 0.08686641868389111,
+                  "relative_error": 0.08659261181097677
+                },
+                "0.05": {
+                  "matvecs": 68,
+                  "radius": 0.046013758649368235,
+                  "relative_error": 0.04583654577980245
+                },
+                "0.02": {
+                  "matvecs": 76,
+                  "radius": 0.018259313772494654,
+                  "relative_error": 0.01813236053877776
+                }
+              }
+            },
+            "hybrid": {
+              "coverage_failure": false,
+              "final_radius": 4.162874715171342e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.09062699148061142,
+                  "relative_error": 0.07710864315235799
+                },
+                "0.05": {
+                  "matvecs": 48,
+                  "radius": 0.040836127348984695,
+                  "relative_error": 0.04019729010107587
+                },
+                "0.02": {
+                  "matvecs": 56,
+                  "radius": 0.014864577339509103,
+                  "relative_error": 0.014619283763940727
+                }
+              }
+            }
+          }
+        },
+        {
+          "seed": 701018,
+          "final_sketch_fraction": 0.9999781598857482,
+          "v_sum_relative": 0.5182236943730116,
+          "metrics": {
+            "progress_single": {
+              "coverage_failure": false,
+              "final_radius": 0.03208924688211457,
+              "stops": {
+                "0.1": {
+                  "matvecs": 88,
+                  "radius": 0.09846651631575695,
+                  "relative_error": 0.0983503640837935
+                },
+                "0.05": {
+                  "matvecs": 168,
+                  "radius": 0.0496053270014979,
+                  "relative_error": 0.0495642379034682
+                },
+                "0.02": null
+              }
+            },
+            "progress_anchored": {
+              "coverage_failure": false,
+              "final_radius": 1.59312547173443e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 92,
+                  "radius": 0.09333626380466364,
+                  "relative_error": 0.09323054206924919
+                },
+                "0.05": {
+                  "matvecs": 96,
+                  "radius": 0.004122609501361435,
+                  "relative_error": 0.004032598995001857
+                },
+                "0.02": {
+                  "matvecs": 96,
+                  "radius": 0.004122609501361435,
+                  "relative_error": 0.004032598995001857
+                }
+              }
+            },
+            "residual_v": {
+              "coverage_failure": false,
+              "final_radius": 3.842909048512638e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.056585504594395916,
+                  "relative_error": 0.047649826290142805
+                },
+                "0.05": {
+                  "matvecs": 44,
+                  "radius": 0.034161671933387004,
+                  "relative_error": 0.032426445090344425
+                },
+                "0.02": {
+                  "matvecs": 48,
+                  "radius": 0.01947309568894355,
+                  "relative_error": 0.018716197527406386
+                }
+              }
+            },
+            "doob": {
+              "coverage_failure": false,
+              "final_radius": 0.01619456682918287,
+              "stops": {
+                "0.1": {
+                  "matvecs": 48,
+                  "radius": 0.09278590362171545,
+                  "relative_error": 0.09197457505904638
+                },
+                "0.05": {
+                  "matvecs": 88,
+                  "radius": 0.04854413686906695,
+                  "relative_error": 0.04843326344689114
+                },
+                "0.02": {
+                  "matvecs": 212,
+                  "radius": 0.019618792331910852,
+                  "relative_error": 0.019589880070288945
+                }
+              }
+            },
+            "chi_square": {
+              "coverage_failure": false,
+              "final_radius": 1.8216291771636745e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 56,
+                  "radius": 0.08094943364530834,
+                  "relative_error": 0.08057022820986459
+                },
+                "0.05": {
+                  "matvecs": 64,
+                  "radius": 0.03816435159232581,
+                  "relative_error": 0.03794970425337252
+                },
+                "0.02": {
+                  "matvecs": 72,
+                  "radius": 0.012142861353232596,
+                  "relative_error": 0.012004727071714294
+                }
+              }
+            },
+            "hybrid": {
+              "coverage_failure": false,
+              "final_radius": 4.189617402475254e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.061158213568779735,
+                  "relative_error": 0.05218386328180813
+                },
+                "0.05": {
+                  "matvecs": 44,
+                  "radius": 0.037593917887641916,
+                  "relative_error": 0.035852932055967957
+                },
+                "0.02": {
+                  "matvecs": 52,
+                  "radius": 0.011523506198449218,
+                  "relative_error": 0.01100971378426352
+                }
+              }
+            }
+          }
+        },
+        {
+          "seed": 701019,
+          "final_sketch_fraction": 0.9999781770786121,
+          "v_sum_relative": 0.49142556942264515,
+          "metrics": {
+            "progress_single": {
+              "coverage_failure": false,
+              "final_radius": 0.029982152849286542,
+              "stops": {
+                "0.1": {
+                  "matvecs": 84,
+                  "radius": 0.09724074127324214,
+                  "relative_error": 0.09711351049287109
+                },
+                "0.05": {
+                  "matvecs": 160,
+                  "radius": 0.04883485384933634,
+                  "relative_error": 0.04879045732298892
+                },
+                "0.02": null
+              }
+            },
+            "progress_anchored": {
+              "coverage_failure": false,
+              "final_radius": 1.5798427167998792e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 92,
+                  "radius": 0.0897264036047906,
+                  "relative_error": 0.08961776242689168
+                },
+                "0.05": {
+                  "matvecs": 96,
+                  "radius": 0.0042375179016292605,
+                  "relative_error": 0.004144579545408478
+                },
+                "0.02": {
+                  "matvecs": 96,
+                  "radius": 0.0042375179016292605,
+                  "relative_error": 0.004144579545408478
+                }
+              }
+            },
+            "residual_v": {
+              "coverage_failure": false,
+              "final_radius": 3.3633388576514123e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.03733375159350289,
+                  "relative_error": 0.028909547773436906
+                },
+                "0.05": {
+                  "matvecs": 40,
+                  "radius": 0.03733375159350289,
+                  "relative_error": 0.028909547773436906
+                },
+                "0.02": {
+                  "matvecs": 44,
+                  "radius": 0.01793889581739813,
+                  "relative_error": 0.015963587257152412
+                }
+              }
+            },
+            "doob": {
+              "coverage_failure": false,
+              "final_radius": 0.01407767786294318,
+              "stops": {
+                "0.1": {
+                  "matvecs": 44,
+                  "radius": 0.09032269777068386,
+                  "relative_error": 0.08820692857551293
+                },
+                "0.05": {
+                  "matvecs": 76,
+                  "radius": 0.049496598838122206,
+                  "relative_error": 0.0493450893540881
+                },
+                "0.02": {
+                  "matvecs": 184,
+                  "radius": 0.019722865967797456,
+                  "relative_error": 0.01968758883975652
+                }
+              }
+            },
+            "chi_square": {
+              "coverage_failure": false,
+              "final_radius": 1.6857284346429257e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 52,
+                  "radius": 0.08698797511307305,
+                  "relative_error": 0.08648998604341385
+                },
+                "0.05": {
+                  "matvecs": 60,
+                  "radius": 0.03721725146606133,
+                  "relative_error": 0.03693949579820699
+                },
+                "0.02": {
+                  "matvecs": 68,
+                  "radius": 0.008870875627015034,
+                  "relative_error": 0.008696244972132838
+                }
+              }
+            },
+            "hybrid": {
+              "coverage_failure": false,
+              "final_radius": 3.680240324079261e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.04161807982400247,
+                  "relative_error": 0.03315908290654579
+                },
+                "0.05": {
+                  "matvecs": 40,
+                  "radius": 0.04161807982400247,
+                  "relative_error": 0.03315908290654579
+                },
+                "0.02": {
+                  "matvecs": 48,
+                  "radius": 0.008724756183878284,
+                  "relative_error": 0.008049552635678747
+                }
+              }
+            }
+          }
+        },
+        {
+          "seed": 701020,
+          "final_sketch_fraction": 0.9999783004567945,
+          "v_sum_relative": 0.4905023552320771,
+          "metrics": {
+            "progress_single": {
+              "coverage_failure": false,
+              "final_radius": 0.029913982362070574,
+              "stops": {
+                "0.1": {
+                  "matvecs": 84,
+                  "radius": 0.09704049272001761,
+                  "relative_error": 0.09689999546898487
+                },
+                "0.05": {
+                  "matvecs": 160,
+                  "radius": 0.04872583729807702,
+                  "relative_error": 0.048681938091232446
+                },
+                "0.02": null
+              }
+            },
+            "progress_anchored": {
+              "coverage_failure": false,
+              "final_radius": 1.6604408418256052e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 92,
+                  "radius": 0.0942964474307374,
+                  "relative_error": 0.09418290988333466
+                },
+                "0.05": {
+                  "matvecs": 96,
+                  "radius": 0.004577444799848106,
+                  "relative_error": 0.004482333822434237
+                },
+                "0.02": {
+                  "matvecs": 96,
+                  "radius": 0.004577444799848106,
+                  "relative_error": 0.004482333822434237
+                }
+              }
+            },
+            "residual_v": {
+              "coverage_failure": false,
+              "final_radius": 3.532865148143372e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.04675247485535197,
+                  "relative_error": 0.04381727465832608
+                },
+                "0.05": {
+                  "matvecs": 40,
+                  "radius": 0.04675247485535197,
+                  "relative_error": 0.04381727465832608
+                },
+                "0.02": {
+                  "matvecs": 48,
+                  "radius": 0.015875580669854127,
+                  "relative_error": 0.015075615767525141
+                }
+              }
+            },
+            "doob": {
+              "coverage_failure": false,
+              "final_radius": 0.014009192260692733,
+              "stops": {
+                "0.1": {
+                  "matvecs": 44,
+                  "radius": 0.08954196773053409,
+                  "relative_error": 0.08828133588992082
+                },
+                "0.05": {
+                  "matvecs": 76,
+                  "radius": 0.04927037792230954,
+                  "relative_error": 0.04910621866217513
+                },
+                "0.02": {
+                  "matvecs": 184,
+                  "radius": 0.019627439748152516,
+                  "relative_error": 0.019592420811084033
+                }
+              }
+            },
+            "chi_square": {
+              "coverage_failure": false,
+              "final_radius": 1.7026132560425072e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 52,
+                  "radius": 0.09562880010958676,
+                  "relative_error": 0.09505539114752581
+                },
+                "0.05": {
+                  "matvecs": 60,
+                  "radius": 0.047115713490406545,
+                  "relative_error": 0.04680000876869994
+                },
+                "0.02": {
+                  "matvecs": 68,
+                  "radius": 0.016554258151055958,
+                  "relative_error": 0.01634663374480083
+                }
+              }
+            },
+            "hybrid": {
+              "coverage_failure": false,
+              "final_radius": 3.855493137376857e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.050893175375608536,
+                  "relative_error": 0.04794636423399479
+                },
+                "0.05": {
+                  "matvecs": 44,
+                  "radius": 0.031319723291282645,
+                  "relative_error": 0.0301264562859358
+                },
+                "0.02": {
+                  "matvecs": 48,
+                  "radius": 0.018083434206931783,
+                  "relative_error": 0.017281730700611675
+                }
+              }
+            }
+          }
+        },
+        {
+          "seed": 701021,
+          "final_sketch_fraction": 0.9999777644568578,
+          "v_sum_relative": 0.5133700068876783,
+          "metrics": {
+            "progress_single": {
+              "coverage_failure": false,
+              "final_radius": 0.03168903775817533,
+              "stops": {
+                "0.1": {
+                  "matvecs": 88,
+                  "radius": 0.0973222345849953,
+                  "relative_error": 0.09720511846138158
+                },
+                "0.05": {
+                  "matvecs": 168,
+                  "radius": 0.04899775093349025,
+                  "relative_error": 0.04895638905971422
+                },
+                "0.02": null
+              }
+            },
+            "progress_anchored": {
+              "coverage_failure": false,
+              "final_radius": 1.5618661290857995e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 92,
+                  "radius": 0.09044946504048465,
+                  "relative_error": 0.09034566677687828
+                },
+                "0.05": {
+                  "matvecs": 96,
+                  "radius": 0.004397873140988901,
+                  "relative_error": 0.004309749401083973
+                },
+                "0.02": {
+                  "matvecs": 96,
+                  "radius": 0.004397873140988901,
+                  "relative_error": 0.004309749401083973
+                }
+              }
+            },
+            "residual_v": {
+              "coverage_failure": false,
+              "final_radius": 3.986338343285689e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.05010085331770959,
+                  "relative_error": 0.03843790662063884
+                },
+                "0.05": {
+                  "matvecs": 44,
+                  "radius": 0.02803979933756249,
+                  "relative_error": 0.027039028027169953
+                },
+                "0.02": {
+                  "matvecs": 48,
+                  "radius": 0.0159762698110279,
+                  "relative_error": 0.015428288933257095
+                }
+              }
+            },
+            "doob": {
+              "coverage_failure": false,
+              "final_radius": 0.01579248911780792,
+              "stops": {
+                "0.1": {
+                  "matvecs": 44,
+                  "radius": 0.09978525125829213,
+                  "relative_error": 0.09871463752547638
+                },
+                "0.05": {
+                  "matvecs": 84,
+                  "radius": 0.0497473277734257,
+                  "relative_error": 0.04962617520949042
+                },
+                "0.02": {
+                  "matvecs": 204,
+                  "radius": 0.019898787292068794,
+                  "relative_error": 0.019867678845298054
+                }
+              }
+            },
+            "chi_square": {
+              "coverage_failure": false,
+              "final_radius": 1.844502426927354e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 52,
+                  "radius": 0.09908409463958409,
+                  "relative_error": 0.09856364934650674
+                },
+                "0.05": {
+                  "matvecs": 60,
+                  "radius": 0.04824172532919895,
+                  "relative_error": 0.04795104547776474
+                },
+                "0.02": {
+                  "matvecs": 68,
+                  "radius": 0.01715179713774042,
+                  "relative_error": 0.016964272949868686
+                }
+              }
+            },
+            "hybrid": {
+              "coverage_failure": false,
+              "final_radius": 4.3394268742002074e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.05436768882377839,
+                  "relative_error": 0.042657352511781266
+                },
+                "0.05": {
+                  "matvecs": 44,
+                  "radius": 0.031065567046922628,
+                  "relative_error": 0.03006185022652441
+                },
+                "0.02": {
+                  "matvecs": 48,
+                  "radius": 0.018100087270357546,
+                  "relative_error": 0.017526043186207874
+                }
+              }
+            }
+          }
+        },
+        {
+          "seed": 701022,
+          "final_sketch_fraction": 0.9999780690223266,
+          "v_sum_relative": 0.5141272214806087,
+          "metrics": {
+            "progress_single": {
+              "coverage_failure": false,
+              "final_radius": 0.03176658826113285,
+              "stops": {
+                "0.1": {
+                  "matvecs": 88,
+                  "radius": 0.09754660234262048,
+                  "relative_error": 0.09742777148556803
+                },
+                "0.05": {
+                  "matvecs": 168,
+                  "radius": 0.04911572060771057,
+                  "relative_error": 0.04907436249069952
+                },
+                "0.02": null
+              }
+            },
+            "progress_anchored": {
+              "coverage_failure": false,
+              "final_radius": 1.6016743559189935e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 92,
+                  "radius": 0.09187635963841963,
+                  "relative_error": 0.09176498653775544
+                },
+                "0.05": {
+                  "matvecs": 96,
+                  "radius": 0.0037294144402098047,
+                  "relative_error": 0.0036333553623311143
+                },
+                "0.02": {
+                  "matvecs": 96,
+                  "radius": 0.0037294144402098047,
+                  "relative_error": 0.0036333553623311143
+                }
+              }
+            },
+            "residual_v": {
+              "coverage_failure": false,
+              "final_radius": 3.815296987177919e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.05985927605555161,
+                  "relative_error": 0.05153438945687072
+                },
+                "0.05": {
+                  "matvecs": 44,
+                  "radius": 0.03620893386831995,
+                  "relative_error": 0.03505681845267139
+                },
+                "0.02": {
+                  "matvecs": 52,
+                  "radius": 0.009768966696328537,
+                  "relative_error": 0.00943764222989052
+                }
+              }
+            },
+            "doob": {
+              "coverage_failure": false,
+              "final_radius": 0.01587040140601167,
+              "stops": {
+                "0.1": {
+                  "matvecs": 48,
+                  "radius": 0.09098948328433393,
+                  "relative_error": 0.09035828035933502
+                },
+                "0.05": {
+                  "matvecs": 84,
+                  "radius": 0.04998705982029329,
+                  "relative_error": 0.049864949748237075
+                },
+                "0.02": {
+                  "matvecs": 204,
+                  "radius": 0.019996643131755573,
+                  "relative_error": 0.019965779731414113
+                }
+              }
+            },
+            "chi_square": {
+              "coverage_failure": false,
+              "final_radius": 1.8524177603931457e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 56,
+                  "radius": 0.0859476390957579,
+                  "relative_error": 0.08563012464616593
+                },
+                "0.05": {
+                  "matvecs": 64,
+                  "radius": 0.041778974123273964,
+                  "relative_error": 0.04158509019069201
+                },
+                "0.02": {
+                  "matvecs": 72,
+                  "radius": 0.013589915176451006,
+                  "relative_error": 0.013450622615049479
+                }
+              }
+            },
+            "hybrid": {
+              "coverage_failure": false,
+              "final_radius": 4.164615850531895e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.06464047882748103,
+                  "relative_error": 0.05627803727053271
+                },
+                "0.05": {
+                  "matvecs": 44,
+                  "radius": 0.039884458716642424,
+                  "relative_error": 0.038728256645590875
+                },
+                "0.02": {
+                  "matvecs": 52,
+                  "radius": 0.011622532986466233,
+                  "relative_error": 0.011276617323990434
+                }
+              }
+            }
+          }
+        },
+        {
+          "seed": 701023,
+          "final_sketch_fraction": 0.9999781361600786,
+          "v_sum_relative": 0.5446358423829165,
+          "metrics": {
+            "progress_single": {
+              "coverage_failure": false,
+              "final_radius": 0.0341036817510895,
+              "stops": {
+                "0.1": {
+                  "matvecs": 92,
+                  "radius": 0.0993373957794273,
+                  "relative_error": 0.09922933971214087
+                },
+                "0.05": {
+                  "matvecs": 180,
+                  "radius": 0.04902220770643394,
+                  "relative_error": 0.04898451517234714
+                },
+                "0.02": null
+              }
+            },
+            "progress_anchored": {
+              "coverage_failure": false,
+              "final_radius": 1.5898825063326273e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 92,
+                  "radius": 0.09060291066155049,
+                  "relative_error": 0.0904957131242432
+                },
+                "0.05": {
+                  "matvecs": 96,
+                  "radius": 0.004026980901033782,
+                  "relative_error": 0.003935117729496618
+                },
+                "0.02": {
+                  "matvecs": 96,
+                  "radius": 0.004026980901033782,
+                  "relative_error": 0.003935117729496618
+                }
+              }
+            },
+            "residual_v": {
+              "coverage_failure": false,
+              "final_radius": 3.5333177878547396e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.06231447505976295,
+                  "relative_error": 0.05209281722764669
+                },
+                "0.05": {
+                  "matvecs": 44,
+                  "radius": 0.03668424401631589,
+                  "relative_error": 0.034899989199321135
+                },
+                "0.02": {
+                  "matvecs": 48,
+                  "radius": 0.019875948273364676,
+                  "relative_error": 0.018876248007866137
+                }
+              }
+            },
+            "doob": {
+              "coverage_failure": false,
+              "final_radius": 0.018218465506372832,
+              "stops": {
+                "0.1": {
+                  "matvecs": 52,
+                  "radius": 0.09479003819498012,
+                  "relative_error": 0.0941934302346843
+                },
+                "0.05": {
+                  "matvecs": 96,
+                  "radius": 0.04968812718670659,
+                  "relative_error": 0.04959208626119116
+                },
+                "0.02": {
+                  "matvecs": 236,
+                  "radius": 0.019784850583749736,
+                  "relative_error": 0.019759843543201816
+                }
+              }
+            },
+            "chi_square": {
+              "coverage_failure": false,
+              "final_radius": 1.758479941733508e-05,
+              "stops": {
+                "0.1": {
+                  "matvecs": 56,
+                  "radius": 0.08928641168706614,
+                  "relative_error": 0.08888127966386672
+                },
+                "0.05": {
+                  "matvecs": 64,
+                  "radius": 0.04303980660145683,
+                  "relative_error": 0.042809514696876105
+                },
+                "0.02": {
+                  "matvecs": 72,
+                  "radius": 0.013161829259444412,
+                  "relative_error": 0.013003490098167259
+                }
+              }
+            },
+            "hybrid": {
+              "coverage_failure": false,
+              "final_radius": 3.863831082256937e-06,
+              "stops": {
+                "0.1": {
+                  "matvecs": 40,
+                  "radius": 0.06728047628427593,
+                  "relative_error": 0.05701103527071716
+                },
+                "0.05": {
+                  "matvecs": 44,
+                  "radius": 0.04053489844828885,
+                  "relative_error": 0.038744016204709464
+                },
+                "0.02": {
+                  "matvecs": 52,
+                  "radius": 0.01044266888099858,
+                  "relative_error": 0.009901627134543789
+                }
+              }
+            }
+          }
+        }
+      ],
+      "completed_paths": 24,
+      "complete": true
+    }
+  }
+}

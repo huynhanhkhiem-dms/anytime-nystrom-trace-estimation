@@ -1,0 +1,12 @@
+{
+  "seed": 95274832,
+  "generated_configurations": 10000,
+  "signed_nonrejection_membership_checks": 54991,
+  "total_trace_radius_bound_checks": 5019,
+  "residual_trace_radius_bound_checks": 5010,
+  "sharp_radius_equality_checks": 3,
+  "scope": "Deterministic rational checks of the anchored formulas and width bound. No stochastic coverage was tested.",
+  "source_sha256": {
+    "validate_inexact_endpoints.py": "ec554762158c66cf4675089ea5d09e2f463834c868e83596da8e8b69f2fe099e"
+  }
+}

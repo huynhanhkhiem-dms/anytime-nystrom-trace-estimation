@@ -1,0 +1,10 @@
+{
+  "pointwise_evidence_comparisons": 100000,
+  "rescaling_checks": 6,
+  "disjoint_branch_checks": 2,
+  "scope": "Deterministic checks of binary64 roots, with no stochastic coverage test.",
+  "source_sha256": {
+    "validate_anchored_norm.py": "e8e6e9a170d42819489a657c8d9eba631564f87d3854c6cd507cd7d60587e00b",
+    "anchored_norm.py": "83a37ae3f4cd7c8c1a03709efe83a4012c804235afd73bdf27a33372b90076c1"
+  }
+}

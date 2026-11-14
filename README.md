@@ -1,23 +1,59 @@
 # Anytime trace estimation from Gaussian Nyström progress
 
-Reproducibility code and recorded numerical results for the manuscript by **Huynh Anh Khiem**.
+**Research reproducibility archive** for the manuscript of **Huynh Anh Khiem**
+(Faculty of Information Technology, Ton Duc Thang University, Ho Chi Minh City, Vietnam;
+ORCID 0009-0007-7210-174X).
 
-## Setup
+This repository preserves the numerical implementation, recorded results and
+experiment protocols accompanying the manuscript submitted to the *SIAM Journal
+on Matrix Analysis and Applications* (SIMAX). It is not an independently
+validated software package.
 
-Use Python 3.14 in a new virtual environment. Run the commands from the repository root.
+## Contents
 
-```sh
-python -m venv .venv
-# On macOS or Linux
-. .venv/bin/activate
+- `core.py`, `anchored_norm.py`, `progress_certificate.py`, `fast_evidence.py`,
+  `baselines.py`: core implementations and certificates.
+- `run_*.py` and calibration scripts: experiments; `validate_*.py` and
+  `check_confirmatory_archive.py`: deterministic and archived-output checks.
+- `results/`: archived experimental outputs. The public operator inputs are **not**
+  redistributed; `data_sources.json` identifies the providers and SHA-256 checksums.
+- `README.txt`: full commands and study-specific details.
+- `manifest_sha256.json`: integrity hashes of the included research files.
+
+## Reproduce the experiments
+
+Use **Python 3.14** with the exact versions in `requirements.txt`. In the
+repository root:
+
+```bash
 python -m pip install -r requirements.txt
 python fetch_inputs.py
+python run_anchor_norm_comparison.py --jobs 4
+python run_na_checkpoint.py --jobs 4
+python calibrate_na_checkpoint.py
+python run_asymmetric_progress.py
+python run_serial_block_timing.py
+python run_verified_norm_comparison.py
+python run_sparse_inverse.py
+python analyze_results.py
 ```
 
-The input script downloads 12 files from the public providers listed in [`data_sources.json`](data_sources.json) and checks their SHA-256 digests. The sources’ terms apply to those inputs.
+See `README.txt` for the remaining experiment commands, order, numerical
+assumptions, observed hardware/BLAS dependencies, and verification routines.
+Theoretical guarantees assume exact Gaussian sampling and the conditions in
+the manuscript; finite-precision and inexact solves require the stated verified
+conditions. Random number seeds and operator provenance are recorded in the
+code and supplementary experiment protocols.
 
-## Reproduce the results
+To keep the archived results unchanged, rerun in a fresh checkout or copy.
+The supplementary ZIP submitted with the paper is intended as a permanent
+snapshot of these source and result files. File checksums are provided for
+integrity checking; a matching checksum is not itself proof of mathematical
+correctness.
 
-Use [`README.txt`](README.txt) for the experiment commands, run order, and validation checks. From a fresh checkout, `python analyze_results.py` regenerates both figures from the recorded outputs in [`results/`](results/). The supplied outputs can be compared with a rerun in a separate working copy. Runtime and iterative-solver steps can vary with the host and BLAS.
+## Citation and reuse
 
-[`CONTENTS.txt`](CONTENTS.txt) lists the files in the accompanying journal archive. [`manifest_sha256.json`](manifest_sha256.json) records their checksums, apart from the manifest itself. [`source_provenance.json`](source_provenance.json) maps source hashes from the experiment records to the supplied files.
+Please cite the associated manuscript if you use the work. Third-party input
+data retain their original provider terms; check `data_sources.json` before
+downloading or redistributing external data. No separate source-code license
+is granted by this README.

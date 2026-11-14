@@ -1,0 +1,23 @@
+{
+  "source_hashes_checked": 8,
+  "results_sha256": "e8a099472673ab6ff1eb8ad4b05ffcb2bacbb73603ce18a3bdb6a2c4f2f74f56",
+  "recorded_checkpoints_checked": 53760,
+  "finite_replay_endpoints_checked": 1096,
+  "cost_summaries_checked": 56,
+  "maximum_replay_endpoint_discrepancy_over_trace": 4.3231682892893864e-14,
+  "replayed_cases": [
+    "email_heat_0.5",
+    "email_heat_5",
+    "yeast_heat_0.5",
+    "yeast_heat_5",
+    "494_bus_inverse_0.01",
+    "nos3_inverse_0.01",
+    "har_log_covariance_0.1",
+    "har_log_covariance_10"
+  ],
+  "one_shared_path_per_case_replayed_with_slow_reference_evidence": true,
+  "paired_contrasts_recomputed": 16,
+  "source_sha256": {
+    "check_confirmatory_archive.py": "a2c2120f927d7a082a8a1e9b90fe4c7a31b6adbd896f8bb486663474a07383b3"
+  }
+}

@@ -1,0 +1,64 @@
+[
+  {
+    "path": "matrices/bcsstk14.mtx.gz",
+    "url": "https://math.nist.gov/pub/MatrixMarket2/Harwell-Boeing/bcsstruc2/bcsstk14.mtx.gz",
+    "sha256": "9ec9a34b7df5c84a819ded555a2ef2cb398127b593d24bcd88f5e407b1eaa1aa"
+  },
+  {
+    "path": "matrices/bcsstk15.mtx.gz",
+    "url": "https://math.nist.gov/pub/MatrixMarket2/Harwell-Boeing/bcsstruc2/bcsstk15.mtx.gz",
+    "sha256": "661ffe2633a153c97ad309d09724a96372dae08aee45816d0172a1f451bc8dbb"
+  },
+  {
+    "path": "matrices/bcsstk16.mtx.gz",
+    "url": "https://math.nist.gov/pub/MatrixMarket2/Harwell-Boeing/bcsstruc2/bcsstk16.mtx.gz",
+    "sha256": "3736579229a28286a952f3f993866958ad7af857843e04ee5c2ee3a9acc90ce8"
+  },
+  {
+    "path": "matrices/ca-GrQc.txt.gz",
+    "url": "https://snap.stanford.edu/data/ca-GrQc.txt.gz",
+    "sha256": "a254442cdf5d684712578b630c2e0d7543518ab154ef2341cabb607572ce7230"
+  },
+  {
+    "path": "matrices/email-Eu-core.txt.gz",
+    "url": "https://snap.stanford.edu/data/email-Eu-core.txt.gz",
+    "sha256": "4b47acdb80197b085fe63c819c357ae488131ee904ed93d1b219a68b0f9e245f"
+  },
+  {
+    "path": "matrices/bio-yeast.zip",
+    "url": "https://nrvis.com/download/data/bio/bio-yeast.zip",
+    "sha256": "93614b09ad0289ec110de94c9059b2282e03f1825bf48151ff97926e1a8c2117"
+  },
+  {
+    "path": "matrices/494_bus.mtx.gz",
+    "url": "https://math.nist.gov/pub/MatrixMarket2/Harwell-Boeing/psadmit/494_bus.mtx.gz",
+    "sha256": "55a2551e699253653e1b297467da1fdb7b647f850b05eb2c6647f8d66a1d8748"
+  },
+  {
+    "path": "matrices/nos3.mtx.gz",
+    "url": "https://math.nist.gov/pub/MatrixMarket2/Harwell-Boeing/lanpro/nos3.mtx.gz",
+    "sha256": "83337fac6e0785af7043ba216cb54795b98bcab4903375f14ef23d2fc05e1def"
+  },
+  {
+    "path": "matrices/har-240.zip",
+    "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/00240/UCI%20HAR%20Dataset.zip",
+    "sha256": "2045e435c955214b38145fb5fa00776c72814f01b203fec405152dac7d5bfeb0"
+  },
+  {
+    "path": "matrices/bcsstk08.mtx.gz",
+    "url": "https://math.nist.gov/pub/MatrixMarket2/Harwell-Boeing/bcsstruc1/bcsstk08.mtx.gz",
+    "sha256": "5945836beb24009e8a94b58242d9b5c6cfd261117595898149d3fa9c99c084f7"
+  },
+  {
+    "path": "matrices/1138_bus.mtx.gz",
+    "url": "https://math.nist.gov/pub/MatrixMarket2/Harwell-Boeing/psadmit/1138_bus.mtx.gz",
+    "sha256": "0544e52ed96893ae82c5a7f9051d662e04a1c27fe57768578de09932381fd963"
+  },
+  {
+    "path": "spambase.data",
+    "url": "https://archive.ics.uci.edu/static/public/94/spambase.zip",
+    "member": "spambase.data",
+    "download_sha256": "813ac1df8effac70463c09c9c4b11e8803eefcab54771af66150852bcdcd1636",
+    "sha256": "b1ef93de71f97714d3d7d4f58fc9f718da7bbc8ac8a150eff2778616a8097b12"
+  }
+]

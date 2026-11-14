@@ -1,0 +1,49 @@
+{
+  "status": "EXACT_LAW_SIMULATION",
+  "dimension": 65536,
+  "budget": 2048,
+  "trials": 1000,
+  "target": 0.05,
+  "seed": 319772,
+  "source_sha256": {
+    "run_confidence_sweep.py": "c4ae0e4cb77d36b16eaab1b04fd1894cf0139f879df5788b6458ec7c8a502bd6"
+  },
+  "results": {
+    "0.05": {
+      "trace_progress": {
+        "stopped": 1000,
+        "median_probe_count_among_stops": 296.0,
+        "anytime_coverage_failures": 0
+      },
+      "doob_sharp_constant": {
+        "stopped": 1000,
+        "median_probe_count_among_stops": 140.0,
+        "anytime_coverage_failures": 0
+      }
+    },
+    "0.001": {
+      "trace_progress": {
+        "stopped": 1000,
+        "median_probe_count_among_stops": 609.0,
+        "anytime_coverage_failures": 0
+      },
+      "doob_sharp_constant": {
+        "stopped": 1000,
+        "median_probe_count_among_stops": 989.0,
+        "anytime_coverage_failures": 0
+      }
+    },
+    "1e-06": {
+      "trace_progress": {
+        "stopped": 1000,
+        "median_probe_count_among_stops": 1162.0,
+        "anytime_coverage_failures": 0
+      },
+      "doob_sharp_constant": {
+        "stopped": 0,
+        "median_probe_count_among_stops": null,
+        "anytime_coverage_failures": 0
+      }
+    }
+  }
+}

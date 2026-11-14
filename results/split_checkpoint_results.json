@@ -1,0 +1,1302 @@
+{
+  "status": "EXPLORATORY_PILOT",
+  "target": 0.05,
+  "alpha": 0.05,
+  "checkpoints": [
+    12,
+    16,
+    24,
+    32,
+    44,
+    64,
+    96,
+    128,
+    192,
+    256
+  ],
+  "sketch_fractions": [
+    0.25,
+    0.5,
+    0.75
+  ],
+  "source_sha256": {
+    "run_split_checkpoints.py": "51dbe7d909f9c1690175e61d1088d0aac84ca22f7785424cfd272581b05c6938",
+    "run_progress_pilot.py": "2a4828535b927554f9b391ee9b8bc0e82ae95c5acce1bd21069954fcda8aff34",
+    "baselines.py": "e1a2db59c8890f6a59961e3f6e57ee7c0535dc64d41d8f6e1b5849771fdc7f3f",
+    "core.py": "a3bd2d26e828a9fadaeb3f7075a468ce61e320a7dcc54d4a982c637cba383da5"
+  },
+  "matrices": {
+    "bcsstk14": {
+      "audit": {
+        "source": "https://math.nist.gov/pub/MatrixMarket2/Harwell-Boeing/bcsstruc2/bcsstk14.mtx.gz",
+        "bytes": 299854,
+        "sha256": "9ec9a34b7df5c84a819ded555a2ef2cb398127b593d24bcd88f5e407b1eaa1aa",
+        "dimension": 1806,
+        "nnz": 63454,
+        "trace_from_all_unit_solves": 40.005335754913574,
+        "trace_from_dense_eigenspectrum_if_computed": 40.00533414274975,
+        "one_probe_relative_linear_solve_residual": 4.251599377101151e-14,
+        "reference_is_floating_point": true
+      },
+      "records": [
+        {
+          "seed": 701000,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 64,
+              "relative_error": 0.001342089985486794
+            },
+            "split_observed_v": {
+              "matvecs": 64,
+              "relative_error": 0.00029232266193512935
+            }
+          }
+        },
+        {
+          "seed": 701001,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 64,
+              "relative_error": 0.0021886913410913422
+            },
+            "split_observed_v": {
+              "matvecs": 64,
+              "relative_error": 0.000721263575932829
+            }
+          }
+        },
+        {
+          "seed": 701002,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 64,
+              "relative_error": 0.0013107900421904795
+            },
+            "split_observed_v": {
+              "matvecs": 64,
+              "relative_error": 0.0003174783522255087
+            }
+          }
+        },
+        {
+          "seed": 701003,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 64,
+              "relative_error": 0.002515798308182271
+            },
+            "split_observed_v": {
+              "matvecs": 64,
+              "relative_error": 0.0007776068033724659
+            }
+          }
+        },
+        {
+          "seed": 701004,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 64,
+              "relative_error": 0.0024407950958582614
+            },
+            "split_observed_v": {
+              "matvecs": 64,
+              "relative_error": 0.000861835651195797
+            }
+          }
+        },
+        {
+          "seed": 701005,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 64,
+              "relative_error": 0.0010677432185293156
+            },
+            "split_observed_v": {
+              "matvecs": 64,
+              "relative_error": 0.00020330536105839236
+            }
+          }
+        },
+        {
+          "seed": 701006,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 64,
+              "relative_error": 0.001460523436721095
+            },
+            "split_observed_v": {
+              "matvecs": 64,
+              "relative_error": 0.0003296033219044592
+            }
+          }
+        },
+        {
+          "seed": 701007,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 64,
+              "relative_error": 0.0013939726664307095
+            },
+            "split_observed_v": {
+              "matvecs": 64,
+              "relative_error": 0.00030005463444671143
+            }
+          }
+        },
+        {
+          "seed": 701008,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 64,
+              "relative_error": 0.0015469737612214818
+            },
+            "split_observed_v": {
+              "matvecs": 64,
+              "relative_error": 0.0003707162254462659
+            }
+          }
+        },
+        {
+          "seed": 701009,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 64,
+              "relative_error": 0.0019199051091693953
+            },
+            "split_observed_v": {
+              "matvecs": 64,
+              "relative_error": 0.0004613090605554149
+            }
+          }
+        },
+        {
+          "seed": 701010,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 64,
+              "relative_error": 0.001136531473026725
+            },
+            "split_observed_v": {
+              "matvecs": 64,
+              "relative_error": 0.00017423647899117434
+            }
+          }
+        },
+        {
+          "seed": 701011,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 64,
+              "relative_error": 0.001612948182918128
+            },
+            "split_observed_v": {
+              "matvecs": 64,
+              "relative_error": 0.0003535431929941879
+            }
+          }
+        },
+        {
+          "seed": 701012,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 64,
+              "relative_error": 0.002671442525731038
+            },
+            "split_observed_v": {
+              "matvecs": 64,
+              "relative_error": 0.0010499931383634031
+            }
+          }
+        },
+        {
+          "seed": 701013,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 64,
+              "relative_error": 0.0018278312939932206
+            },
+            "split_observed_v": {
+              "matvecs": 64,
+              "relative_error": 0.0005460937252761422
+            }
+          }
+        },
+        {
+          "seed": 701014,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 64,
+              "relative_error": 0.001286199174935776
+            },
+            "split_observed_v": {
+              "matvecs": 64,
+              "relative_error": 0.00024012941157902645
+            }
+          }
+        },
+        {
+          "seed": 701015,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 64,
+              "relative_error": 0.001421763530061293
+            },
+            "split_observed_v": {
+              "matvecs": 64,
+              "relative_error": 0.00029103566552213245
+            }
+          }
+        },
+        {
+          "seed": 701016,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 64,
+              "relative_error": 0.0013531351005227066
+            },
+            "split_observed_v": {
+              "matvecs": 64,
+              "relative_error": 0.0003052540124239833
+            }
+          }
+        },
+        {
+          "seed": 701017,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 64,
+              "relative_error": 0.0014862056414282065
+            },
+            "split_observed_v": {
+              "matvecs": 64,
+              "relative_error": 0.00039026073745174195
+            }
+          }
+        },
+        {
+          "seed": 701018,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 64,
+              "relative_error": 0.0015593456645168757
+            },
+            "split_observed_v": {
+              "matvecs": 64,
+              "relative_error": 0.0003835612866511795
+            }
+          }
+        },
+        {
+          "seed": 701019,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 64,
+              "relative_error": 0.0013195714740772413
+            },
+            "split_observed_v": {
+              "matvecs": 64,
+              "relative_error": 0.00029129537869820865
+            }
+          }
+        },
+        {
+          "seed": 701020,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 64,
+              "relative_error": 0.0015067907481389753
+            },
+            "split_observed_v": {
+              "matvecs": 64,
+              "relative_error": 0.00032806802193707796
+            }
+          }
+        },
+        {
+          "seed": 701021,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 64,
+              "relative_error": 0.0011506993738121807
+            },
+            "split_observed_v": {
+              "matvecs": 64,
+              "relative_error": 0.00018547890673237255
+            }
+          }
+        },
+        {
+          "seed": 701022,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 64,
+              "relative_error": 0.0014964434667819049
+            },
+            "split_observed_v": {
+              "matvecs": 64,
+              "relative_error": 0.0003324109809181852
+            }
+          }
+        },
+        {
+          "seed": 701023,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 64,
+              "relative_error": 0.0022462718117735037
+            },
+            "split_observed_v": {
+              "matvecs": 64,
+              "relative_error": 0.0007458342026251952
+            }
+          }
+        }
+      ],
+      "elapsed_seconds": 14.172756500018295
+    },
+    "bcsstk15": {
+      "audit": {
+        "source": "https://math.nist.gov/pub/MatrixMarket2/Harwell-Boeing/bcsstruc2/bcsstk15.mtx.gz",
+        "bytes": 373272,
+        "sha256": "661ffe2633a153c97ad309d09724a96372dae08aee45816d0172a1f451bc8dbb",
+        "dimension": 3948,
+        "nnz": 117816,
+        "trace_from_all_unit_solves": 6.029641906696575,
+        "trace_from_dense_eigenspectrum_if_computed": null,
+        "one_probe_relative_linear_solve_residual": 2.609718704108062e-13,
+        "reference_is_floating_point": true
+      },
+      "records": [
+        {
+          "seed": 701000,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 24,
+              "relative_error": 0.027653713722021633
+            },
+            "split_observed_v": {
+              "matvecs": 16,
+              "relative_error": 0.02039563704624947
+            }
+          }
+        },
+        {
+          "seed": 701001,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 24,
+              "relative_error": 0.0276873324362803
+            },
+            "split_observed_v": {
+              "matvecs": 16,
+              "relative_error": 0.010869675634758158
+            }
+          }
+        },
+        {
+          "seed": 701002,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 24,
+              "relative_error": 0.02721725899537053
+            },
+            "split_observed_v": {
+              "matvecs": 16,
+              "relative_error": 0.02708177408979684
+            }
+          }
+        },
+        {
+          "seed": 701003,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 24,
+              "relative_error": 0.027998314630040877
+            },
+            "split_observed_v": {
+              "matvecs": 16,
+              "relative_error": 0.03565128710575882
+            }
+          }
+        },
+        {
+          "seed": 701004,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 24,
+              "relative_error": 0.02381948625526209
+            },
+            "split_observed_v": {
+              "matvecs": 16,
+              "relative_error": 0.012993554355621884
+            }
+          }
+        },
+        {
+          "seed": 701005,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 24,
+              "relative_error": 0.02283795417454937
+            },
+            "split_observed_v": {
+              "matvecs": 16,
+              "relative_error": 0.017453079574176744
+            }
+          }
+        },
+        {
+          "seed": 701006,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 32,
+              "relative_error": 0.015362716806198717
+            },
+            "split_observed_v": {
+              "matvecs": 16,
+              "relative_error": 0.0375240743279186
+            }
+          }
+        },
+        {
+          "seed": 701007,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 24,
+              "relative_error": 0.03078788032548685
+            },
+            "split_observed_v": {
+              "matvecs": 16,
+              "relative_error": 0.02523857029900256
+            }
+          }
+        },
+        {
+          "seed": 701008,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 24,
+              "relative_error": 0.03566823924522011
+            },
+            "split_observed_v": {
+              "matvecs": 24,
+              "relative_error": 0.0064347345669450995
+            }
+          }
+        },
+        {
+          "seed": 701009,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 24,
+              "relative_error": 0.022300247486912284
+            },
+            "split_observed_v": {
+              "matvecs": 16,
+              "relative_error": 0.023414483258242358
+            }
+          }
+        },
+        {
+          "seed": 701010,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 24,
+              "relative_error": 0.020823293777965546
+            },
+            "split_observed_v": {
+              "matvecs": 16,
+              "relative_error": 0.013648459630713594
+            }
+          }
+        },
+        {
+          "seed": 701011,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 24,
+              "relative_error": 0.03682075956466324
+            },
+            "split_observed_v": {
+              "matvecs": 24,
+              "relative_error": 0.007450590849801708
+            }
+          }
+        },
+        {
+          "seed": 701012,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 24,
+              "relative_error": 0.015539337014509602
+            },
+            "split_observed_v": {
+              "matvecs": 16,
+              "relative_error": 0.017178720641147338
+            }
+          }
+        },
+        {
+          "seed": 701013,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 24,
+              "relative_error": 0.028344875232618083
+            },
+            "split_observed_v": {
+              "matvecs": 16,
+              "relative_error": 0.029070918853516536
+            }
+          }
+        },
+        {
+          "seed": 701014,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 24,
+              "relative_error": 0.03005972562961312
+            },
+            "split_observed_v": {
+              "matvecs": 16,
+              "relative_error": 0.027293972539983002
+            }
+          }
+        },
+        {
+          "seed": 701015,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 24,
+              "relative_error": 0.02640889155608006
+            },
+            "split_observed_v": {
+              "matvecs": 16,
+              "relative_error": 0.04004407569469781
+            }
+          }
+        },
+        {
+          "seed": 701016,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 24,
+              "relative_error": 0.022805418937734245
+            },
+            "split_observed_v": {
+              "matvecs": 16,
+              "relative_error": 0.02708161240749485
+            }
+          }
+        },
+        {
+          "seed": 701017,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 24,
+              "relative_error": 0.021860695907329752
+            },
+            "split_observed_v": {
+              "matvecs": 16,
+              "relative_error": 0.03194840451601033
+            }
+          }
+        },
+        {
+          "seed": 701018,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 24,
+              "relative_error": 0.022497389238702592
+            },
+            "split_observed_v": {
+              "matvecs": 16,
+              "relative_error": 0.029073500597720958
+            }
+          }
+        },
+        {
+          "seed": 701019,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 24,
+              "relative_error": 0.023238448799787204
+            },
+            "split_observed_v": {
+              "matvecs": 16,
+              "relative_error": 0.025040434141178736
+            }
+          }
+        },
+        {
+          "seed": 701020,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 24,
+              "relative_error": 0.028292720783217984
+            },
+            "split_observed_v": {
+              "matvecs": 16,
+              "relative_error": 0.030851110151567163
+            }
+          }
+        },
+        {
+          "seed": 701021,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 24,
+              "relative_error": 0.025565290031141608
+            },
+            "split_observed_v": {
+              "matvecs": 16,
+              "relative_error": 0.007699061447773881
+            }
+          }
+        },
+        {
+          "seed": 701022,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 24,
+              "relative_error": 0.024862413508915937
+            },
+            "split_observed_v": {
+              "matvecs": 12,
+              "relative_error": 0.030390666204335393
+            }
+          }
+        },
+        {
+          "seed": 701023,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 24,
+              "relative_error": 0.021829456622304733
+            },
+            "split_observed_v": {
+              "matvecs": 16,
+              "relative_error": 0.022725531624225415
+            }
+          }
+        }
+      ],
+      "elapsed_seconds": 32.341297899984056
+    },
+    "bcsstk16": {
+      "audit": {
+        "source": "https://math.nist.gov/pub/MatrixMarket2/Harwell-Boeing/bcsstruc2/bcsstk16.mtx.gz",
+        "bytes": 880309,
+        "sha256": "3736579229a28286a952f3f993866958ad7af857843e04ee5c2ee3a9acc90ce8",
+        "dimension": 4884,
+        "nnz": 290378,
+        "trace_from_all_unit_solves": 74.00001539589792,
+        "trace_from_dense_eigenspectrum_if_computed": null,
+        "one_probe_relative_linear_solve_residual": 3.2557366983125525e-15,
+        "reference_is_floating_point": true
+      },
+      "records": [
+        {
+          "seed": 701000,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 96,
+              "relative_error": 0.0259587924549618
+            },
+            "split_observed_v": {
+              "matvecs": 96,
+              "relative_error": 0.013199782355710843
+            }
+          }
+        },
+        {
+          "seed": 701001,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 128,
+              "relative_error": 6.193321022696097e-07
+            },
+            "split_observed_v": {
+              "matvecs": 96,
+              "relative_error": 0.025965318588547115
+            }
+          }
+        },
+        {
+          "seed": 701002,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 96,
+              "relative_error": 0.028335989406587325
+            },
+            "split_observed_v": {
+              "matvecs": 96,
+              "relative_error": 0.014412841900637963
+            }
+          }
+        },
+        {
+          "seed": 701003,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 96,
+              "relative_error": 0.031689486597517025
+            },
+            "split_observed_v": {
+              "matvecs": 96,
+              "relative_error": 0.01609842873348999
+            }
+          }
+        },
+        {
+          "seed": 701004,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 96,
+              "relative_error": 0.04805089142187757
+            },
+            "split_observed_v": {
+              "matvecs": 96,
+              "relative_error": 0.024241345769032252
+            }
+          }
+        },
+        {
+          "seed": 701005,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 96,
+              "relative_error": 0.04644752783502892
+            },
+            "split_observed_v": {
+              "matvecs": 96,
+              "relative_error": 0.023443975388759863
+            }
+          }
+        },
+        {
+          "seed": 701006,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 96,
+              "relative_error": 0.044068648142359335
+            },
+            "split_observed_v": {
+              "matvecs": 96,
+              "relative_error": 0.022272294743368892
+            }
+          }
+        },
+        {
+          "seed": 701007,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 96,
+              "relative_error": 0.030255772705891193
+            },
+            "split_observed_v": {
+              "matvecs": 96,
+              "relative_error": 0.015382939490247605
+            }
+          }
+        },
+        {
+          "seed": 701008,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 96,
+              "relative_error": 0.04398996347174178
+            },
+            "split_observed_v": {
+              "matvecs": 96,
+              "relative_error": 0.022233495759589772
+            }
+          }
+        },
+        {
+          "seed": 701009,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 96,
+              "relative_error": 0.04844579499101065
+            },
+            "split_observed_v": {
+              "matvecs": 96,
+              "relative_error": 0.024435835150641516
+            }
+          }
+        },
+        {
+          "seed": 701010,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 96,
+              "relative_error": 0.039767912376687864
+            },
+            "split_observed_v": {
+              "matvecs": 96,
+              "relative_error": 0.02014084824116069
+            }
+          }
+        },
+        {
+          "seed": 701011,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 96,
+              "relative_error": 0.019548153563734072
+            },
+            "split_observed_v": {
+              "matvecs": 96,
+              "relative_error": 0.009913505647362042
+            }
+          }
+        },
+        {
+          "seed": 701012,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 96,
+              "relative_error": 0.029383126525898806
+            },
+            "split_observed_v": {
+              "matvecs": 96,
+              "relative_error": 0.014944571556632757
+            }
+          }
+        },
+        {
+          "seed": 701013,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 96,
+              "relative_error": 0.026638523806687076
+            },
+            "split_observed_v": {
+              "matvecs": 96,
+              "relative_error": 0.013543829161699161
+            }
+          }
+        },
+        {
+          "seed": 701014,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 96,
+              "relative_error": 0.023948136518360252
+            },
+            "split_observed_v": {
+              "matvecs": 96,
+              "relative_error": 0.012179880891824535
+            }
+          }
+        },
+        {
+          "seed": 701015,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 96,
+              "relative_error": 0.0481060839898253
+            },
+            "split_observed_v": {
+              "matvecs": 96,
+              "relative_error": 0.02426031371882753
+            }
+          }
+        },
+        {
+          "seed": 701016,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 96,
+              "relative_error": 0.026848948922750138
+            },
+            "split_observed_v": {
+              "matvecs": 96,
+              "relative_error": 0.013659785560632853
+            }
+          }
+        },
+        {
+          "seed": 701017,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 96,
+              "relative_error": 0.028498285389980227
+            },
+            "split_observed_v": {
+              "matvecs": 96,
+              "relative_error": 0.014492153853117973
+            }
+          }
+        },
+        {
+          "seed": 701018,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 96,
+              "relative_error": 0.03529729506187329
+            },
+            "split_observed_v": {
+              "matvecs": 96,
+              "relative_error": 0.01791457175113509
+            }
+          }
+        },
+        {
+          "seed": 701019,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 96,
+              "relative_error": 0.029244466754801968
+            },
+            "split_observed_v": {
+              "matvecs": 96,
+              "relative_error": 0.014873356789726344
+            }
+          }
+        },
+        {
+          "seed": 701020,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 96,
+              "relative_error": 0.025364220046583563
+            },
+            "split_observed_v": {
+              "matvecs": 96,
+              "relative_error": 0.012903669877976531
+            }
+          }
+        },
+        {
+          "seed": 701021,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 128,
+              "relative_error": 7.03748484598421e-07
+            },
+            "split_observed_v": {
+              "matvecs": 96,
+              "relative_error": 0.027274734139934864
+            }
+          }
+        },
+        {
+          "seed": 701022,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 96,
+              "relative_error": 0.026083048203685566
+            },
+            "split_observed_v": {
+              "matvecs": 96,
+              "relative_error": 0.013271410398804306
+            }
+          }
+        },
+        {
+          "seed": 701023,
+          "coverage_failures": {
+            "split_chernoff": false,
+            "split_observed_v": false
+          },
+          "stops": {
+            "split_chernoff": {
+              "matvecs": 128,
+              "relative_error": 6.248364061711698e-07
+            },
+            "split_observed_v": {
+              "matvecs": 96,
+              "relative_error": 0.026870608291867937
+            }
+          }
+        }
+      ],
+      "elapsed_seconds": 38.52394479999202
+    }
+  }
+}
